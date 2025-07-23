@@ -5,5 +5,20 @@
     "services": "Leistungen",
     "team": "Team",
     "contact": "Kontakt"
+  },
+
+  "EgmImages": {
+    "logo": {
+      "image": "/images/logo.svg",
+      "alt": "Logo EGM"
+    },
+    "zt": {
+      "image": "/images/zt_Logo_trans.png",
+      "alt": "Logo ZT Elektrochemie"
+    },
+    "adler": {
+      "image": "/images/header/adlerLogo.png",
+      "alt": "Logo Adler"
+    }
   }
 }

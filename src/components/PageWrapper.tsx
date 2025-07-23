@@ -1,4 +1,4 @@
-import MainNavigation from "@/app/components/MainNavigation/MainNavigation";
+import MainNavigation from "@/components/ui/MainNavigation/MainNavigation";
 import { ReactNode } from "react";
 
 interface PageWrapperProps {

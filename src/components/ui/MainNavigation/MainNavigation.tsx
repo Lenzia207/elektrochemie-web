@@ -10,5 +10,5 @@ export default async function MainNavigation({ locale }: MainNavigationProps) {
   const navData = await fetchLocaleNavText(locale);
   const navItems = transformNavData(navData);
 
-  return <ClientNavigation navItems={navItems} />;
+  return <ClientNavigation navItems={[...navItems]} />;
 }

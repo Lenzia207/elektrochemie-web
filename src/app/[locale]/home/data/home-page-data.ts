@@ -10,12 +10,14 @@ import { cache } from "react";
 export const fetchHomePageData = cache(async function (
   locale: string
 ): Promise<HomePageData> {
-  const [homeData] = await Promise.all([
+  const [homeData, egmImages] = await Promise.all([
     import(`../../../../../messages/${locale}/home.json`),
+    import(`../../../../../messages/${locale}/common.json`),
   ]);
 
   return {
     ...homeData.default.HomePage,
+    egmImages: egmImages.default.EgmImages,
   };
 });
 

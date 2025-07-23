@@ -13,16 +13,16 @@ export default async function HomeScreen({ data }: HomeScreenProps) {
     <div className="relative ">
       <div className="absolute flex flex-col items-center justify-center min-h-screen min-w-screen">
         <Image
-          // src={"/images/zt_Logo_trans.png"}
-          src="https://picsum.photos/seed/picsum/200/300"
-          alt="Bild"
+          src={data.egmImages.zt.image}
+          alt={"Bild ZT Elektrochemie"}
           width={200}
           height={250}
           className="object-cover rounded-full"
         />
-        <p className="text-2xl font-bold">{data?.pageSlogan}</p>
+        <p className="text-white text-2xl font-bold">{data?.pageSlogan}</p>
       </div>
       <BackgroundClient />
+      <div className="h-96 w-full bg-amber-300">Hello</div>
     </div>
   );
 }
