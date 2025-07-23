@@ -1,18 +1,15 @@
 "use client";
 import React, { useState } from "react";
-
-import AppLogo from "../components/AppLogo";
-
+import { NavbarLogo } from "./NavbarLogo";
+import { NavItems } from "./NavItems";
+import { NavBody } from "./NavBody";
+import { Navbar } from "./Navbar";
 import {
-  Navbar,
-  NavBody,
-  NavItems,
   MobileNav,
-  NavbarLogo,
   MobileNavHeader,
   MobileNavToggle,
   MobileNavMenu,
-} from "@/components/ui/resizable-navbar";
+} from "@/components/ui/MainNavigation/MobileMainNavigation";
 
 interface ClientNavigationProps {
   navItems: {
@@ -27,13 +24,14 @@ export default function ClientNavigation({ navItems }: ClientNavigationProps) {
     <div className="relative w-full">
       <Navbar>
         <NavBody>
-          <NavbarLogo />
+          <NavbarLogo image="/images/header/adlerLogo.png" />
+          <NavbarLogo image="/images/logo.svg" />
           <NavItems items={navItems} />
         </NavBody>
 
         <MobileNav>
           <MobileNavHeader>
-            <NavbarLogo />
+            <NavbarLogo image="/images/logo.svg" />
             <MobileNavToggle
               isOpen={isMobileMenuOpen}
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
