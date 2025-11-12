@@ -89,3 +89,19 @@
   }
 
 } */
+
+@layer components {
+
+  .title-xxl{
+    font-size: 3.5rem;
+    font-weight: 700;
+  }
+  .title-xl{
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+  .header-m{
+    font-size: 1rem;
+    font-weight: 200;
+  }
+}

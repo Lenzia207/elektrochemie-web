@@ -13,11 +13,11 @@ export const routing = defineRouting({
       en: "/",
       de: "/",
     },
-    "/expertise": {
+    "/kompetenzen": {
       en: "/expertise",
       de: "/kompetenzen",
     },
-    "/services": {
+    "/leistungen": {
       en: "/services",
       de: "/leistungen",
     },
@@ -30,11 +30,11 @@ export const routing = defineRouting({
       de: "/kontakt",
     },
 
-    "/imprint": {
+    "/impressum": {
       en: "/imprint",
       de: "/impressum",
     },
-    "/privacy": {
+    "/datenschutz": {
       en: "/privacy",
       de: "/datenschutz",
     },

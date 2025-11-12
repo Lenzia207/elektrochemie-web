@@ -10,6 +10,7 @@ export default async function PageWrapper({
   locale,
   pageContent,
 }: PageWrapperProps) {
+  console.log(locale);
   return (
     // <CookieConsentProvider>
     <div>

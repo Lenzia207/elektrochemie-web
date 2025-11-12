@@ -8,7 +8,13 @@ interface MainNavigationProps {
 
 export default async function MainNavigation({ locale }: MainNavigationProps) {
   const navData = await fetchLocaleNavText(locale);
-  const navItems = transformNavData(navData);
+  const navItems = transformNavData(locale, navData);
 
-  return <ClientNavigation navItems={[...navItems]} />;
+  // Map link object to string (e.g., using path)
+  const mappedNavItems = navItems.map((item) => ({
+    ...item,
+    link: item.link.path, // or construct a string as needed
+  }));
+
+  return <ClientNavigation navItems={mappedNavItems} />;
 }
