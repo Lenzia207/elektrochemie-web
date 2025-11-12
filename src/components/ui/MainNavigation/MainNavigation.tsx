@@ -4,9 +4,13 @@ import { transformNavData } from "./utils/transform-nav-data";
 
 interface MainNavigationProps {
   locale: string;
+  trackHeaderOverlap?: boolean;
 }
 
-export default async function MainNavigation({ locale }: MainNavigationProps) {
+export default async function MainNavigation({
+  locale,
+  trackHeaderOverlap,
+}: MainNavigationProps) {
   const navData = await fetchLocaleNavText(locale);
   const navItems = transformNavData(locale, navData);
 
@@ -16,5 +20,10 @@ export default async function MainNavigation({ locale }: MainNavigationProps) {
     link: item.link.path, // or construct a string as needed
   }));
 
-  return <ClientNavigation navItems={mappedNavItems} />;
+  return (
+    <ClientNavigation
+      navItems={mappedNavItems}
+      trackHeaderOverlap={trackHeaderOverlap}
+    />
+  );
 }

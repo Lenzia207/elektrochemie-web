@@ -1,5 +1,5 @@
 import { cn } from "@/utils/utils";
-import { motion } from "motion/react";
+import { motion, useMotionValueEvent, useScroll } from "motion/react";
 import { useState } from "react";
 
 interface NavItemsProps {
@@ -9,16 +9,36 @@ interface NavItemsProps {
   }[];
   className?: string;
   onItemClick?: () => void;
+  trackHeaderOverlap?: boolean;
 }
 
-export const NavItems = ({ items, className, onItemClick }: NavItemsProps) => {
+export const NavItems = ({
+  items,
+  className,
+  onItemClick,
+  trackHeaderOverlap = false,
+}: NavItemsProps) => {
   const [hovered, setHovered] = useState<number | null>(null);
+  const [isOverHeader, setIsOverHeader] = useState(
+    trackHeaderOverlap ? true : false
+  );
+  const { scrollY } = useScroll();
 
+  // Only track scroll if trackHeaderOverlap is true
+  useMotionValueEvent(scrollY, "change", (latest) => {
+    if (trackHeaderOverlap) {
+      const headerHeight = window.innerHeight;
+      setIsOverHeader(latest < headerHeight);
+    }
+  });
+
+  const itemText =
+    trackHeaderOverlap && isOverHeader ? "text-white" : "text-black";
   return (
     <motion.div
       onMouseLeave={() => setHovered(null)}
       className={cn(
-        "absolute inset-0 hidden flex-1 flex-row items-center justify-center space-x-2 text-sm font-medium text-zinc-600 transition duration-200 hover:text-zinc-800 lg:flex lg:space-x-2",
+        `absolute inset-0 hidden flex-1 flex-row items-center justify-center space-x-2 text-sm font-medium ${itemText} transition duration-200 hover:text-zinc-800 lg:flex lg:space-x-2`,
         className
       )}
     >

@@ -11,7 +11,11 @@ const Home = async (props: LocaleParams) => {
 
   if (!data) return <div>Loading...</div>;
   return (
-    <PageWrapper locale={locale} pageContent={<HomeScreen data={data} />} />
+    <PageWrapper
+      locale={locale}
+      isNavTextOverlaping={true}
+      pageContent={<HomeScreen data={data} />}
+    />
   );
 };
 

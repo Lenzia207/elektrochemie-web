@@ -16,9 +16,13 @@ interface ClientNavigationProps {
     link: string;
     name: string;
   }[];
+  trackHeaderOverlap?: boolean;
 }
 
-export default function ClientNavigation({ navItems }: ClientNavigationProps) {
+export default function ClientNavigation({
+  navItems,
+  trackHeaderOverlap = false,
+}: ClientNavigationProps) {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   return (
     <div className="relative w-full">
@@ -26,7 +30,7 @@ export default function ClientNavigation({ navItems }: ClientNavigationProps) {
         <NavBody>
           <NavbarLogo image="/images/header/adlerLogo.png" />
           <NavbarLogo image="/images/logo.svg" />
-          <NavItems items={navItems} />
+          <NavItems items={navItems} trackHeaderOverlap={trackHeaderOverlap} />
         </NavBody>
 
         <MobileNav>
