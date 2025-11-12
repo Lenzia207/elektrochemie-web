@@ -39,6 +39,7 @@ export default function ClientNavigation({
             <MobileNavToggle
               isOpen={isMobileMenuOpen}
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+              trackHeaderOverlap={trackHeaderOverlap}
             />
           </MobileNavHeader>
 
