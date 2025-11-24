@@ -1,4 +1,3 @@
-/* @type {import('tailwindcss').Config} */
 import type { Config } from "tailwindcss";
 
 module.exports = {
@@ -18,7 +17,9 @@ module.exports = {
         white: "#FFFFFF",
         egmBlueTransparency: "var(--egmBlueTransparency)",
         egmPurple: "var(--egmPurple)",
-        egmAccentBlue: "var(--egmAccentBlue)",
+        egmAccentBlue: "var(--egmAccentBlue)", // Changed to use CSS variable
+        egmBlack: "var(--egm-black)",
+        egmGray: "var(--egm-gray)",
       },
     },
   },

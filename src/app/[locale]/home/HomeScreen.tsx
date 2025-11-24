@@ -1,7 +1,6 @@
-import { HomePageData } from "./types/home-types";
+import { HomePageData } from "./data/types/home-types";
 import Image from "next/image";
 import BackgroundClient from "./components/BackgroundClient";
-import CardSwap, { Card } from "@/components/CardSwap";
 import ProfileCard from "@/components/ui/Cards/ProfileCard";
 import FeatureCard from "@/components/ui/Cards/FeaturCard";
 
@@ -19,6 +18,7 @@ import {
 } from "react-icons/fa";
 import SloganAnimation from "./components/SloganAnimation";
 import HeadlineText from "@/components/ui/Texts/HeadlineText";
+import ScrollToTop from "./components/ScrollToTop";
 
 interface HomeScreenProps {
   data: HomePageData;
@@ -150,16 +150,12 @@ export default async function HomeScreen({ data }: HomeScreenProps) {
         </div>
         <div className="relative my-20 bg-gradient-to-r from-[#1f4f83d0] to-[#1f4f83] py-12 -mx-20">
           <div className="max-w-4xl mx-auto px-8">
-            <p className="text-lg md:text-xl text-white text-center leading-relaxed ">
+            <p className="text-white text-center leading-relaxed md:text-xl">
               Ganz besonders möchten wir auf unsere Tätigkeit im Rahmen von{" "}
-              <span className="font-bold text-[#70c3d8]">
-                Sachverständigengutachten
-              </span>{" "}
-              sowie die Zusammenarbeit mit{" "}
-              <span className="font-bold text-[#70c3d8]">Rechtsanwälten</span>{" "}
-              und{" "}
-              <span className="font-bold text-[#70c3d8]">Versicherungen</span>{" "}
-              hinweisen.
+              <span className="font-bold">Sachverständigengutachten</span> sowie
+              die Zusammenarbeit mit{" "}
+              <span className="font-bold ">Rechtsanwälten</span> und{" "}
+              <span className="font-bold ">Versicherungen</span> hinweisen.
             </p>
           </div>
         </div>
@@ -184,6 +180,7 @@ export default async function HomeScreen({ data }: HomeScreenProps) {
           ))}
         </div>
       </div>
+      <ScrollToTop />
     </div>
   );
 }

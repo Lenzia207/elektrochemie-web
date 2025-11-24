@@ -46,14 +46,17 @@ export const NavItems = ({
         <a
           onMouseEnter={() => setHovered(idx)}
           onClick={onItemClick}
-          className="relative px-4 py-2 text-shadow-black dark:text-neutral-300"
+          className={cn(
+            "relative px-4 py-2 text-shadow-black dark:text-neutral-300 ",
+            hovered === idx && "text-white transition duration-250"
+          )}
           key={`link-${idx}`}
           href={item.link}
         >
           {hovered === idx && (
             <motion.div
               layoutId="hovered"
-              className="absolute inset-0 h-full w-full rounded-full bg-blue-950/70 dark:bg-neutral-800"
+              className="absolute inset-0 h-full w-full rounded-full bg-[var(--egmAccentBlue)]  dark:bg-neutral-800"
             />
           )}
           <span className="relative z-20">{item.name}</span>

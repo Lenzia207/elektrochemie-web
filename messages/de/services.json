@@ -1,6 +1,63 @@
 {
   "ServicesPage": {
-    "pageTitle": "Expertise",
-    "pageDescription": "Unsere Expertise im Bereich Elektrochemie"
+    "pageTitle": "Unsere Leistungen",
+    "pageDescription": "Unsere Expertise im Bereich Elektrochemie",
+    "expertiseList": [
+      {
+        "expertiseTitle": "Unterstützung bei Behördenverfahren und Einreichungen",
+        "expertiseDescription": "Eine zentrale Aufgabe der Ziviltechniker ist die Vertretung seiner Kunden bei behördlichen Genehmigungsverfahren wie Betriebsanlagenverfahren und Betriebsstättengenehmigungen. Hierbei sind neben technischen (fachlichen) Herausforderungen auch diffizile Abgrenzungsfragen und juristische Aspekte zu beachten. Neben der Zersplitterung des Anlagenrechts in zahlreiche Materiengesetze und entsprechenden Verfahrensvorschriften sind europarechtliche Einflüsse sowie technische Weiterentwicklungen zu beachten. Hier liefert das EGM eine kompetente und zertifizierte Unterstützung, beginnend von der Planung über die Erstellung der erforderlichen Unterlagen und das eigentliche Betriebsanlagenverfahren bis hin zur rechtzeitigen Problemerkennung im laufenden Betrieb.",
+        "image": "/images/leistungen/01.jpg"
+      },
+      {
+        "expertiseTitle": "Befunde und Gutachten",
+        "expertiseDescription": "Ob Unterstützung in einem Gerichtsverfahren oder für ein Privatgutachten, das Team des EGM steht Ihnen kompetent zur Seite und hilft Ihnen Ihren Standpunkt zu verdeutlichen.",
+        "image": "/images/leistungen/02.jpg"
+      },
+      {
+        "expertiseTitle": "Schadensvermeidung und Schadensaufklärung",
+        "expertiseDescription": "Risikoabschätzungen und Risikominimierung sind zentrale Aufgaben einer Prozessentwicklung und Qualitätssicherung. Von der FMEA, den Prozessanweisungen bis hin zu Fragen der Qualitätssicherung unterstützen wir Ihre laufende Produktion. Sollte einmal etwas nicht so laufen wie es soll, dann sind wir erfahren in der raschen Aufklärung der Ursachen und dem Erarbeiten korrigierender Maßnahmen.",
+        "image": "/images/leistungen/03.jpg"
+      },
+      {
+        "expertiseTitle": "Prozesskontrolle galvanischer Bäder und Systeme",
+        "expertiseDescription": "Die prozessbegleitende Analyse galvanischer Bäder ist eine zentrale Aufgabe in der Oberflächentechnik. Das Team des EGM unterstützt diese wichtigen Analysen, führt diese als externer Partner für seine Kunden durch und liefert die Daten für eine optimale Einstellung der Prozessbäder. Zusätzlich begleiten und koordinieren wir Optimierungen, helfen bei der Auswahl von Prozessparametern und unterstützen bei der Einführung neuer Elektrolyte.",
+        "image": "/images/leistungen/04.jpg"
+      },
+      {
+        "expertiseTitle": "Chemikalien- und Gefahrenstoffmanagement",
+        "expertiseDescription": "Das Bundesgesetz über den Schutz des Menschen und der Umwelt vor Chemikalien (Chemikaliengesetz 1996 – ChemG 1996) schreibt die lückenlose, laufende Überwachung und Aufzeichnung von Chemikalienbeständen und deren Verbräuchen vor. Als kompetenter und zertifizierter Partner übernimmt das EGM diese Tätigkeiten für seine Kunden, führt die Chemikaliendatenbanken, bereitet die regelmäßigen Berichte für Behörden vor und kann aktiv die Vertretung seiner Kunden bei behördlichen Audits übernehmen. Sicherheitsdatenblätter können für eigene Mischungen REACH konform und qualifiziert erstellt werden. Lagerstätten für Chemikalien können bezüglich Arbeitsschutz und behördlichen Auflagen evaluiert und entsprechend adaptiert werden.",
+        "image": "/images/leistungen/05.jpg"
+      },
+      {
+        "expertiseTitle": "Materialprüfung, Produktionskontrolle, Oberflächenanalyse",
+        "expertiseDescription": "Viele unterschiedliche Faktoren beeinflussen die problemlose Verwendung von Materialien und Rohstoffen in der laufenden Produktion. Neben der exakten Zusammensetzung, sind es meist Gefügestrukturen und Oberflächenphänomene, welche einen zentralen Einfluss auf das Verhalten bei der Bearbeitung und die Eigenschaften des finalen Produktes haben. Das EGM unterstützt über eine Vielzahl an material- und oberflächensensitiven Mess- und Prüfroutinen, nach internationalen Normen oder nach kundenspezifischen Vorschriften, die (chemischen) Materialeigenschaften, den Materialaufbau und die Oberflächengegebenheiten. Von der ausgelagerten Wareneingangskontrolle bis hin zur Spezifikation und Qualitätssicherung des fertigen Produktes ist das EGM Ihr kompetenter Partner.",
+        "image": "/images/leistungen/06.jpg"
+      },
+      {
+        "expertiseTitle": "Koordination von Innovationsprojekten und Innovationsmanagement",
+        "expertiseDescription": "Innovation ist die gewinnbringende Umsetzung einer genialen Idee in der industriellen Praxis. Von der Entwicklung bis zur laufenden industriellen Produktion begleiten wir chemische Prozesse und Verfahren über alle Stufen des Up-Scaling und der Validierung bis hin zum laufenden industriellen Produktionsprozess. Wir agieren hier als Schnittstelle zwischen Forschungspartnern, der Entwicklungsabteilung sowie der Produktion und Qualitätssicherung, unterstützen die Auswahl und Integration von Systemlieferanten und helfen die geeigneten chemischen Rohstoffe und Betriebsanlagen zu zertifizieren.",
+        "image": "/images/leistungen/07.jpg"
+      },
+      {
+        "expertiseTitle": "Koordination und prozessbegleitende Kontrolle von Produktionsketten",
+        "expertiseDescription": "Für den Erfolg der Umsetzung eines neuen Produktionsprozesses ist das Erkennen und Schließen der einzelnen Schnittstellen über die gesamte Produktionskette wesentlich. Diese beginnt bei der Definition der kundenspezifischen Produktspezifikationen im Anwendungsfall, erstreckt sich über die Auswahl geeigneter Materialien und Bearbeitungschemikalien, der Auslegung und Gestaltung der (chemischen) Anlagen, der Nachbearbeitung und Reinigung bis hin zur prozessbegleitenden Qualitätssicherung. In dieser gesamten Kette agieren wir als kompetenter Partner und Koordinator, und bieten so unseren Kunden eine effiziente, stets zielorientierte und fehlervermeidende Umsetzung neuer (chemischer) Produktionsprozesse. Selbstverständlich erstreckt sich diese Unterstützung auch auf Prozessoptimierungen.",
+        "image": "/images/leistungen/08.jpg"
+      },
+      {
+        "expertiseTitle": "Patentplausibilisierung",
+        "expertiseDescription": "Sie wollen eine neue Erfindung patentieren oder ein Patent aus dem Bereich Chemie für Ihren Betrieb kaufen? Wir prüfen für Sie rasch und unabhängig, ob bzw. mit welchem Aufwand sich diese Erfindung in der industriellen Praxis umsetzen lässt, bzw. zeigen auf, welche Randbedingungen oder Erfordernisse für diese Umsetzung notwendig sind.",
+        "image": "/images/leistungen/09.jpg"
+      },
+      {
+        "expertiseTitle": "Schulungen, Seminare und Fachkonferenzen",
+        "expertiseDescription": "Neben der Organisation internationaler Fachtagungen (Europäisches Pulse Plating Seminar, Mitorganisator EDNANO) bieten die erfahrenen Vortragenden des EGM eine Reihe von individuellen Fachseminaren und Schulungen an. Praxisnah, abwechslungsreich und informativ decken wir alle Teilbereiche der Chemie und ihrer Anwendung in der industriellen Praxis ab. Von neuen Entwicklungsbereichen, über Schwerpunktschulungen bis hin zu sicherheitsrelevanten Themen richten wir unsere Vorträge ganz nach ihren Bedürfnissen aus.",
+        "image": "/images/leistungen/10.jpg"
+      },
+      {
+        "expertiseTitle": "Schadstoffanalyse",
+        "expertiseDescription": "Ob nach einem Brandfall oder dessen Sanierung, ob nach einem Chemieunfall oder einer Kontamination in Schaltschränken oder Anlagen, wir stehen an Ihrer Seite, klären Ursachen auf, führen alle Analysen durch und prüfen und bestätigen, dass alle Verunreinigungen vollständig beseitigt wurden.",
+        "image": "/images/leistungen/11.jpg"
+      }
+    ]
   }
 }
