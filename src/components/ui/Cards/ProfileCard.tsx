@@ -22,20 +22,20 @@ export default function ProfileCard({
       rel="noopener noreferrer"
       className="no-underline cursor-pointer"
     >
-      <div className="flex flex-col min-w-80 shadow-md backdrop-blur-3xl rounded-lg items-center bg-gray-50 ">
+      <div className="flex flex-col min-w-80  items-center ">
         <Image
           src={image}
           alt="Profile"
-          width={200}
-          height={200}
+          width={150}
+          height={150}
           className="rounded-lg object-cover bg-transparent "
         />
 
         <div className="card-body p-10">
-          <h2 className="card-title">{name}</h2>
+          <h5 className="card-title">{name}</h5>
           <p>{position}</p>
           <div className="card-actions justify-end">
-            <div className="badge badge-outline">LinkedIn</div>
+            <div className="badge badge-outline small-opacity">LinkedIn</div>
           </div>
         </div>
       </div>

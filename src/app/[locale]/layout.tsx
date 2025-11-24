@@ -1,4 +1,10 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import {
+  // Alexandria,
+  Geist,
+  Geist_Mono,
+  Licorice,
+  Funnel_Sans,
+} from "next/font/google";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 import { notFound } from "next/navigation";
@@ -13,6 +19,23 @@ const geistSans = Geist({
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
+});
+
+// const alexandria = Alexandria({
+//   subsets: ["latin"],
+//   weight: ["400", "500", "700"],
+//   variable: "--font-alexandria",
+// });
+
+const licorice = Licorice({
+  subsets: ["latin"],
+  weight: ["400"],
+  variable: "--font-licorice",
+});
+const funnel = Funnel_Sans({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700", "800"],
+  variable: "--font-funnel",
 });
 
 export async function generateStaticParams() {
@@ -36,7 +59,7 @@ export default async function RootLayout({
   return (
     <html
       lang={locale}
-      className={`${geistSans.variable} ${geistMono.variable} font-sans`}
+      className={`${geistSans.variable} ${geistMono.variable}  ${licorice.variable} ${funnel.variable} $font-sans`}
     >
       <body>
         <NextIntlClientProvider messages={messages}>

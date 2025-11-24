@@ -14,8 +14,11 @@ import {
   FaRecycle,
   FaCube,
   FaChartLine,
+  FaBalanceScale,
+  FaAtom,
 } from "react-icons/fa";
-import { TextWriterEffect } from "@/components/ui/Texts/TextWriter";
+import SloganAnimation from "./components/SloganAnimation";
+import HeadlineText from "@/components/ui/Texts/HeadlineText";
 
 interface HomeScreenProps {
   data: HomePageData;
@@ -114,36 +117,61 @@ export default async function HomeScreen({ data }: HomeScreenProps) {
           height={250}
           className="object-cover rounded-full"
         />
-        <p className="text-white title-xxl text-center whitespace-pre-line">
+        <h1 className="text-white text-center whitespace-pre-line lg:mx-14">
           {data?.pageSlogan}
-        </p>
+        </h1>
       </div>
       <BackgroundClient />
 
-      <div className="px-10">
-        <TextWriterEffect
-          words="Willkommen am EGM, dem Institut für Elektrochemie, Galvanotechnik und Materialchemie. Chemie ist überall und wir leben Chemie."
-          textCenter
-        />
-
-        {/* <h1 className="ml-10 title-xl">
-        Chemie ist überall und wir leben Chemie.
-      </h1> */}
-        {/* <h1 className="ml-10 title-xxl">
-          Willkommen am EGM, dem Institut für Elektrochemie, Galvanotechnik und
-          Materialchemie.
-        </h1> */}
+      <div className="mx-20">
+        <HeadlineText />
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-center gap-10  pt-10">
-          {features.map((feature) => (
+          {features.slice(0, 4).map((feature, index) => (
             <FeatureCard
               key={feature.id}
+              index={index}
               icon={feature.icon}
               title={feature.title}
               description={feature.description}
             />
           ))}
         </div>
+        <SloganAnimation />
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-center gap-10  pt-10">
+          {features.slice(4).map((feature, index) => (
+            <FeatureCard
+              key={feature.id}
+              index={index + 4}
+              icon={feature.icon}
+              title={feature.title}
+              description={feature.description}
+            />
+          ))}
+        </div>
+        <div className="relative my-20 bg-gradient-to-r from-[#1f4f83d0] to-[#1f4f83] py-12 -mx-20">
+          <div className="max-w-4xl mx-auto px-8">
+            <p className="text-lg md:text-xl text-white text-center leading-relaxed ">
+              Ganz besonders möchten wir auf unsere Tätigkeit im Rahmen von{" "}
+              <span className="font-bold text-[#70c3d8]">
+                Sachverständigengutachten
+              </span>{" "}
+              sowie die Zusammenarbeit mit{" "}
+              <span className="font-bold text-[#70c3d8]">Rechtsanwälten</span>{" "}
+              und{" "}
+              <span className="font-bold text-[#70c3d8]">Versicherungen</span>{" "}
+              hinweisen.
+            </p>
+          </div>
+        </div>
 
+        <div className="text-center py-10 max-w-3xl mx-auto">
+          <p className="text-xl md:text-2xl text-gray-700 mb-6">
+            Wir freuen uns darauf, für Sie da sein zu können!
+          </p>
+          <div className="licorice-regular text-3xl md:text-4xl text-[#1f4f83]">
+            Ihr EGM Team
+          </div>
+        </div>
         <div className="flex flex-wrap py-20 justify-center gap-10">
           {items.map((item, index) => (
             <ProfileCard

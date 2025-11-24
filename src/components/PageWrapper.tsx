@@ -15,7 +15,7 @@ export default async function PageWrapper({
   console.log(locale);
   return (
     // <CookieConsentProvider>
-    <div>
+    <div className="bg-white">
       <MainNavigation
         locale={locale}
         trackHeaderOverlap={isNavTextOverlaping}

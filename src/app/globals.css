@@ -1,6 +1,11 @@
 @import "tailwindcss";
 /* @import "tw-animate-css"; */
 
+/* @import url('https://fonts.googleapis.com/css2?family=Licorice&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&family=Licorice&display=swap');
+
+
+
 @custom-variant dark (&:is(.dark *));
 
 :root {
@@ -24,7 +29,7 @@
   --input: oklch(0.922 0 0);
   --ring: oklch(0.708 0 0);
   --chart-1: oklch(0.646 0.222 41.116);
-  --chart-2: oklch(0.6 0.118 184.704);
+  --chart-2: #009689;
   --chart-3: oklch(0.398 0.07 227.392);
   --chart-4: oklch(0.828 0.189 84.429);
   --chart-5: oklch(0.769 0.188 70.08);
@@ -35,11 +40,13 @@
   --sidebar-accent: oklch(0.97 0 0);
   --sidebar-accent-foreground: oklch(0.205 0 0);
   --sidebar-border: oklch(0.922 0 0);
-  --sidebar-ring: oklch(0.708 0 0);
+  --sidebar-ring: #a1a1a1;
   --primary: #1f4f83;
   --egmBlueTransparency: #1f4f83b6;
   --egmPurple: #765f95;
   --egmAccentBlue: #70c3d8;
+  --egm-black: #525252;
+  --egm-gray:#D9D9D9
 }
 
 .dark {
@@ -80,28 +87,160 @@
   --egmAccentBlue: #70c3d8;
 }
 
-/* @layer base {
-  {
-    @apply border-border outline-ring/50;
+@layer base {
+  h1 {
+    font-family: 'Funnel_Sans', sans-serif;
+    font-size: 2.99rem;
+    font-weight: 700;
+    line-height: 3.5rem;
+    letter-spacing: -0.022rem;
   }
-  body {
-    @apply bg-background text-foreground;
+  h2 {
+    font-family: "Funnel_Sans", sans-serif;
+    font-size: 2.488rem;
+    font-weight: 700;
+    line-height: 3.1rem;
+    letter-spacing: -0.022rem;
   }
 
-} */
+  h3 {
+    font-family: "Funnel_Sans", sans-serif;
+    font-size: 2.074rem;
+    font-weight: 700;
+    line-height: 2.25rem;
+    letter-spacing: -0.022rem;
+  }
+
+  h4 {
+    font-family: "Funnel_Sans", sans-serif;
+    font-size: 1.728rem;
+    font-weight: 700;
+    line-height: 2.25rem;
+    letter-spacing: -0.022rem;
+  }
+
+  h5 {
+    font-family: "Funnel_Sans", sans-serif;
+    font-size: 1.44rem;
+    font-weight: 700;
+    line-height: 2.25rem;
+    letter-spacing: -0.022rem;
+  }
+
+  h6 {
+    font-family: "Funnel_Sans", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: 1.5rem;
+    letter-spacing: -0.022rem;
+  }
+  p {
+    font-family: "Funnel_Sans", sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.6rem;
+  }
+}
 
 @layer components {
+  .small-opacity {
+    font-family: "Funnel_Sans", sans-serif;
+    font-size: 0.875rem;
 
-  .title-xxl{
-    font-size: 3.5rem;
-    font-weight: 700;
+    font-weight: 100;
+    line-height: 1.2rem;
+    letter-spacing: -0.01rem;
+    opacity: 0.7;
   }
-  .title-xl{
-    font-size: 1.5rem;
-    font-weight: 700;
+
+  .licorice-regular {
+    font-family: "Licorice", cursive;
+    font-weight: 400;
+    font-style: normal;
   }
-  .header-m{
-    font-size: 1rem;
-    font-weight: 200;
+
+
+
+  @keyframes slide-from-border-right {
+    from {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
   }
+
+  @keyframes slide-from-border-left {
+    from {
+      transform: translateX(-20%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  .animate-slide-from-border-right {
+    animation: slide-from-border-right 1.5s ease-out backwards;
+  }
+
+  .animate-slide-from-border-left {
+    animation: slide-from-border-left 1.5s ease-out forwards;
+    animation-delay: 1.4s;
+    opacity: 0;
+  }
+
+  @keyframes slide-up {
+    from {
+      transform: translateY(150px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  .animate-slide-up {
+    animation: slide-up 0.8s ease-out forwards;
+  }
+
+  @keyframes border-expand-left {
+    from {
+      width: 0;
+      opacity: 0;
+    }
+    to {
+      width: 5rem;
+      opacity: 1;
+    }
+  }
+
+  @keyframes border-expand-right {
+    from {
+      width: 0;
+      opacity: 0;
+    }
+    to {
+      width: 5rem;
+      opacity: 1;
+    }
+  }
+
+  .animate-border-left {
+    animation: border-expand-left 0.5s ease-out forwards;
+    animation-delay: 0.3s;
+    opacity: 0;
+  }
+
+  .animate-border-right {
+    animation: border-expand-right 0.5s ease-out forwards;
+    animation-delay: 0.3s;
+    opacity: 0;
+  }
+
+
 }
