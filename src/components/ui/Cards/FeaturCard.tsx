@@ -1,3 +1,5 @@
+import React from "react";
+
 interface FeatureCardProps {
   index?: number;
   icon: React.ReactNode;
@@ -11,30 +13,49 @@ export default function FeatureCard({
   description,
   index = 0,
 }: FeatureCardProps) {
-  const variants = [{ bgCard: "bg-[#F3F3F3FF]", text: "text-[#383838FF]" }];
-
-  const { bgCard, text } = variants[index % variants.length];
   return (
     <div
-      className={`group relative flex flex-col justify-between gap-10 lg:px-6 lg:py-8 max-w-full ${bgCard} rounded-2xl shadow-lg transition-all duration-300 hover:scale-105 border border-white/20 overflow-hidden backdrop-blur-sm`}
+      className="
+        group relative flex flex-col items-center text-center
+        h-full w-full
+        p-8
+        bg-white
+        rounded-2xl
+        shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]
+        border border-gray-100
+        transition-all duration-300 ease-out
+        hover:-translate-y-1 hover:shadow-[0_8px_30px_rgb(0,0,0,0.12)]
+        overflow-hidden
+      "
     >
-      {/* Glossy top highlight */}
-      <div className="absolute top-0 left-0 right-0 h-1/2 bg-gradient-to-b from-white/30 via-white/10 to-transparent rounded-2xl pointer-events-none"></div>
+      {/* Subtle background decoration */}
+      <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-primary/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
 
-      {/* Content */}
-      <div className="relative z-10">
-        {description && (
-          <p className={`${text} text-center small-opacity`}>{description}</p>
-        )}
+      {/* Icon Container */}
+      <div className="
+        mb-6 p-4
+        rounded-full
+        bg-primary/5 text-primary
+        group-hover:bg-primary group-hover:text-white
+        transition-all duration-300
+        shadow-sm
+      ">
+        <div className="text-3xl flex items-center justify-center w-8 h-8">
+          {icon}
+        </div>
       </div>
 
-      <div className="relative z-10 items-center">
-        <h5
-          className={`mb-4 justify-items-center ${text} transform transition-transform group-hover:scale-110`}
-        >
-          {icon}
-        </h5>
-        <h6 className={`mb-2 text-center ${text}`}>{title}</h6>
+      {/* Content */}
+      <div className="flex flex-col gap-3 z-10">
+        <h3 className="text-xl font-bold text-gray-800 group-hover:text-primary transition-colors duration-300">
+          {title}
+        </h3>
+        
+        {description && (
+          <p className="text-gray-500 leading-relaxed text-sm font-medium">
+            {description}
+          </p>
+        )}
       </div>
     </div>
   );

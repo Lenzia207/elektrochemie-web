@@ -1,6 +1,33 @@
 {
-  "TeamPagae": {
-    "pageTitle": "Team",
-    "pageDescription": "Lernen Sie unser Team kennen"
+  "TeamPage": {
+    "pageTitle": "Unser EGM Team",
+    "teamImage": "/images/team/Team.jpg",
+    "teamMemberList": [
+      {
+        "name": "Mag. Dr. habil. Wolfgang Hansal",
+        "role": "Institutsvorstand, Geschäftsführer, Ziviltechniker Chemie, allgemein beeideter und gerichtlich zertifizierter Sachverständiger",
+        "description": "Dr. Wolfgang Hansal blickt auf mehr als 25 Jahre Berufserfahrung in den Bereichen Chemie, Oberflächentechnik und Galvanotechnik zurück und hat dabei erfolgreich mehr als 100 industrierelevante Projekte in diesen Gebieten geleitet. Als Vorstandsmitglied der europäischen Akademie für Oberflächentechnik und Mitglied in zahlreichen Fachverbänden ist er zudem sehr gut international vernetzt. Er ist Autor zahlreicher Fachpublikationen, darunter Bücher zum Thema elektrochemische Pulsabscheidung und Nachbearbeitung 3D-gedruckter Metallbauteile (in Druck).",
+        "image": "/images/team/Wolfgang.png"
+      },
+      {
+        "name": "Mag. Dr. Selma Hansal",
+        "role": "Geschäftsführerin, Ziviltechnikerin Chemie",
+        "description": "Dr. Selma Hansal ist seit über 20 Jahren erfolgreich in der Leitung industrierelaventer F&E Projekte tätig und hat dabei Ihren Fokus stets auf die industrielle Umsetzung gelegt. Ihre Kernkompetenzen sind Elektrochemie, Materialanalyse und Nachbearbeitung additiv gefertigter Metallbauteile. Branchenübergreifende Netzwerke sowie die umfassende Betrachtung und Abstimmung gesamter Prozessketten sind Ihr ein zentrales Anliegen.",
+        "image": "/images/team/Selma.jpg"
+      },
+      {
+        "name": "Ing. Susanna Weiß",
+        "role": "Operations Managerin, Chemieingenieurin",
+        "description": "Frau Susanna Weiß hat langjährige Erfahrung auf dem Gebiet der chemischen Oberflächenbearbeitung sowie der chemischen Analyse. Sie hat sich neben dem Fachgebiet Elektrochemie auf Umweltchemie, Oberflächenanalyse und Gefahrenstoffmanagement spezialisiert und ist geprüfte Sachkundige für Sicherheitsdatenblätter nach REACH.",
+        "image": "/images/team/Susanna.jpg"
+      }
+    ],
+
+    "infoCertificates": [
+      {
+        "infoClarification": "Staatlich befugte und beeidete ZiviltechnikerInnen sind natürliche Personen, die freiberuflich aufgrund der vom Bundesminister für Wirtschaft und Arbeit verliehenen Befugnis auf ingenieur- oder naturwissenschaftlichen Fachgebieten tätig sind. Als äußeres Zeichen der staatlichen Befugnis und Beeidigung führen ZiviltechnikerInnen ein Siegel mit dem Bundeswappen der Republik Österreich. ZiviltechnikerInnen sind mit „öffentlichem Glauben“ versehene Personen gemäß §292 Zivilprozessordnung (öffentliche Urkundsperson). Sie sind berechtigt, im Rahmen ihrer Befugnis öffentliche Urkunden zu erreichten, die von Verwaltungsbehörden so angesehen werden, als wenn sie von Behörden selbst ausgefertigt worden wären. ",
+        "infoDescription": "Die breite Leistungspalette der ZivilingenieurInnen umfasst die spezialisierte Fachplanung, bis zur Gesamtplanung komplexer Investitionsvorhaben und kompetenter Prüf- und Beratungsleistungen als neutrale Treuhänder des Auftraggebers. Sie stellen mit Ihren hochqualifizierten MitarbeiterInnen einen Leistungsvorteil sicher, der sich durch Transparenz, Interdisziplinarität, Kontrolle und Verantwortlichkeit dokumentiert. Durch ihre innovativen Lösungen sind ZivilingenieurInnen in vielen Bereichen des Alltags Garanten für die Sicherung der Lebensqualität der Menschen."
+      }
+    ]
   }
 }

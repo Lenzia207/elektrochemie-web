@@ -16,7 +16,7 @@ export default function ScrollToTop() {
       const scrollPercentage = (scrollTop / (scrollHeight - clientHeight)) * 100;
       
       // Show when scrolled 90% or more
-      setIsVisible(scrollPercentage >= 90);
+      setIsVisible(scrollPercentage >= 30);
     };
 
     window.addEventListener("scroll", handleScroll);
