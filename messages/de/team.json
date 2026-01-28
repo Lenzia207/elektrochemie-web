@@ -28,6 +28,40 @@
         "infoClarification": "Staatlich befugte und beeidete ZiviltechnikerInnen sind natürliche Personen, die freiberuflich aufgrund der vom Bundesminister für Wirtschaft und Arbeit verliehenen Befugnis auf ingenieur- oder naturwissenschaftlichen Fachgebieten tätig sind. Als äußeres Zeichen der staatlichen Befugnis und Beeidigung führen ZiviltechnikerInnen ein Siegel mit dem Bundeswappen der Republik Österreich. ZiviltechnikerInnen sind mit „öffentlichem Glauben“ versehene Personen gemäß §292 Zivilprozessordnung (öffentliche Urkundsperson). Sie sind berechtigt, im Rahmen ihrer Befugnis öffentliche Urkunden zu erreichten, die von Verwaltungsbehörden so angesehen werden, als wenn sie von Behörden selbst ausgefertigt worden wären. ",
         "infoDescription": "Die breite Leistungspalette der ZivilingenieurInnen umfasst die spezialisierte Fachplanung, bis zur Gesamtplanung komplexer Investitionsvorhaben und kompetenter Prüf- und Beratungsleistungen als neutrale Treuhänder des Auftraggebers. Sie stellen mit Ihren hochqualifizierten MitarbeiterInnen einen Leistungsvorteil sicher, der sich durch Transparenz, Interdisziplinarität, Kontrolle und Verantwortlichkeit dokumentiert. Durch ihre innovativen Lösungen sind ZivilingenieurInnen in vielen Bereichen des Alltags Garanten für die Sicherung der Lebensqualität der Menschen."
       }
-    ]
+    ],
+    "scientificTeam":{
+      "title": "Unser Wissenschaftlicher Beirat",
+      "description": "Am Puls der technologischen Entwicklung zu bleiben, ist nicht nur unsere Verpflichtung, es ist uns auch ein ganz besonderes, persönliches Anliegen. So tauschen wir uns regelmäßig mit den führenden internationalen Fachexperten aus und arbeiten mit diesen eng mit in unterschiedlichen Projekten zusammen. Unser wissenschaftlicher Beirat unterstützt uns bei Bedarf fachlich und kann in Innovationsprojekte eingebunden werden.",
+      "members": [
+        {
+          "image": "/images/team/beirat/Bund.png",
+          "name": "Prof. Dr. Andreas Bund",
+          "university": "Technische Universität Ilmenau",
+          "alt":"Prof. Dr. Andreas Bund Porträtbild von TU Ilmenau",
+          "url":"https://www.tu-ilmenau.de/universitaet/fakultaeten/fakultaet-elektrotechnik-und-informationstechnik/profil/institute-und-fachgebiete/fachgebiet-elektrochemie-und-galvanotechnik/team"
+        },
+        {
+          "image": "/images/team/beirat/Lampke.png",
+          "name": "Prof. Dr. Thomas Lampke",
+          "university": "Technische Universität Chemnitz",
+          "alt":"Prof. Dr. Thomas Lampke Porträtbild von TU Chemnitz",
+          "url":"https://www.tu-chemnitz.de/mb/WOT/professur/ma.php?id=7"
+        },
+        {
+          "image": "/images/team/beirat/Leisner.png",
+          "name": "Prof. Dr. Peter Leisner",
+          "university": "Jönköping University",
+          "alt":"Prof. Dr. Peter Leisner Porträtbild von Jönköping University",
+          "url":"https://ju.se/en/personinfo?id=3687"
+        },
+        {
+          "image": "/images/team/beirat/Kautek.png",
+          "name": "Prof. Dr. Wolfgang Kautek",
+          "university": "Universität Wien",
+          "alt":"Prof. Dr. Wolfgang Kautek Porträtbild von Universität Wien",
+          "url":"https://ufind.univie.ac.at/de/person.html?id=88668"
+        }
+      ]
+    }
   }
 }

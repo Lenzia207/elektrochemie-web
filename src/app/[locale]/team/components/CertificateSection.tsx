@@ -4,7 +4,7 @@ import { TeamPageData } from "../data/types/team-types";
 
 export default function CertificateSection({ data }: { data: TeamPageData }) {
     return (
-        <div className="max-w-7xl mx-auto px-6 mt-24">
+        <div className="max-w-7xl mx-auto px-6 pb-20 mt-24">
             <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}

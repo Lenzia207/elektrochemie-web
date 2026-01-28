@@ -6,6 +6,7 @@ export interface TeamPageData {
   teamImage: string;
   teamMemberList: TeamMembersList[];
   infoCertificates: InfoCertificates[];
+  scientificTeam: ScientificTeam;
 }
 
 export interface TeamMembersList {
@@ -18,4 +19,18 @@ export interface TeamMembersList {
 export interface InfoCertificates {
   infoClarification: string;
   infoDescription: string;
+}
+
+export interface ScientificTeam {
+  title: string;
+  description: string;
+  members: ScientificTeamMembersList[];
+}
+
+export interface ScientificTeamMembersList {
+  image: string;
+  name: string;
+  university: string;
+  alt: string;
+  url: string;
 }
