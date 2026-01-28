@@ -1,5 +1,6 @@
 import MainNavigation from "@/components/ui/MainNavigation/MainNavigation";
 import { ReactNode } from "react";
+import { Footer } from "./Footer";
 
 interface PageWrapperProps {
   locale: string;
@@ -25,7 +26,7 @@ export default async function PageWrapper({
 
       <div>{pageContent}</div>
 
-      {/* <Footer /> */}
+      <Footer />
     </div>
     // </CookieConsentProvider>
   );
