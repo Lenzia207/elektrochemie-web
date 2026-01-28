@@ -11,7 +11,7 @@ import {
   type PreviewLinkCardContentProps as PreviewLinkCardContentPrimitiveProps,
   type PreviewLinkCardImageProps as PreviewLinkCardImagePrimitiveProps,
 } from '@/components/animate-ui/primitives/radix/preview-link-card';
-import { cn } from '@/utils/utils';
+import { cn } from '@/lib/utils/utils';
 
 type PreviewLinkCardProps = PreviewLinkCardPrimitiveProps;
 

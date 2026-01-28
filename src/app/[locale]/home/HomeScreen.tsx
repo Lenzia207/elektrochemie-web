@@ -1,7 +1,6 @@
 import { HomePageData } from "./data/types/home-types";
 import Image from "next/image";
 import BackgroundClient from "./components/BackgroundClient";
-import ProfileCard from "@/components/ui/Cards/ProfileCard";
 import FeatureCard from "@/components/ui/Cards/FeaturCard";
 
 import {
@@ -13,12 +12,14 @@ import {
   FaRecycle,
   FaCube,
   FaChartLine,
-  FaBalanceScale,
-  FaAtom,
+
 } from "react-icons/fa";
 import SloganAnimation from "./components/SloganAnimation";
 import HeadlineText from "@/components/ui/Texts/HeadlineText";
-import ScrollToTop from "./components/ScrollToTop";
+import ScrollToTop from "../../../components/ScrollToTop";
+import { TeamAvaterImages } from "@/components/ui/Cards/TeamAvaterImages";
+import TeamGreetingSection from "./components/TeamGreetingSection";
+import ExpertiseHighlightSection from "./components/ExpertiseHighlightSection";
 
 interface HomeScreenProps {
   data: HomePageData;
@@ -27,26 +28,7 @@ interface HomeScreenProps {
 export default async function HomeScreen({ data }: HomeScreenProps) {
   if (!data) return null;
 
-  const items = [
-    {
-      image: "/images/team/Wolfgang.png",
-      title: "Mag. Dr. habil. Wolfgang Hansal",
-      position: "Leiter des Instituts",
-      hrefLinkedIn: "https://www.linkedin.com/in/wolfgang-hansal-76b55672/",
-    },
-    {
-      image: "/images/team/Selma.jpg",
-      title: "Mag. Dr. Selma Hansal",
-      position: "Leiter des Instituts",
-      hrefLinkedIn: "https://www.linkedin.com/in/wolfgang-hansal-76b55672/",
-    },
-    {
-      image: "/images/team/Susanna.jpg",
-      title: "Ing. Susanna Weiß",
-      position: "Leiter des Instituts",
-      hrefLinkedIn: "https://www.linkedin.com/in/wolfgang-hansal-76b55672/",
-    },
-  ];
+
 
   const features = [
     {
@@ -118,7 +100,7 @@ export default async function HomeScreen({ data }: HomeScreenProps) {
           className="object-cover rounded-full"
         />
         <h1 className="text-white text-center whitespace-pre-line lg:mx-14">
-          {data?.pageSlogan}
+          {data.pageIntro}
         </h1>
       </div>
       <BackgroundClient />
@@ -136,7 +118,7 @@ export default async function HomeScreen({ data }: HomeScreenProps) {
             />
           ))}
         </div>
-        <SloganAnimation />
+        <SloganAnimation egmSlogan={data.egmSlogan} />
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-center gap-10  pt-10">
           {features.slice(4).map((feature, index) => (
             <FeatureCard
@@ -148,36 +130,14 @@ export default async function HomeScreen({ data }: HomeScreenProps) {
             />
           ))}
         </div>
-        <div className="relative my-20 bg-gradient-to-r from-[#1f4f83d0] to-[#1f4f83] py-12 -mx-20">
-          <div className="max-w-4xl mx-auto px-8">
-            <p className="text-white text-center leading-relaxed md:text-xl">
-              Ganz besonders möchten wir auf unsere Tätigkeit im Rahmen von{" "}
-              <span className="font-bold">Sachverständigengutachten</span> sowie
-              die Zusammenarbeit mit{" "}
-              <span className="font-bold ">Rechtsanwälten</span> und{" "}
-              <span className="font-bold ">Versicherungen</span> hinweisen.
-            </p>
-          </div>
-        </div>
+        <ExpertiseHighlightSection text={data.expertiseHighlight} />
 
-        <div className="text-center py-10 max-w-3xl mx-auto">
-          <p className="text-xl md:text-2xl text-gray-700 mb-6">
-            Wir freuen uns darauf, für Sie da sein zu können!
-          </p>
-          <div className="licorice-regular text-3xl md:text-4xl text-[#1f4f83]">
-            Ihr EGM Team
-          </div>
-        </div>
-        <div className="flex flex-wrap py-20 justify-center gap-10">
-          {items.map((item, index) => (
-            <ProfileCard
-              key={index}
-              image={item.image}
-              name={item.title}
-              position={item.position}
-              // hrefLinkedIn={item.hrefLinkedIn}
-            />
-          ))}
+        <TeamGreetingSection
+          welcomeMessage={data.egmWelcomeEnd[0]}
+          teamSignature={data.egmWelcomeEnd[1]}
+        />
+        <div className="flex flex-wrap py-2 justify-center gap-10">
+          <TeamAvaterImages teamMembers={data.teamMembers} />
         </div>
       </div>
       <ScrollToTop />

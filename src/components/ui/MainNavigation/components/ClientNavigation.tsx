@@ -28,7 +28,7 @@ export default function ClientNavigation({
     <div className="relative w-full">
       <Navbar>
         <NavBody>
-          <NavbarLogo image="/images/header/adlerLogo.png" />
+          <NavbarLogo image="/images/header/adlerLogo.png" url="https://ziviltechniker.at/mitglied/958130"/>
           <NavbarLogo image="/images/logo.svg" />
           <NavItems items={navItems} trackHeaderOverlap={trackHeaderOverlap} />
         </NavBody>

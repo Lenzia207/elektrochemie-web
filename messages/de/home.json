@@ -1,5 +1,28 @@
 {
   "HomePage": {
-    "pageSlogan": "Ihre Spezialisten\nfür Chemie, Korrosion und Oberflächentechnik. "
+    "pageIntro": "Ihre Spezialisten\nfür Chemie, Korrosion und Oberflächentechnik. ",
+    "egmSlogan": [
+      "Chemie ist überall",
+      "Wie leben Chemie"
+    ],
+    "expertiseHighlight": "Ganz besonders möchten wir auf unsere Tätigkeit im Rahmen von Sachverständigengutachten sowie die Zusammenarbeit mit Rechtsanwälten und Versicherungen hinweisen.",
+    "egmWelcomeEnd": [
+      " Wir freuen uns darauf, für Sie da sein zu können!",
+      "Ihr EGM-Team"
+    ],
+    "teamMembers": [
+      {
+        "name": "Mag. Dr. habil. Wolfgang Hansal",
+        "image": "/images/team/Wolfgang.png"
+      },
+      {
+        "name": "Mag. Dr. Selma Hansal",
+        "image": "/images/team/Selma.jpg"
+      },
+      {
+        "name": "Ing. Susanna Weiß",
+        "image": "/images/team/Susanna.jpg"
+      }
+    ]
   }
 }

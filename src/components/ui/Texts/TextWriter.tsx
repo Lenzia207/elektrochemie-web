@@ -1,7 +1,7 @@
 "use client";
 import { useEffect } from "react";
 import { motion, stagger, useAnimate } from "motion/react";
-import { cn } from "@/utils/utils";
+import { cn } from "@/lib/utils/utils";
 import { text } from "stream/consumers";
 
 export const TextWriterEffect = ({

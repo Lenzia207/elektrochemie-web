@@ -2,8 +2,12 @@
  * Type declarations for the home page.
  */
 export interface HomePageData {
-  pageSlogan: string;
+  pageIntro: string;
   egmImages: EgmImagesData;
+  egmSlogan: string[];
+  expertiseHighlight: string;
+  egmWelcomeEnd: string[];
+  teamMembers: TeamMember[];
 }
 
 export interface EgmImagesData {
@@ -19,4 +23,9 @@ export interface EgmImagesData {
     image: string;
     alt: string;
   };
+}
+
+export interface TeamMember {
+  image: string;
+  name: string;
 }

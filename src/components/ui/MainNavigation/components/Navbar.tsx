@@ -1,4 +1,4 @@
-import { cn } from "@/utils/utils";
+import { cn } from "@/lib/utils/utils";
 import { useScroll, useMotionValueEvent, motion } from "motion/react";
 import React, { useRef, useState } from "react";
 

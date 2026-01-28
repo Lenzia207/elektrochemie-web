@@ -7,7 +7,7 @@ import {
     PreviewLinkCardImage,
     PreviewLinkCardTrigger,
 } from "@/components/animate-ui/components/radix/preview-link-card";
-import { extractTextForLink } from "@/utils/helper";
+import { extractTextForLink } from "@/lib/utils/helper";
 
 
 export function TeamMemberCard({ member, index }: { member: TeamMembersList; index: number }) {

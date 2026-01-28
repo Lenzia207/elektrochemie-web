@@ -1,5 +1,5 @@
 "use client";
-import { cn } from "../../../utils/utils";
+import { cn } from "../../../lib/utils/utils";
 import { IconMenu2, IconX } from "@tabler/icons-react";
 import {
   motion,

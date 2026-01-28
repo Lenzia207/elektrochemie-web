@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 
-export default function SloganAnimation() {
+export default function SloganAnimation({ egmSlogan }: { egmSlogan: string[] }) {
   const [isVisible, setIsVisible] = useState(false);
   const sectionRef = useRef<HTMLDivElement>(null);
 
@@ -37,7 +37,7 @@ export default function SloganAnimation() {
             isVisible ? "animate-slide-from-border-right" : "opacity-0"
           }`}
         >
-          Chemie ist überall
+          {egmSlogan[0]}
         </h2>
       </div>
       <div className="relative text-left pl-8">
@@ -46,7 +46,7 @@ export default function SloganAnimation() {
             isVisible ? "animate-slide-from-border-left" : "opacity-0"
           }`}
         >
-          Wir leben Chemie
+          {egmSlogan[1]}
         </h2>
       </div>
     </div>
