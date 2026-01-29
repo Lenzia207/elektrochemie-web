@@ -1,0 +1,47 @@
+{
+  "CompetencePage": {
+    "pageTitle": "Unsere Kompetenzen",
+    "pageDescription": " Während das Team des EGM den ganzen Bereich der Chemie abdeckt, so setzen wir auf Basis einer mehr als 20 jährigen industriellen Praxisexpertise insbesondere auf folgende Schwerpunkte: "
+  
+,"competenceList": [
+    {
+    "image": "/images/kompetenzen/1_galvanik.jpeg",
+    "competenceTitle": "Elektrochemische Oberflächentechnik / Galvanik",
+    "competenceDescription":
+      "Von der galvanischen Beschichtung, der Anodisierung von Leichtmetallen, einer Außenstromlosabscheidung, Elektropolieren bis hin zu Pulsabscheidung oder einer plasmaelektrolytischen Oxidation widmet sich das EGM allen Arten der (elektrochemischen) Oberflächenbeschichtung. Das EGM unterstützt Sie bei der Auswahl der geeigneten Systeme, der Durchführung und Prüfung normgerechter Beschichtungen sowie der Planung, Auslegung und Umsetzung neuer Produktionsanlagen."
+  },
+  {
+
+    "image": "/images/kompetenzen/2_post_processing.jpeg",
+    "competenceTitle": "Post-Processing 3D-gedruckter Metallbauteile",
+    "competenceDescription":
+      "Die Herstellung von (metallischen) Komponenten mittels additiver Verfahren ist auch als 3D-Druck bekannt. Dieses Herstellungsverfahren erlaubt eine bis dato unerreichte Freiheit im Design und erweitert oder kombiniert die Funktionalität solcher Bauteile. Allerdings bringt dieses neue Verfahren auch neue Herausforderungen mit sich, so z.B. die Notwendigkeit zum Entfernen anhaftender Stützstrukturen und signifikante Oberflächenrauigkeiten. Das EGM unterstützt Sie bei der Auswahl geeigneter Post-Processing-Verfahren, übernimmt die Koordination zwischen Druck und Nachbearbeitung, definiert gemeinsam mit dem Kunden Routinen zur Qualitätssicherung und schließt die Schnittstellen innerhalb der additiven Prozesskette."
+  },
+  {
+    "image": "/images/kompetenzen/3_korrosion.jpeg",
+    "competenceTitle": "Korrosion und deren Vermeidung",
+    "competenceDescription":
+      "Korrosion metallischer Werkstoffe verändert die Bauteileigenschaften und beeinträchtigt mitunter entscheidend dessen Funktion. So gilt Korrosion und die dadurch entstehenden Schäden als weltweit relevanter Faktor in den wirtschaftlichen Betrachtungen. Elektrochemische Aufklärung von Korrosionsphänomenen und deren Quantifizierung sowie Maßnahmen zur Vermeidung und zum geeigneten Korrosionsschutz der Bauteile sind eine der wesentlichen Aufgaben des EGM."
+  },
+  {
+    "image": "/images/kompetenzen/4_green_energy.jpeg",
+    "competenceTitle": "Green Energy und Energy Storage",
+    "competenceDescription":
+      "Nachhaltigkeit und umfassendes Umweltbewusstsein sind nicht mehr nur Schlagzeilen sondern ganz gezielt Fokus der politischen und gesellschaftlichen Anstrengungen. Grüner Wasserstoff und die (lokale, temporäre) Speicherung des erzeugten Ökostroms sind dabei ganz wesentliche Aspekte. Sowohl der Elektrolyse von Wasser zu Wasserstoff (und Sauerstoff) als auch einer jeden Energiespeicherung in Form von Batterien und Akkumulatoren liegen elektrochemische Prozesse zugrunde. Über seine elektrochemische Expertise und einen interdisziplinären Ansatz kann das EGM hier einen entscheidenden Input geben und gleichzeitig als Ziviltechniker den Aufbau und die industrielle Umsetzung umfassend koordinieren."
+  },
+  {
+    "image": "/images/kompetenzen/5_material.jpeg",
+    "competenceTitle": "Materialien und deren Oberfläche",
+    "competenceDescription":
+      "Bauteilfunktionen hängen sowohl von den Oberflächeneigenschaften, getragen meist von Beschichtungen oder Überzügen, als auch von den Eigenschaften des zugrundeliegenden Materials und der Oberflächenchemie ab. Die Abstimmung zwischen dem Grundmaterial und der nachfolgenden Oberflächenbearbeitung ist somit von wesentlicher Bedeutung. Genau hier setzt das EGM mit seiner Expertise an und hilft einerseits die Eigenschaften zu bestimmen und andererseits auf Basis von Materialdaten und den Bauteilspezifikationen ideale Kombinationen aus Material – Nachbearbeitung – Beschichtung zu erarbeiten und industriell umzusetzen."
+  },
+  {
+    "image": "/images/kompetenzen/6_chemikalien_management.jpeg",
+    "competenceTitle": "Chemikalienmanagement",
+    "competenceDescription":
+      "Der ordnungsgemäße Umgang mit Chemikalien und Gefahrenstoffen ist eine essentielle Voraussetzung für eine sichere Produktion im Sinne von ArbeitnehmerInnenschutz und Umweltschutz. Die Basis dafür ist eine beachtliche Zahl an Gesetzestexten, Verordnungen und Vorschriften. Für den Laien ist es oft sehr schwierig sich in diesem Umfeld zurechtzufinden und selbst für erfahrene produzierende Unternehmen bedeutet die Einhaltung aller Auflagen einen erheblichen Zeitaufwand. Die befugten Chemiker des EGM sind mit den aktuellen Vorschriften stets vertraut und können alle Aufgaben des Chemikalienmanagements kompetent und effizient für Sie übernehmen."
+  }
+]
+}
+
+}

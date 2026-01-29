@@ -2,21 +2,26 @@
 
 import { ExpertiseSectionMobile } from "./ExpertiseSectionMobile";
 import { ExpertiseSectionDesktop } from "./ExpertiseSectionDesktop";
-import { ExpertiseList } from "../data/types/leistungen-types";
+
+export interface SectionItem {
+  title: string;
+  description: string;
+  image: string;
+}
 
 interface ExpertiseSectionProps {
-  expertise: ExpertiseList;
+  item: SectionItem;
   index: number;
 }
 
-export function ExpertiseSection({ expertise, index }: ExpertiseSectionProps) {
+export function ExpertiseSection({ item, index }: ExpertiseSectionProps) {
   return (
     <>
       <div className="md:hidden">
-        <ExpertiseSectionMobile expertise={expertise} index={index} />
+        <ExpertiseSectionMobile item={item} index={index} />
       </div>
 
-      <ExpertiseSectionDesktop expertise={expertise} index={index} />
+      <ExpertiseSectionDesktop item={item} index={index} />
     </>
   );
 }

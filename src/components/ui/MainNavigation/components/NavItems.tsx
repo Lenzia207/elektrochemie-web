@@ -47,8 +47,13 @@ export const NavItems = ({
           onMouseEnter={() => setHovered(idx)}
           onClick={onItemClick}
           className={cn(
-            "relative px-4 py-2 text-shadow-black dark:text-neutral-300 ",
-            hovered === idx && "text-white transition duration-250"
+            "relative px-4 py-2 dark:text-neutral-300 transition duration-250",
+            trackHeaderOverlap && isOverHeader 
+              ? "text-white" 
+              : hovered === idx 
+                ? "text-white" 
+                : "text-black",
+            "text-shadow-black"
           )}
           key={`link-${idx}`}
           href={item.link}
@@ -56,7 +61,7 @@ export const NavItems = ({
           {hovered === idx && (
             <motion.div
               layoutId="hovered"
-              className="absolute inset-0 h-full w-full rounded-full bg-[var(--egmAccentBlue)]  dark:bg-neutral-800"
+              className="absolute inset-0 h-full w-full rounded-full bg-[var(--primary)]  dark:bg-neutral-800"
             />
           )}
           <span className="relative z-20">{item.name}</span>

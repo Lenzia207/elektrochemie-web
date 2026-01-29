@@ -9,7 +9,7 @@ import { ServicesPageData } from "./data/types/leistungen-types";
 import ScrollToTop from "../../../components/ScrollToTop";
 import { ExpertiseSection } from "./components/ExpertiseSection";
 import Image from "next/image";
-import BackgroundClient from "../home/components/BackgroundClient";
+import PageImageHeader from "@/components/PageImageHeader";
 
 
 
@@ -28,35 +28,19 @@ export default function ServicesScreen({ data }: ServicesPageProps) {
 
 
   return (
-    <>
-      <div className="relative min-h-screen w-full">
-        {/* Background Image */}
-        <Image
-          src={"/images/leistungen/header-leistungen.jpg"}
-          alt={"Bild ZT Elektrochemie"}
-          fill
-          className="object-cover"
-          priority
-        />
-        
-        {/* Dark Overlay */}
-        <div className="absolute inset-0 bg-black/30 z-[1]" />
-
-        {/* Content Layer */}
-        <div className="absolute inset-0 flex flex-col items-center justify-center gap-8 z-10 px-4">
-          <h1 className="text-5xl md:text-6xl font-bold text-white text-center mb-6">
-            {data.pageTitle}
-          </h1>
-          <p className="text-xl text-white text-center max-w-3xl">
-            {data.pageDescription}
-          </p>
-        </div>
-      </div>
-
+    <div>
+      <PageImageHeader imageSrc="/images/leistungen/header-leistungen.jpg" altText="Bild ZT Elektrochemie" title={data.pageTitle} description={data.pageDescription} />
       <div>
-
         {data.expertiseList.map((expertise, index) => (
-          <ExpertiseSection key={index} expertise={expertise} index={index} />
+          <ExpertiseSection 
+            key={index} 
+            item={{
+              title: expertise.expertiseTitle,
+              description: expertise.expertiseDescription,
+              image: expertise.image,
+            }} 
+            index={index} 
+          />
         ))}
 
         <motion.div
@@ -65,6 +49,6 @@ export default function ServicesScreen({ data }: ServicesPageProps) {
         />
         <ScrollToTop />
       </div>
-    </>
+    </div>
   );
 }

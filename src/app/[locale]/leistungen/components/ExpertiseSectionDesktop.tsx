@@ -3,19 +3,19 @@
 import { motion, MotionValue, useScroll, useTransform } from "motion/react";
 import { useRef } from "react";
 import Image from "next/image";
-import { ExpertiseList } from "../data/types/leistungen-types";
+import { SectionItem } from "./ExpertiseSection";
 
 function useParallax(value: MotionValue<number>, distance: number) {
   return useTransform(value, [0, 1], [-distance, distance]);
 }
 
 interface ExpertiseSectionDesktopProps {
-  expertise: ExpertiseList;
+  item: SectionItem;
   index: number;
 }
 
 export function ExpertiseSectionDesktop({
-  expertise,
+  item,
   index,
 }: ExpertiseSectionDesktopProps) {
   const ref = useRef(null);
@@ -40,8 +40,8 @@ export function ExpertiseSectionDesktop({
         className="w-full md:w-1/2 max-w-xl h-[400px] lg:h-[600px] bg-gray-100 overflow-hidden rounded-md shadow-[0_10px_30px_rgba(0,0,0,0.1)] relative"
       >
         <Image
-          src={expertise.image}
-          alt={expertise.expertiseTitle}
+          src={item.image}
+          alt={item.title}
           width={500}
           height={500}
           className="object-cover w-full h-full"
@@ -60,10 +60,10 @@ export function ExpertiseSectionDesktop({
           </div>
           <div>
             <h2 className="text-2xl lg:text-4xl font-bold text-[#1f4f83] mb-4">
-              {expertise.expertiseTitle}
+              {item.title}
             </h2>
             <p className="text-gray-700 text-sm lg:text-base text-balance leading-relaxed">
-              {expertise.expertiseDescription}
+              {item.description}
             </p>
           </div>
         </div>
