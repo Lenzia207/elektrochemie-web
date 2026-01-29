@@ -29,20 +29,20 @@ export default function SloganAnimation({ egmSlogan }: { egmSlogan: string[] }) 
   return (
     <div
       ref={sectionRef}
-      className="relative grid grid-cols-1 md:grid-cols-2  pt-20 pb-8 items-center max-w-6xl mx-auto overflow-hidden"
+      className="relative flex flex-col md:grid md:grid-cols-2 pt-12 md:pt-20 pb-8 gap-6 md:gap-0 items-center max-w-6xl mx-auto overflow-hidden px-4 md:px-8"
     >
-      <div className="relative text-right border-r-4 border-[#1f4f83] pr-8">
+      <div className="relative w-full text-center md:text-right md:border-r-4 md:border-[#1f4f83] md:pr-8 pb-6 md:pb-0 border-b-4 md:border-b-0 border-[#1f4f83]">
         <h2
-          className={`text-4xl md:text-5xl font-bold text-[#1f4f83] ${
+          className={`text-3xl md:text-4xl lg:text-5xl font-bold text-[#1f4f83] ${
             isVisible ? "animate-slide-from-border-right" : "opacity-0"
           }`}
         >
           {egmSlogan[0]}
         </h2>
       </div>
-      <div className="relative text-left pl-8">
+      <div className="relative w-full text-center md:text-left md:pl-8 pt-6 md:pt-0">
         <h2
-          className={`text-4xl md:text-5xl font-bold text-gray-700 ${
+          className={`text-3xl md:text-4xl lg:text-5xl font-bold text-gray-700 ${
             isVisible ? "animate-slide-from-border-left" : "opacity-0"
           }`}
         >

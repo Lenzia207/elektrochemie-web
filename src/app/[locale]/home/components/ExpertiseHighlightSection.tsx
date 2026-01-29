@@ -21,22 +21,22 @@ export default function ExpertiseHighlightSection({
   };
 
   return (
-    <div className="w-full mt-40 mb-20">
+    <div className="w-full mt-20 md:mt-40 mb-12 md:mb-20 px-4 md:px-6">
       <div className="
         relative 
         bg-slate-50 
         border border-gray-200 
-        p-8 md:p-10 
-        rounded-xl
+        p-6 md:p-10 
+        rounded-lg md:rounded-xl
         max-w-4xl mx-auto
       ">
         {/* Flat left accent strip */}
-        {/* <div className="absolute left-0 top-0 bottom-0 w-1.5 bg-[#1f4f83] rounded-l-xl" /> */}
+        {/* <div className="absolute left-0 top-0 bottom-0 w-1 md:w-1.5 bg-[#1f4f83] rounded-l-lg md:rounded-l-xl" /> */}
         
-        <div className="flex flex-col md:flex-row gap-6 items-start">
+        <div className="flex flex-col md:flex-row gap-4 md:gap-6 items-start">
            {/* Info Icon */}
-           {/* <div className="shrink-0 text-[#1f4f83] mt-1">
-             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+           {/* <div className="shrink-0 text-[#1f4f83] mt-0.5 md:mt-1">
+             <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6 md:w-8 md:h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                <circle cx="12" cy="12" r="10" />
                <line x1="12" y1="16" x2="12" y2="12" />
                <line x1="12" y1="8" x2="12.01" y2="8" />
@@ -44,10 +44,10 @@ export default function ExpertiseHighlightSection({
            </div>
             */}
            <div className="flex-1">
-             <h4 className="text-[#1f4f83] font-bold text-xs uppercase tracking-widest mb-3 opacity-80">
+             <h4 className="text-[#1f4f83] font-bold text-xs uppercase tracking-widest mb-2 md:mb-3 opacity-80">
                Gut zu wissen
              </h4>
-             <p className="text-gray-700 leading-relaxed text-lg md:text-xl font-light">
+             <p className="text-gray-700 leading-relaxed text-base md:text-lg lg:text-xl font-light">
                {renderHighlightedText(text)}
              </p>
            </div>
@@ -55,4 +55,5 @@ export default function ExpertiseHighlightSection({
       </div>
     </div>
   );
+       
 }

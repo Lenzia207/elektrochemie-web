@@ -12,7 +12,7 @@ const ServicesPage = async (props: LocaleParams) => {
 
   if (!data) return <div>Loading...</div>;
   return (
-    <PageWrapper locale={locale} pageContent={<ServicesScreen data={data} />} />
+    <PageWrapper locale={locale} isNavTextOverlaping={true} pageContent={<ServicesScreen data={data} />} />
   );
 };
 

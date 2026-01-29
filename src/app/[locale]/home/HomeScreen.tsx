@@ -99,13 +99,13 @@ export default async function HomeScreen({ data }: HomeScreenProps) {
           height={250}
           className="object-cover rounded-full"
         />
-        <h1 className="text-white text-center whitespace-pre-line lg:mx-14">
+        <h1 className="text-white lg:text-6xl text-3xl text-center whitespace-pre-line lg:mx-14">
           {data.pageIntro}
         </h1>
       </div>
       <BackgroundClient />
 
-      <div className="mx-20">
+      <div className="lg:mx-20 md:mx-10">
         <HeadlineText />
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-center gap-10  pt-10">
           {features.slice(0, 4).map((feature, index) => (

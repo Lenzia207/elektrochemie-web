@@ -28,7 +28,7 @@ export default function HeadlineText() {
   }, []);
 
   return (
-    <div ref={textRef} className="relative text-center p-20">
+    <div ref={textRef} className="relative text-center lg:p-20 p-10 md:pb-20">
       <div className="relative z-10 max-w-5xl mx-auto">
         <h2 className=" font-medium mb-6">
           <span className="block  mb-2">Willkommen im Institut für</span>
