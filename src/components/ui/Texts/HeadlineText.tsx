@@ -30,9 +30,9 @@ export default function HeadlineText() {
   return (
     <div ref={textRef} className="relative text-center p-20">
       <div className="relative z-10 max-w-5xl mx-auto">
-        <h1 className="  mb-6">
-          <span className="block mb-2">Willkommen im Institut für</span>
-        </h1>
+        <h2 className=" font-medium mb-6">
+          <span className="block  mb-2">Willkommen im Institut für</span>
+        </h2>
         <div className="flex items-center justify-center gap-4 mt-6">
           <div
             className={`h-1 w-20 bg-[#1f4f83] ${
@@ -47,13 +47,13 @@ export default function HeadlineText() {
           ></div>
         </div>
         <div
-          className={`inline-block border-2 border-[#1f4f83] ${
+          className={`inline-block  ${
             isVisible ? "animate-slide-up" : "opacity-0"
-          } rounded-full px-8 py-4 mt-4`}
+          }  px-8 py-4 mt-4`}
         >
-          <p className="text-lg md:text-xl font-medium text-gray-700">
+          <h1 className="text-lg md:text-xl font-medium">
             Elektrochemie • Galvanotechnik • Materialchemie
-          </p>
+          </h1>
         </div>
       </div>
     </div>

@@ -2,7 +2,7 @@ import { LocaleParams } from "@/i18n/local-params";
 
 import PageWrapper from "@/components/PageWrapper";
 import ServicesScreen from "./ServicesScreen";
-import fetchServicesPageData from "./data/leistungen-page.data";
+import fetchServicesPageData from "./data/leistungen-data";
 
 const ServicesPage = async (props: LocaleParams) => {
   const { locale } = await props.params;

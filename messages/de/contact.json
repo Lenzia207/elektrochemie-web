@@ -1,6 +1,18 @@
 {
   "ContactPage": {
     "pageTitle": "Kontakt",
-    "pageDescription": "Nehmen Sie Kontakt mit uns auf"
+    "pageDescription": " Wir freuen uns auf Ihre Kontaktaufnahme und stehen Ihnen gerne für Fragen zur Verfügung.",
+    "companyName": [
+      "EGM",
+      "Institut für Elektrochemie, Galvanotechnik\nund Materialchemie Ziviltechniker GmbH"
+    ],
+    "telephone": [
+      "Telephone",
+      "+43 699 15111555"
+    ], 
+    "email": [
+      "E-Mail",
+      "help@elektrochemie.eu"
+    ]
   }
 }
