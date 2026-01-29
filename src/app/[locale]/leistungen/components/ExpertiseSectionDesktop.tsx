@@ -26,7 +26,7 @@ export function ExpertiseSectionDesktop({
 
   return (
     <section
-      className={`hidden md:flex md:min-h-[40vh] lg:min-h-screen flex-col md:py-16 mb-20 ${
+      className={`hidden md:flex md:min-h-[40vh] lg:min-h-screen flex-col ${
         isEven ? "md:flex-row-reverse" : "md:flex-row"
       } justify-center items-center relative px-6 lg:px-12 gap-4 lg:gap-16 overflow-hidden`}
     >

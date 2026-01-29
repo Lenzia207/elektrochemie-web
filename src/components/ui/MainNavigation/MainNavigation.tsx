@@ -17,7 +17,7 @@ export default async function MainNavigation({
   // Map link object to string (e.g., using path)
   const mappedNavItems = navItems.map((item) => ({
     ...item,
-    link: item.link.path, // or construct a string as needed
+    link: item.link.path, 
   }));
 
   return (

@@ -40,7 +40,7 @@ export default function SloganAnimation({ egmSlogan }: { egmSlogan: string[] }) 
           {egmSlogan[0]}
         </h2>
       </div>
-      <div className="relative w-full text-center md:text-left md:pl-8 pt-6 md:pt-0">
+      <div className="relative w-full text-center md:text-left md:pl-8">
         <h2
           className={`text-3xl md:text-4xl lg:text-5xl font-bold text-gray-700 ${
             isVisible ? "animate-slide-from-border-left" : "opacity-0"

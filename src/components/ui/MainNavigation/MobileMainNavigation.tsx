@@ -8,7 +8,7 @@ import {
   useScroll,
 } from "motion/react";
 
-import React, { useRef, useState } from "react";
+import React, { useState, useEffect } from "react";
 
 interface MobileNavProps {
   children: React.ReactNode;
@@ -29,18 +29,27 @@ interface MobileNavMenuProps {
 }
 
 export const MobileNav = ({ children, className, visible }: MobileNavProps) => {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkMobile = () => setIsMobile(window.innerWidth <= 768);
+    checkMobile();
+    window.addEventListener('resize', checkMobile);
+    return () => window.removeEventListener('resize', checkMobile);
+  }, []);
+
   return (
     <motion.div
       animate={{
-        backdropFilter: visible ? "blur(10px)" : "none",
-        boxShadow: visible
+        backdropFilter: (visible || isMobile) ? "blur(10px)" : "none",
+        boxShadow: (visible || isMobile)
           ? "0 0 24px rgba(34, 42, 53, 0.06), 0 1px 1px rgba(0, 0, 0, 0.05), 0 0 0 1px rgba(34, 42, 53, 0.04), 0 0 4px rgba(34, 42, 53, 0.08), 0 16px 68px rgba(47, 48, 55, 0.05), 0 1px 0 rgba(255, 255, 255, 0.1) inset"
           : "none",
-        width: visible ? "90%" : "100%",
-        paddingRight: visible ? "12px" : "0px",
-        paddingLeft: visible ? "12px" : "0px",
-        borderRadius: visible ? "16px" : "2rem",
-        y: visible ? -20 : 0,
+        width: (visible || isMobile) ? "90%" : "100%",
+        paddingRight: (visible || isMobile) ? "12px" : "0px",
+        paddingLeft: (visible || isMobile) ? "12px" : "0px",
+        borderRadius: (visible || isMobile) ? "16px" : "2rem",
+        y: (visible || isMobile) ? -20 : 0,
       }}
       transition={{
         type: "spring",
@@ -49,7 +58,7 @@ export const MobileNav = ({ children, className, visible }: MobileNavProps) => {
       }}
       className={cn(
         "fixed bottom-4 left-0 right-0 z-50 mx-auto flex w-full max-w-[calc(100vw-2rem)] flex-col items-center justify-between bg-transparent px-0 py-3 lg:hidden",
-        visible && "backdrop-blur-3xl bg-white/90 dark:bg-neutral-950/80",
+        (visible || isMobile) && "backdrop-blur-3xl bg-white/90 dark:bg-neutral-950/80",
         className
       )}
     >
@@ -112,18 +121,28 @@ export const MobileNavToggle = ({
   const [isOverHeader, setIsOverHeader] = useState(
     trackHeaderOverlap ? true : false
   );
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkMobile = () => setIsMobile(window.innerWidth <= 768);
+    checkMobile();
+    window.addEventListener('resize', checkMobile);
+    return () => window.removeEventListener('resize', checkMobile);
+  }, []);
 
   const { scrollY } = useScroll();
 
   // Only track scroll if trackHeaderOverlap is true
   useMotionValueEvent(scrollY, "change", (latest) => {
     if (trackHeaderOverlap) {
-      const headerHeight = window.innerHeight;
-      setIsOverHeader(latest < headerHeight);
+      // Use a smaller threshold for mobile to switch color earlier
+      const mobileThreshold = 80; // px, adjust as needed
+      const desktopThreshold = window.innerHeight;
+      const threshold = isMobile ? mobileThreshold : desktopThreshold;
+      setIsOverHeader(latest < threshold);
     }
   });
-  const iconColor =
-    trackHeaderOverlap && isOverHeader ? "text-white" : "text-black";
+  const iconColor = isMobile ? "text-black" : (trackHeaderOverlap && isOverHeader ? "text-white" : "text-black");
   return isOpen ? (
     <IconX className={`${iconColor} dark:text-white`} onClick={onClick} />
   ) : (

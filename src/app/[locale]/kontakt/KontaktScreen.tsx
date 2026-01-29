@@ -2,7 +2,7 @@ import { ContactPageData } from "./data/types/contact-types";
 
 export default async function KontaktScreen({ data }: { data: ContactPageData }) {
     return (
-        <div className="max-w-4xl mx-auto pt-40 px-6 py-12 pb-24">
+        <div className="max-w-4xl mx-auto lg:pt-40 px-6 py-12 pb-24">
             <h1 className="text-4xl md:text-5xl font-bold text-[#1f4f83] mb-8">{data.pageTitle}</h1>
 
             <p className="text-gray-700 text-lg mb-12">
