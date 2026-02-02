@@ -26,42 +26,34 @@
     ],
     "features": [
       {
-        "id": "1",
         "title": "Korrodierende Teile & Oberflächen",
         "description": "Sie benötigen Unterstützung bei korrodierenden Teilen und Oberflächen?"
       },
       {
-        "id": "2",
         "title": "Kontaminationen aufklären",
         "description": "Sie möchten Kontaminationen (z.B. in Schaltschränken) zielsicher aufklären?"
       },
       {
-        "id": "3",
         "title": "Schadstoffanalyse nach Brandfall",
         "description": "Sie wollen nach einem Brandfall bzw. einer Brandsanierung eine zuverlässige Schadstoffanalyse?"
       },
       {
-        "id": "4",
         "title": "Experten an Ihrer Seite",
         "description": "Sie wünschen sich bei chemischen Fragestellungen einen erfahrenen Experten an Ihrer Seite?"
       },
       {
-        "id": "5",
         "title": "Anlagenbau & Erweiterung",
         "description": "Sie planen die Errichtung oder Erweiterung einer chemischen oder galvanotechnischen Anlage?"
       },
       {
-        "id": "6",
         "title": "Chemikalien- & Umweltmanagement",
         "description": "Sie suchen einen Experten für Ihr Chemikalien- und Umweltmanagement bzw. als HSE-Beauftragten?"
       },
       {
-        "id": "7",
         "title": "Oberflächenfinishing 3D-Druck",
         "description": "Sie benötigen das richtige Oberflächenfinishing für Ihre 3D-gedruckten Metallteile?"
       },
       {
-        "id": "8",
         "title": "Investitions- & F&E-Projekte",
         "description": "Sie wollen professionelle Unterstützung bei der Leitung von technischen Investitionsvorhaben und F&E-Projekten?"
       }

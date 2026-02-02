@@ -28,20 +28,20 @@ interface HomeScreenProps {
 export default async function HomeScreen({ data }: HomeScreenProps) {
   if (!data) return null;
 
-  const iconMap = {
-    "1": <FaFlask />,
-    "2": <FaSearch />,
-    "3": <FaFire />,
-    "4": <FaIndustry />,
-    "5": <FaProjectDiagram />,
-    "6": <FaRecycle />,
-    "7": <FaCube />,
-    "8": <FaChartLine />,
-  };
+  const icons = [
+    <FaFlask />,
+    <FaSearch />,
+    <FaFire />,
+    <FaIndustry />,
+    <FaProjectDiagram />,
+    <FaRecycle />,
+    <FaCube />,
+    <FaChartLine />,
+  ];
 
-  const features = data.features.map((feature) => ({
+  const features = data.features.map((feature, index) => ({
     ...feature,
-    icon: iconMap[feature.id as keyof typeof iconMap],
+    icon: icons[index],
   }));
 
   return (
@@ -65,7 +65,7 @@ export default async function HomeScreen({ data }: HomeScreenProps) {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-center gap-10 px-10 pt-10">
           {features.slice(0, 4).map((feature, index) => (
             <FeatureCard
-              key={feature.id}
+              key={index}
               index={index}
               icon={feature.icon}
               title={feature.title}
@@ -77,7 +77,7 @@ export default async function HomeScreen({ data }: HomeScreenProps) {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-center gap-10  px-10 pt-10">
           {features.slice(4).map((feature, index) => (
             <FeatureCard
-              key={feature.id}
+              key={index}
               index={index + 4}
               icon={feature.icon}
               title={feature.title}
