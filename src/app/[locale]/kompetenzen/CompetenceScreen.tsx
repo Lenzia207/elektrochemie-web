@@ -19,17 +19,20 @@ export default function CompetenceScreen({ data }: CompetenceScreenProps) {
 
     return (
         <div>
-            <PageImageHeader imageSrc="/images/kompetenzen/header-kompetenzen.jpg" altText="Bild ZT Elektrochemie" title={data.pageTitle} description={data.pageDescription} />
+            <PageImageHeader imageSrc="/images/kompetenzen/header-kompetenzen.jpg" altText="Bild ZT Elektrochemie" title={data.pageTitle} />
+            <div className="lg:text-xl text-md text-justify text-black  max-w-7xl lg:px-20 lg:pt-20 px-6 pt-6 mx-auto">
+                {data.pageDescription}
+            </div>
             <div>
                 {data.competenceList.map((competence, index) => (
-                    <ExpertiseSection 
-                        key={index} 
+                    <ExpertiseSection
+                        key={index}
                         item={{
                             title: competence.competenceTitle,
                             description: competence.competenceDescription,
                             image: competence.image,
-                        }} 
-                        index={index} 
+                        }}
+                        index={index}
                     />
                 ))}
 

@@ -29,7 +29,9 @@ export default function ServicesScreen({ data }: ServicesPageProps) {
 
   return (
     <div>
-      <PageImageHeader imageSrc="/images/leistungen/header-leistungen.jpg" altText="Bild ZT Elektrochemie" title={data.pageTitle} description={data.pageDescription} />
+      <PageImageHeader imageSrc="/images/leistungen/header-leistungen.jpg" altText="Bild ZT Elektrochemie" title={data.pageTitle} />
+         
+     
       <div>
         {data.expertiseList.map((expertise, index) => (
           <ExpertiseSection 

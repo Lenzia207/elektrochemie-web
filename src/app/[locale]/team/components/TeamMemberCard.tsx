@@ -20,12 +20,12 @@ export function TeamMemberCard({ member, index }: { member: TeamMembersList; ind
             transition={{ duration: 0.5, delay: index * 0.1 }}
             className="group"
         >
-            <div className="relative w-full aspect-square mb-6">
+            <div className="relative lg:w-full w-[50%] aspect-square mb-6 mx-auto">
                 <Image
                     src={member.image}
                     alt={member.name}
                     fill
-                    className="object-contain drop-shadow-xl transition-transform duration-500 group-hover:scale-105"
+                    className="object-contain drop-shadow-xl  transition-transform duration-500 group-hover:scale-105"
                 />
             </div>
 

@@ -3,7 +3,6 @@
  */
 export interface ServicesPageData {
   pageTitle: string;
-  pageDescription: string;
   expertiseList: ExpertiseList[];
 }
 

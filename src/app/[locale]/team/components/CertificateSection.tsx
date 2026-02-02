@@ -16,7 +16,7 @@ export default function CertificateSection({ data }: { data: TeamPageData }) {
                         key={idx}
                         className="bg-gray-50 p-6 rounded-xl border-l-4 border-[#1f4f83] shadow-sm hover:shadow-md transition-shadow"
                     >
-                        <div className="font-bold text-[#1f4f83] text-lg mb-2">
+                        <div className="font-bold text-[#1f4f83] lg:text-lg text-md mb-2">
                             {cert.infoClarification}
                         </div>
                         <p className="text-gray-600 text-sm leading-relaxed">

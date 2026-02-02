@@ -28,10 +28,9 @@ export default function TeamImageHeaderMobile({ data }: { data: TeamPageData }) 
                         transition={{ duration: 0.8 }}
                         className="text-center px-6"
                     >
-                        <div className="inline-block px-3 py-1 mb-2 rounded-full border border-white/30 bg-white/10 backdrop-blur-sm text-white/90 text-sm font-medium">
-                            {data.pageTitle}
-                        </div>
-                        <div className="h-1 w-16 bg-white/80 mx-auto rounded-full mt-2" />
+                        <h3 className=" font-bold text-white drop-shadow-lg tracking-tight">
+            {data.pageTitle}
+          </h3>
                     </motion.div>
                 </div>
             </div>

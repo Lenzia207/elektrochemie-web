@@ -19,7 +19,7 @@ export default function TeamScreen({ data }: TeamScreenProps) {
   if (!data) return null;
 
   return (
-    <div className="bg-white min-h-screen pb-20">
+    <div className="bg-white min-h-screen">
       {/* Full Screen Header with Parallax & Title */}
       <TeamImageHeader data={data} />
 

@@ -30,14 +30,9 @@ export function ExpertiseSectionDesktop({
         isEven ? "md:flex-row-reverse" : "md:flex-row"
       } justify-center items-center relative px-6 lg:px-12 gap-4 lg:gap-16 overflow-hidden`}
     >
-      {/* Large Background Number */}
-      <div className="absolute top-4 left-4 lg:top-8 lg:left-8 text-[150px] lg:text-[300px] font-bold text-gray-100 opacity-20 leading-none pointer-events-none select-none">
-        {String(index + 1).padStart(3, "00")}
-      </div>
-
-      <div
+          <div
         ref={ref}
-        className="w-full md:w-1/2 max-w-xl h-[400px] lg:h-[600px] bg-gray-100 overflow-hidden rounded-md shadow-[0_10px_30px_rgba(0,0,0,0.1)] relative"
+        className="w-full md:w-1/2 h-[400px] lg:h-[500px] bg-gray-100 overflow-hidden rounded-md shadow-[0_10px_30px_rgba(0,0,0,0.1)] relative"
       >
         <Image
           src={item.image}

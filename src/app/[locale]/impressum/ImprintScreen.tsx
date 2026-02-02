@@ -1,6 +1,6 @@
 export default async function ImprintScreen({ data }: { data?: any }) {
     return (
-        <div className="max-w-4xl mx-auto pt-40 px-6 py-12">
+        <div className="max-w-4xl mx-auto lg:pt-40 px-6 py-12">
             <h1 className="text-4xl font-bold text-[#1f4f83] mb-8">Impressum</h1>
 
             <p className="text-gray-700 mb-8">
@@ -54,7 +54,7 @@ export default async function ImprintScreen({ data }: { data?: any }) {
             </section>
 
             {/* EU Dispute Resolution */}
-            <section className="mb-10">
+            {/* <section className="mb-10">
                 <h2 className="text-2xl font-semibold text-[#1f4f83] mb-4">EU-Streitschlichtung</h2>
                 <p className="text-gray-700 mb-4">
                     Gemäß Verordnung über Online-Streitbeilegung in Verbraucherangelegenheiten (ODR-Verordnung) möchten wir Sie über die Online-Streitbeilegungsplattform (OS-Plattform) informieren.
@@ -72,7 +72,7 @@ export default async function ImprintScreen({ data }: { data?: any }) {
                 <p className="text-gray-700">
                     Wir möchten Sie jedoch darauf hinweisen, dass wir nicht bereit oder verpflichtet sind, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.
                 </p>
-            </section>
+            </section> */}
 
             {/* Liability for Content */}
             <section className="mb-10">
@@ -103,9 +103,7 @@ export default async function ImprintScreen({ data }: { data?: any }) {
             <section className="mb-10">
                 <h2 className="text-2xl font-semibold text-[#1f4f83] mb-4">Urheberrechtshinweis</h2>
                 <p className="text-gray-700 mb-4">
-                    Alle Inhalte dieser Webseite (Bilder, Fotos, Texte, Videos) unterliegen dem Urheberrecht. Bitte fragen Sie uns bevor Sie die Inhalte dieser Website verbreiten, vervielfältigen oder verwerten wie zum Beispiel auf anderen Websites erneut veröffentlichen. Falls notwendig, werden wir die unerlaubte Nutzung von Teilen der Inhalte unserer Seite rechtlich verfolgen.
-                </p>
-                <p className="text-gray-700">
+                    Alle Inhalte dieser Webseite (Bilder, Fotos, Texte, Videos) unterliegen dem Urheberrecht. Bitte fragen Sie uns bevor Sie die Inhalte dieser Website verbreiten, vervielfältigen oder verwerten wie zum Beispiel auf anderen Websites erneut veröffentlichen.
                     Sollten Sie auf dieser Webseite Inhalte finden, die das Urheberrecht verletzen, bitten wir Sie uns zu kontaktieren.
                 </p>
             </section>

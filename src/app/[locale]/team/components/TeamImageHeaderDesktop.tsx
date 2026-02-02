@@ -45,7 +45,7 @@ export default function TeamImageHeaderDesktop({ data }: { data: TeamPageData })
             {data.pageTitle}
           </h1>
           {/* Optional decorative line */}
-          <div className="h-1.5 w-24 bg-white/80 mx-auto rounded-full mt-6 shadow-lg" />
+          {/* <div className="h-1.5 w-24 bg-white/80 mx-auto rounded-full mt-6 shadow-lg" /> */}
         </motion.div>
       </div>
     </section>

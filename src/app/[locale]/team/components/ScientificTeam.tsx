@@ -22,10 +22,10 @@ export default function ScientificTeam({ data }: ScientificTeamProps) {
             viewport={{ once: true }}
             className="mb-20"
         >
-            <h2 className="text-3xl md:text-4xl font-bold text-[#1f4f83] mb-8">
+            <h2 className="lg:text-3xl text-2xl font-bold text-[#1f4f83] mb-8">
                 {scientificTeam.title}
             </h2>
-            <p className="text-gray-600 leading-relaxed text-lg text-justify">
+            <p className="text-gray-600 leading-relaxed lg:text-lg text-md text-justify">
                 {scientificTeam.description}
             </p>
         </motion.div>

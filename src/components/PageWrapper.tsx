@@ -24,7 +24,7 @@ export default async function PageWrapper({
 
       {/* <CookieBanner /> */}
 
-      <div>{pageContent}</div>
+      <div className="pb-20">{pageContent}</div>
 
       <Footer />
     </div>
