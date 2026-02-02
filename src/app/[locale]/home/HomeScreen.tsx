@@ -16,7 +16,7 @@ import {
 } from "react-icons/fa";
 import SloganAnimation from "./components/SloganAnimation";
 import HeadlineText from "@/components/ui/Texts/HeadlineText";
-import ScrollToTop from "../../../components/ScrollToTop";
+import ScrollToTop from "../../../components/ui/ScrollToTop/ScrollToTopClient";
 import { TeamAvaterImages } from "@/components/ui/Cards/TeamAvaterImages";
 import TeamGreetingSection from "./components/TeamGreetingSection";
 import ExpertiseHighlightSection from "./components/ExpertiseHighlightSection";
@@ -28,66 +28,21 @@ interface HomeScreenProps {
 export default async function HomeScreen({ data }: HomeScreenProps) {
   if (!data) return null;
 
+  const iconMap = {
+    "1": <FaFlask />,
+    "2": <FaSearch />,
+    "3": <FaFire />,
+    "4": <FaIndustry />,
+    "5": <FaProjectDiagram />,
+    "6": <FaRecycle />,
+    "7": <FaCube />,
+    "8": <FaChartLine />,
+  };
 
-
-  const features = [
-    {
-      id: "1",
-      icon: <FaFlask />,
-      title: "Korrodierende Teile & Oberflächen",
-      description:
-        "Sie benötigen Unterstützung bei korrodierenden Teilen und Oberflächen?",
-    },
-    {
-      id: "2",
-      icon: <FaSearch />,
-      title: "Kontaminationen aufklären",
-      description:
-        "Sie möchten Kontaminationen (z.B. in Schaltschränken) zielsicher aufklären?",
-    },
-    {
-      id: "3",
-      icon: <FaFire />,
-      title: "Schadstoffanalyse nach Brandfall",
-      description:
-        "Sie wollen nach einem Brandfall bzw. einer Brandsanierung eine zuverlässige Schadstoffanalyse?",
-    },
-    {
-      id: "4",
-      icon: <FaIndustry />,
-      title: "Experten an Ihrer Seite",
-      description:
-        "Sie wünschen sich bei chemischen Fragestellungen einen erfahrenen Experten an Ihrer Seite?",
-    },
-    {
-      id: "5",
-      icon: <FaProjectDiagram />,
-      title: "Anlagenbau & Erweiterung",
-      description:
-        "Sie planen die Errichtung oder Erweiterung einer chemischen oder galvanotechnischen Anlage?",
-    },
-    {
-      id: "6",
-      icon: <FaRecycle />,
-      title: "Chemikalien- & Umweltmanagement",
-      description:
-        "Sie suchen einen Experten für Ihr Chemikalien- und Umweltmanagement bzw. als HSE-Beauftragten?",
-    },
-    {
-      id: "7",
-      icon: <FaCube />,
-      title: "Oberflächenfinishing 3D-Druck",
-      description:
-        "Sie benötigen das richtige Oberflächenfinishing für Ihre 3D-gedruckten Metallteile?",
-    },
-    {
-      id: "8",
-      icon: <FaChartLine />,
-      title: "Investitions- & F&E-Projekte",
-      description:
-        "Sie wollen professionelle Unterstützung bei der Leitung von technischen Investitionsvorhaben und F&E-Projekten?",
-    },
-  ];
+  const features = data.features.map((feature) => ({
+    ...feature,
+    icon: iconMap[feature.id as keyof typeof iconMap],
+  }));
 
   return (
     <div className="relative">
@@ -140,7 +95,7 @@ export default async function HomeScreen({ data }: HomeScreenProps) {
           <TeamAvaterImages teamMembers={data.teamMembers} />
         </div>
       </div>
-      <ScrollToTop />
+      {/* <ScrollToTop /> */}
     </div>
   );
 }

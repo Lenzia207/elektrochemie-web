@@ -6,7 +6,7 @@ import {
   useSpring,
 } from "motion/react";
 import { ServicesPageData } from "./data/types/leistungen-types";
-import ScrollToTop from "../../../components/ScrollToTop";
+import ScrollToTop from "../../../components/ui/ScrollToTop/ScrollToTopClient";
 import { ExpertiseSection } from "./components/ExpertiseSection";
 import Image from "next/image";
 import PageImageHeader from "@/components/PageImageHeader";

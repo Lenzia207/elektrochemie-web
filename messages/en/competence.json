@@ -1,0 +1,47 @@
+{
+  "CompetencePage": {
+    "pageTitle": "Our Expertise",
+    "pageDescription": "While the EGM team covers the entire field of chemistry, we focus on the following areas based on more than 20 years of industrial practical expertise:"
+  
+,"competenceList": [
+    {
+    "image": "/images/kompetenzen/1_galvanik.jpeg",
+    "competenceTitle": "Electrochemical Surface Technology / Electroplating",
+    "competenceDescription":
+      "From electroplating, anodizing of light metals, electroless deposition, electropolishing to pulse plating or plasma electrolytic oxidation, EGM is dedicated to all types of (electrochemical) surface coating. EGM supports you in selecting suitable systems, performing and testing standard-compliant coatings, as well as planning, designing and implementing new production facilities."
+  },
+  {
+
+    "image": "/images/kompetenzen/2_post_processing.jpeg",
+    "competenceTitle": "Post-Processing of 3D-Printed Metal Components",
+    "competenceDescription":
+      "The production of (metallic) components using additive processes is also known as 3D printing. This manufacturing process allows unprecedented freedom in design and extends or combines the functionality of such components. However, this new process also brings new challenges, such as the need to remove adhering support structures and significant surface roughness. EGM supports you in selecting suitable post-processing methods, coordinates between printing and post-processing, defines quality assurance routines together with the customer and closes the interfaces within the additive process chain."
+  },
+  {
+    "image": "/images/kompetenzen/3_korrosion.jpeg",
+    "competenceTitle": "Corrosion and Its Prevention",
+    "competenceDescription":
+      "Corrosion of metallic materials changes component properties and sometimes significantly impairs its function. Corrosion and the resulting damage is considered a globally relevant factor in economic considerations. Electrochemical investigation of corrosion phenomena and their quantification, as well as measures for prevention and appropriate corrosion protection of components are among the essential tasks of EGM."
+  },
+  {
+    "image": "/images/kompetenzen/4_green_energy.jpeg",
+    "competenceTitle": "Green Energy and Energy Storage",
+    "competenceDescription":
+      "Sustainability and comprehensive environmental awareness are no longer just headlines but specifically the focus of political and social efforts. Green hydrogen and the (local, temporary) storage of generated green electricity are essential aspects. Both the electrolysis of water to hydrogen (and oxygen) and any energy storage in the form of batteries and accumulators are based on electrochemical processes. Through its electrochemical expertise and an interdisciplinary approach, EGM can provide crucial input here and at the same time, as a civil engineer, comprehensively coordinate the construction and industrial implementation."
+  },
+  {
+    "image": "/images/kompetenzen/5_material.jpeg",
+    "competenceTitle": "Materials and Their Surface",
+    "competenceDescription":
+      "Component functions depend both on surface properties, usually carried by coatings or finishes, and on the properties of the underlying material and surface chemistry. The coordination between the base material and subsequent surface treatment is therefore of essential importance. This is exactly where EGM applies its expertise, helping on the one hand to determine the properties and on the other hand to develop and industrially implement ideal combinations of material - post-processing - coating based on material data and component specifications."
+  },
+  {
+    "image": "/images/kompetenzen/6_chemikalien_management.jpeg",
+    "competenceTitle": "Chemical Management",
+    "competenceDescription":
+      "Proper handling of chemicals and hazardous substances is an essential prerequisite for safe production in terms of occupational health and safety and environmental protection. The basis for this is a considerable number of legal texts, ordinances and regulations. For the layperson, it is often very difficult to navigate this environment, and even for experienced manufacturing companies, compliance with all requirements means considerable time expenditure. The authorized chemists at EGM are always familiar with current regulations and can competently and efficiently handle all chemical management tasks for you."
+  }
+]
+}
+
+}

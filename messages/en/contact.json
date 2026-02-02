@@ -1,6 +1,18 @@
 {
   "ContactPage": {
     "pageTitle": "Contact",
-    "pageDescription": "Get in touch with us"
+    "pageDescription": "We look forward to hearing from you and are happy to answer any questions you may have.",
+    "companyName": [
+      "EGM",
+      "Institute for Electrochemistry, Electroplating\nand Material Chemistry Civil Engineers Ltd."
+    ],
+    "telephone": [
+      "Telephone",
+      "+43 699 15111555"
+    ], 
+    "email": [
+      "E-Mail",
+      "help@elektrochemie.eu"
+    ]
   }
 }

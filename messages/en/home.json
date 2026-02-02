@@ -1,5 +1,70 @@
 {
   "HomePage": {
-    "pageSlogan": "Explore our services and solutions in the field of electrochemistry."
+    "pageIntro": "Your specialists\nfor chemistry, corrosion and surface technology.",
+    "egmSlogan": [
+      "Chemistry is everywhere",
+      "We live chemistry"
+    ],
+    "expertiseHighlight": "We would particularly like to draw your attention to our work in the field of expert opinions and our cooperation with lawyers and insurance companies.",
+    "egmWelcomeEnd": [
+      "We look forward to being there for you!",
+      "Your EGM Team"
+    ],
+    "teamMembers": [
+      {
+        "name": "Mag. Dr. habil. Wolfgang Hansal",
+        "image": "/images/team/Wolfgang.png"
+      },
+      {
+        "name": "Mag. Dr. Selma Hansal",
+        "image": "/images/team/Selma.jpg"
+      },
+      {
+        "name": "Ing. Susanna Weiß",
+        "image": "/images/team/Susanna.jpg"
+      }
+    ],
+    "features": [
+      {
+        "id": "1",
+        "title": "Corroding Parts & Surfaces",
+        "description": "Do you need support with corroding parts and surfaces?"
+      },
+      {
+        "id": "2",
+        "title": "Investigate Contaminations",
+        "description": "Would you like to accurately investigate contaminations (e.g. in control cabinets)?"
+      },
+      {
+        "id": "3",
+        "title": "Pollutant Analysis After Fire",
+        "description": "Do you need reliable pollutant analysis after a fire or fire remediation?"
+      },
+      {
+        "id": "4",
+        "title": "Experts at Your Side",
+        "description": "Would you like an experienced expert at your side for chemical questions?"
+      },
+      {
+        "id": "5",
+        "title": "Plant Construction & Expansion",
+        "description": "Are you planning the construction or expansion of a chemical or electroplating plant?"
+      },
+      {
+        "id": "6",
+        "title": "Chemical & Environmental Management",
+        "description": "Are you looking for an expert for your chemical and environmental management or as an HSE officer?"
+      },
+      {
+        "id": "7",
+        "title": "Surface Finishing 3D Printing",
+        "description": "Do you need the right surface finishing for your 3D-printed metal parts?"
+      },
+      {
+        "id": "8",
+        "title": "Investment & R&D Projects",
+        "description": "Do you want professional support in managing technical investment projects and R&D projects?"
+      }
+    ]
   }
 }

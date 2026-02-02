@@ -1,7 +1,67 @@
 {
   "TeamPage": {
-    "pageTitle": "Das EGM Team",
-    "pageDescription": "Lernen Sie unser Team kennen"
+    "pageTitle": "Our EGM Team",
+    "teamImage": "/images/team/Team.jpg",
+    "teamMemberList": [
+      {
+        "name": "Mag. Dr. habil. Wolfgang Hansal",
+        "role": "Institute Director, Managing Director, Civil Engineer Chemistry, generally sworn and court-certified expert",
+        "description": "Dr. Wolfgang Hansal has more than 25 years of professional experience in the fields of chemistry, surface technology and electroplating, successfully leading more than 100 industrially relevant projects in these areas. As a board member of the European Academy for Surface Technology and member of numerous professional associations, he is also very well networked internationally. He is the author of numerous specialist publications, including books on electrochemical pulse deposition and post-processing of 3D-printed metal components (in press).",
+        "image": "/images/team/Wolfgang.png"
+      },
+      {
+        "name": "Mag. Dr. Selma Hansal",
+        "role": "Managing Director, Civil Engineer Chemistry",
+        "description": "Dr. Selma Hansal has been successfully leading industrially relevant R&D projects for over 20 years, always focusing on industrial implementation. Her core competencies are electrochemistry, material analysis and post-processing of additively manufactured metal components. Cross-industry networks and the comprehensive consideration and coordination of entire process chains are a central concern for her.",
+        "image": "/images/team/Selma.jpg"
+      },
+      {
+        "name": "Ing. Susanna Weiß",
+        "role": "Operations Manager, Chemical Engineer",
+        "description": "Ms. Susanna Weiß has many years of experience in the field of chemical surface treatment and chemical analysis. In addition to the field of electrochemistry, she has specialized in environmental chemistry, surface analysis and hazardous substance management and is a certified expert for safety data sheets according to REACH.",
+        "image": "/images/team/Susanna.jpg"
+      }
+    ],
+
+    "infoCertificates": [
+      {
+        "infoClarification": "State-authorized and sworn civil engineers are natural persons who work freelance on the basis of authorization granted by the Federal Minister for Economic Affairs and Labour in engineering or natural science fields. As an external sign of state authorization and oath, civil engineers bear a seal with the federal coat of arms of the Republic of Austria. Civil engineers are persons endowed with \"public faith\" according to §292 Civil Procedure Code (public notary). They are authorized to create public documents within the scope of their authorization, which are regarded by administrative authorities as if they had been issued by authorities themselves.",
+        "infoDescription": "The broad range of services offered by civil engineers includes specialized planning, overall planning of complex investment projects and competent testing and consulting services as neutral trustees of the client. With their highly qualified employees, they ensure a performance advantage that is documented through transparency, interdisciplinarity, control and accountability. Through their innovative solutions, civil engineers are guarantors for securing people's quality of life in many areas of everyday life."
+      }
+    ],
+    "scientificTeam": {
+      "title": "Our Scientific Advisory Board",
+      "description": "Staying at the pulse of technological development is not only our obligation, it is also a very special personal concern for us. We regularly exchange ideas with leading international experts and work closely with them on various projects. Our scientific advisory board supports us professionally when needed and can be involved in innovation projects.",
+      "members": [
+        {
+          "image": "/images/team/beirat/Bund.png",
+          "name": "Prof. Dr. Andreas Bund",
+          "university": "Technical University of Ilmenau",
+          "alt": "Prof. Dr. Andreas Bund portrait from TU Ilmenau",
+          "url": "https://www.tu-ilmenau.de/universitaet/fakultaeten/fakultaet-elektrotechnik-und-informationstechnik/profil/institute-und-fachgebiete/fachgebiet-elektrochemie-und-galvanotechnik/team"
+        },
+        {
+          "image": "/images/team/beirat/Lampke.png",
+          "name": "Prof. Dr. Thomas Lampke",
+          "university": "Chemnitz University of Technology",
+          "alt": "Prof. Dr. Thomas Lampke portrait from TU Chemnitz",
+          "url": "https://www.tu-chemnitz.de/mb/WOT/professur/ma.php?id=7"
+        },
+        {
+          "image": "/images/team/beirat/Leisner.png",
+          "name": "Prof. Dr. Peter Leisner",
+          "university": "Jönköping University",
+          "alt": "Prof. Dr. Peter Leisner portrait from Jönköping University",
+          "url": "https://ju.se/en/personinfo?id=3687"
+        },
+        {
+          "image": "/images/team/beirat/Kautek.png",
+          "name": "Prof. Dr. Wolfgang Kautek",
+          "university": "University of Vienna",
+          "alt": "Prof. Dr. Wolfgang Kautek portrait from University of Vienna",
+          "url": "https://ufind.univie.ac.at/de/person.html?id=88668"
+        }
+      ]
+    }
   }
 }
-  

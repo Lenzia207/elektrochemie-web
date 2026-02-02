@@ -8,6 +8,13 @@ export interface HomePageData {
   expertiseHighlight: string;
   egmWelcomeEnd: string[];
   teamMembers: TeamMember[];
+  features: Feature[];
+}
+
+export interface Feature {
+  id: string;
+  title: string;
+  description: string;
 }
 
 export interface EgmImagesData {
