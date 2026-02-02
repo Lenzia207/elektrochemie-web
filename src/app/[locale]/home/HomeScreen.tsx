@@ -54,7 +54,7 @@ export default async function HomeScreen({ data }: HomeScreenProps) {
           height={250}
           className="object-cover rounded-full"
         />
-        <h1 className="text-white lg:text-6xl text-3xl text-center whitespace-pre-line lg:mx-14">
+        <h1 className="text-white lg:text-5xl text-3xl lg:leading-20 text-center whitespace-pre-line lg:mx-8">
           {data.pageIntro}
         </h1>
       </div>

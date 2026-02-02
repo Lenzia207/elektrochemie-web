@@ -10,7 +10,6 @@ import {
   MobileNavToggle,
   MobileNavMenu,
 } from "@/components/ui/MainNavigation/MobileMainNavigation";
-import { LanguageSwitcher } from "./LanguageSwitcher";
 
 interface ClientNavigationProps {
   navItems: {
@@ -28,20 +27,17 @@ export default function ClientNavigation({
   return (
     <div className="relative w-full">
       <Navbar>
-                  <LanguageSwitcher />
-
         <NavBody>
           <NavbarLogo image="/images/header/adlerLogo.png" url="https://ziviltechniker.at/mitglied/958130"/>
-          <NavbarLogo image="/images/logo.svg" />
+          <NavbarLogo image="/images/logo.svg" showLanguageSwitcher/>
           <NavItems items={navItems} trackHeaderOverlap={trackHeaderOverlap} />
-          
         </NavBody>
 
         <MobileNav>
           <MobileNavHeader>
-            <NavbarLogo image="/images/logo.svg" />
+            <NavbarLogo image="/images/logo.svg" showLanguageSwitcher />
+             
             <div className="flex items-center gap-2">
-              <LanguageSwitcher />
               <MobileNavToggle
                 isOpen={isMobileMenuOpen}
                 onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}

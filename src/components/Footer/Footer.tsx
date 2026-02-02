@@ -5,7 +5,7 @@ import fetchFooterData, { FooterData } from "./footer-data";
 export async function Footer({ locale }: { locale: string }) {
   const data = await fetchFooterData(locale);
   return (
-    <footer className="bg-gradient-to-r from-[#1a3d6b] to-[#1f4f83] text-white py-8 lg:pb-0 pb-36 ">
+    <footer className="bg-gradient-to-r from-[#1a3d6b] to-[#1f4f83] text-white py-8 lg:pb-20 pb-36 ">
       <div className="max-w-7xl mx-auto px-8">
         {/* Main Footer Content */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-center mb-4">
@@ -13,7 +13,7 @@ export async function Footer({ locale }: { locale: string }) {
           <div className="text-center md:text-left">
             <Link
               href="/impressum"
-              className="hover:text-gray-300 transition-colors duration-200 text-sm md:text-base"
+              className="hover:text-gray-300 transition-colors duration-200 md:text-base"
             >
               {data.imprint}
             </Link>
@@ -32,7 +32,7 @@ export async function Footer({ locale }: { locale: string }) {
           <div className="text-center md:text-right">
             <Link
               href="/datenschutz"
-              className="hover:text-gray-300 transition-colors duration-200 text-sm md:text-base"
+              className="hover:text-gray-300 transition-colors duration-200 md:text-base"
             >
               {data.privacyPolicy}
             </Link>
