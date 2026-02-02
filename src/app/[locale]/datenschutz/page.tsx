@@ -1,7 +1,6 @@
 import { LocaleParams } from "@/i18n/local-params";
 
 import PageWrapper from "@/components/PageWrapper";
-import ImprintScreen from "./DataPrivacyScreen";
 import DataPrivacyScreen from "./DataPrivacyScreen";
 
 /// TODO add Englisch Version of Imprint Screen

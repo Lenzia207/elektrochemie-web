@@ -1,6 +1,6 @@
 
 import Link from "next/link";
-import fetchFooterData, { FooterData } from "./footer-data";
+import fetchFooterData from "./footer-data";
 
 export async function Footer({ locale }: { locale: string }) {
   const data = await fetchFooterData(locale);

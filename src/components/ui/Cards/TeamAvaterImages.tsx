@@ -1,5 +1,5 @@
 "use client";
-import { HomePageData, TeamMember } from "@/app/[locale]/home/data/types/home-types";
+import { TeamMember } from "@/app/[locale]/home/data/types/home-types";
 import {
   AvatarGroup,
   AvatarGroupTooltip,

@@ -16,7 +16,6 @@ import {
 } from "react-icons/fa";
 import SloganAnimation from "./components/SloganAnimation";
 import HeadlineText from "@/components/ui/Texts/HeadlineText";
-import ScrollToTop from "../../../components/ui/ScrollToTop/ScrollToTopClient";
 import { TeamAvaterImages } from "@/components/ui/Cards/TeamAvaterImages";
 import TeamGreetingSection from "./components/TeamGreetingSection";
 import ExpertiseHighlightSection from "./components/ExpertiseHighlightSection";
@@ -28,21 +27,24 @@ interface HomeScreenProps {
 export default async function HomeScreen({ data }: HomeScreenProps) {
   if (!data) return null;
 
-  const icons = [
-    <FaFlask />,
-    <FaSearch />,
-    <FaFire />,
-    <FaIndustry />,
-    <FaProjectDiagram />,
-    <FaRecycle />,
-    <FaCube />,
-    <FaChartLine />,
+  const iconComponents = [
+    FaFlask,
+    FaSearch,
+    FaFire,
+    FaIndustry,
+    FaProjectDiagram,
+    FaRecycle,
+    FaCube,
+    FaChartLine,
   ];
 
-  const features = data.features.map((feature, index) => ({
-    ...feature,
-    icon: icons[index],
-  }));
+  const features = data.features.map((feature, index) => {
+    const IconComponent = iconComponents[index];
+    return {
+      ...feature,
+      icon: <IconComponent />,
+    };
+  });
 
   return (
     <div className="relative">
@@ -66,7 +68,6 @@ export default async function HomeScreen({ data }: HomeScreenProps) {
           {features.slice(0, 4).map((feature, index) => (
             <FeatureCard
               key={index}
-              index={index}
               icon={feature.icon}
               title={feature.title}
               description={feature.description}
@@ -77,8 +78,7 @@ export default async function HomeScreen({ data }: HomeScreenProps) {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-center gap-10  px-10 pt-10">
           {features.slice(4).map((feature, index) => (
             <FeatureCard
-              key={index}
-              index={index + 4}
+              key={index + 4}
               icon={feature.icon}
               title={feature.title}
               description={feature.description}
@@ -95,7 +95,6 @@ export default async function HomeScreen({ data }: HomeScreenProps) {
           <TeamAvaterImages teamMembers={data.teamMembers} />
         </div>
       </div>
-      {/* <ScrollToTop /> */}
     </div>
   );
 }

@@ -1,9 +1,6 @@
 "use client";
 
-import { motion, useScroll, useTransform } from "motion/react";
-import Image from "next/image";
-import { useRef } from "react";
-import { TeamPageData, TeamMembersList, InfoCertificates } from "./data/types/team-types";
+import { TeamPageData } from "./data/types/team-types";
 import CertificateSection from "./components/CertificateSection";
 import TeamImageHeader from "./components/TeamImageHeader";
 import { TeamMemberCard } from "./components/TeamMemberCard";

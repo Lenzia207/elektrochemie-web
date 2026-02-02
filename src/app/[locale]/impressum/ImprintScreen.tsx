@@ -1,4 +1,4 @@
-export default async function ImprintScreen({ data }: { data?: any }) {
+export default async function ImprintScreen() {
     return (
         <div className="max-w-4xl mx-auto lg:pt-40 px-6 py-12">
             <h1 className="text-4xl font-bold text-[#1f4f83] mb-8">Impressum</h1>

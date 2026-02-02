@@ -1,7 +1,6 @@
 "use client";
 
 import PageImageHeader from "@/components/PageImageHeader";
-import ScrollToTop from "@/components/ui/ScrollToTop/ScrollToTopClient";
 import { CompetencePageData } from "./data/types/competence-types";
 import { ExpertiseSection } from "../leistungen/components/ExpertiseSection";
 import { motion, useScroll, useSpring } from "motion/react";

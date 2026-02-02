@@ -1,7 +1,6 @@
 import React from "react";
 
 interface FeatureCardProps {
-  index?: number;
   icon: React.ReactNode;
   title: string;
   description?: string;
@@ -11,7 +10,6 @@ export default function FeatureCard({
   icon,
   title,
   description,
-  index = 0,
 }: FeatureCardProps) {
   return (
     <div

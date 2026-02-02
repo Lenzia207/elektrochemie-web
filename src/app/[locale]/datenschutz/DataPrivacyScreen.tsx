@@ -1,3 +1,5 @@
+/* eslint-disable react/no-unescaped-entities */
+
 export default async function DataPrivacyScreen() {
     return (
         <div className="max-w-4xl mx-auto pt-40 px-6 py-12 pb-24">

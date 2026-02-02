@@ -15,6 +15,7 @@ import {
   type HoverCardArrowProps as HoverCardArrowPropsPrimitive,
 } from '@/components/animate-ui/primitives/radix/hover-card';
 import { getStrictContext } from '@/lib/get-strict-context';
+import Image from 'next/image';
 
 type PreviewLinkCardContextType = {
   href: string;
@@ -184,7 +185,11 @@ function PreviewLinkCardImage({
 }: PreviewLinkCardImageProps) {
   const { src, width, height } = usePreviewLinkCard();
 
-  return <img src={src} width={width} height={height} alt={alt} {...props} />;
+  if (!src) {
+    return null;
+  }
+
+  return <Image src={src!} width={width} height={height} alt={alt} {...props} />;
 }
 
 type PreviewLinkCardArrowProps = HoverCardArrowPropsPrimitive;

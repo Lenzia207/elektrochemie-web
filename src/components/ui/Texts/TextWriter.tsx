@@ -2,7 +2,6 @@
 import { useEffect } from "react";
 import { motion, stagger, useAnimate } from "motion/react";
 import { cn } from "@/lib/utils/utils";
-import { text } from "stream/consumers";
 
 export const TextWriterEffect = ({
   words,
@@ -18,7 +17,7 @@ export const TextWriterEffect = ({
   textCenter?: boolean;
 }) => {
   const [scope, animate] = useAnimate();
-  let wordsArray = words.split(" ");
+  const wordsArray = words.split(" ");
   useEffect(() => {
     animate(
       "span",
