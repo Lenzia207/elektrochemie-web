@@ -30,18 +30,16 @@ export default function ServicesScreen({ data }: ServicesPageProps) {
   return (
     <div>
       <PageImageHeader imageSrc="/images/leistungen/header-leistungen.jpg" altText="Bild ZT Elektrochemie" title={data.pageTitle} />
-         
-     
       <div>
         {data.expertiseList.map((expertise, index) => (
-          <ExpertiseSection 
-            key={index} 
+          <ExpertiseSection
+            key={index}
             item={{
               title: expertise.expertiseTitle,
               description: expertise.expertiseDescription,
               image: expertise.image,
-            }} 
-            index={index} 
+            }}
+            index={index}
           />
         ))}
 
@@ -49,7 +47,6 @@ export default function ServicesScreen({ data }: ServicesPageProps) {
           className="fixed left-0 right-0 h-[5px] bg-[#1f4f83] bottom-0 z-50 origin-left"
           style={{ scaleX }}
         />
-        <ScrollToTop />
       </div>
     </div>
   );
