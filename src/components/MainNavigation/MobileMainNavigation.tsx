@@ -11,6 +11,7 @@ import { MobileNavMenu } from "./Mobile/MobileNavMenu";
 import { MobileToggleMenu } from "./Mobile/MobileToggleMenu";
 import { NavigationItem } from "./types";
 import { Link } from "@/i18n/routing";
+import useCurrentLocale from "@/hooks/use-current-locale";
 
 interface MobileNavProps {
   navItems: NavigationItem[];
@@ -80,6 +81,7 @@ export const MobileMainNavigation = ({ navItems, trackHeaderOverlap = false, cla
             key={`mobile-link-${idx}`}
             href={item.link}
             onClick={() => setIsMobileMenuOpen(false)}
+            locale={useCurrentLocale()}
             className="relative text-neutral-600 dark:text-neutral-300"
           >
             <span className="block">{item.name}</span>

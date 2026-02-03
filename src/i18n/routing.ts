@@ -11,13 +11,14 @@ export const routing = defineRouting({
   // For static export: use same paths for all locales
   // The content will be different based on locale, but URLs stay consistent
   pathnames: {
-    "/": "/",
-    "/kompetenzen": "/kompetenzen",
-    "/leistungen": "/leistungen",
-    "/team": "/team",
-    "/kontakt": "/kontakt",
-    "/impressum": "/impressum",
-    "/datenschutz": "/datenschutz",
+    "/": { de: "/", en: "/" },
+    "/kompetenzen": { de: "/kompetenzen", en: "/kompetenzen" },
+    "/leistungen": { de: "/leistungen", en: "/leistungen" },
+    "/team": { de: "/team", en: "/team" },
+    "/kontakt": { de: "/kontakt", en: "/kontakt" },
+    "/impressum": { de: "/impressum", en: "/impressum" },
+    "/datenschutz": { de: "/datenschutz", en: "/datenschutz" },
+
   },
 });
 

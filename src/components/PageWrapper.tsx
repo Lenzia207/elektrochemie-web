@@ -16,7 +16,7 @@ export default async function PageWrapper({
   isNavTextOverlaping = false,
   showToTop = true,
 }: PageWrapperProps) {
-  console.log(locale);
+
   return (
     <div className="bg-white">
       <MainNavigation

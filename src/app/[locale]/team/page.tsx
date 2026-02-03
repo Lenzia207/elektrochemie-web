@@ -15,7 +15,7 @@ const TeamPage = async (props: LocaleParams) => {
   const { locale } = await props.params;
 
   const data = await fetchTeamPageData(locale);
-  console.log(locale);
+  
 
   if (!data) return <div>Loading...</div>;
   return (

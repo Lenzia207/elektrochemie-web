@@ -1,20 +1,22 @@
+"use client";
 import { cn } from "@/lib/utils/utils";
 import { motion, useMotionValueEvent, useScroll } from "motion/react";
 import { useState } from "react";
 import { Link } from "@/i18n/routing";
 import { NavigationItem } from "../types";
+import { useParams } from "next/navigation";
+import useCurrentLocale from "@/hooks/use-current-locale";
 
 interface NavItemsProps {
   items: NavigationItem[];
   trackHeaderOverlap?: boolean;
   className?: string;
-  onItemClick?: () => void;
 }
 
 export const NavItems = ({
   items,
   className,
-  onItemClick,
+  // onItemClick,
   trackHeaderOverlap = false,
 }: NavItemsProps) => {
   const [hovered, setHovered] = useState<number | null>(null);
@@ -43,19 +45,19 @@ export const NavItems = ({
     >
       {items.map((item, idx) => (
         <Link
+          locale={useCurrentLocale()}
           onMouseEnter={() => setHovered(idx)}
-          onClick={onItemClick}
           className={cn(
             "relative px-4 py-2 dark:text-neutral-300 transition duration-250",
-            trackHeaderOverlap && isOverHeader 
-              ? "text-white" 
-              : hovered === idx 
-                ? "text-white" 
+            trackHeaderOverlap && isOverHeader
+              ? "text-white"
+              : hovered === idx
+                ? "text-white"
                 : "text-black",
             "text-shadow-black"
           )}
           key={`link-${idx}`}
-          href={item.link}
+          href={item.link as any}
         >
           {hovered === idx && (
             <motion.div

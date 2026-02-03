@@ -4,6 +4,7 @@ import {
   AvatarGroup,
   AvatarGroupTooltip,
 } from "@/components/animate-ui/primitives/animate/avatar-group";
+import useCurrentLocale from "@/hooks/use-current-locale";
 import { Link } from "@/i18n/routing";
 import Image from "next/image";
 
@@ -16,7 +17,7 @@ export function TeamAvaterImages({ teamMembers }: TeamAvaterImagesProps) {
     <AvatarGroup className="gap-x-2">
       {teamMembers.map((avatar, index) => (
         
-        <Link href="/team" key={index} className="relative w-12 h-12 ">
+        <Link href="/team" key={index} locale={useCurrentLocale()} className="relative w-12 h-12 ">
           <Image
             src={avatar.image}
             alt={avatar.name}

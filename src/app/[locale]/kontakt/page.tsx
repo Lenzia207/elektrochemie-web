@@ -15,7 +15,7 @@ const Kontakt = async (props: LocaleParams) => {
   const { locale } = await props.params;
 
   const data = await fetchContactPageData(locale);
-  console.log(locale);
+  
 
 //   if (!data) return <div>Loading...</div>;
   return (
