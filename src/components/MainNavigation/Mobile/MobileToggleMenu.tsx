@@ -6,10 +6,12 @@ export const MobileToggleMenu = ({
   isOpen,
   onClick,
   trackHeaderOverlap,
+  mobileBreakpoint
 }: {
   isOpen: boolean;
   onClick: () => void;
   trackHeaderOverlap: boolean;
+  mobileBreakpoint: number;
 }) => {
   const [isOverHeader, setIsOverHeader] = useState(
     trackHeaderOverlap ? true : false
@@ -17,7 +19,7 @@ export const MobileToggleMenu = ({
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
-    const checkMobile = () => setIsMobile(window.innerWidth <= 768);
+    const checkMobile = () => setIsMobile(window.innerWidth <= mobileBreakpoint);
     checkMobile();
     window.addEventListener('resize', checkMobile);
     return () => window.removeEventListener('resize', checkMobile);

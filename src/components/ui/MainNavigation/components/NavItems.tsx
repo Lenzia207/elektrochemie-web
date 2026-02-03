@@ -1,8 +1,8 @@
 import { cn } from "@/lib/utils/utils";
 import { motion, useMotionValueEvent, useScroll } from "motion/react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "@/i18n/routing";
-import { NavigationItem } from "../types";
+import { NavigationItem } from "@/components/MainNavigation/types";
 
 interface NavItemsProps {
   items: NavigationItem[];
@@ -33,6 +33,15 @@ export const NavItems = ({
 
   const itemText =
     trackHeaderOverlap && isOverHeader ? "text-white" : "text-black";
+
+  useEffect(() => {
+    // Debug: log nav item hrefs to verify locale prefixes
+    // eslint-disable-next-line no-console
+    console.log("NavItems: items =>", items.map((i) => i.link));
+    // log anchor hrefs rendered in this nav
+    // eslint-disable-next-line no-console
+    setTimeout(() => console.log("NavItems: anchors =>", Array.from(document.querySelectorAll('a')).map(a => (a as HTMLAnchorElement).href).slice(0,20)), 0);
+  }, [items]);
   return (
     <motion.div
       onMouseLeave={() => setHovered(null)}

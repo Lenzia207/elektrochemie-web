@@ -7,7 +7,7 @@ export async function fetchLocaleNavText(
   locale: string
 ): Promise<NavigationData> {
   const navLinks = await import(
-    `../../../../../messages/${locale}/common.json`
+    `../../../../messages/${locale}/common.json`
   );
   return navLinks.default.NavLinks;
 }

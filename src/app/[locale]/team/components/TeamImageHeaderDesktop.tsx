@@ -5,7 +5,7 @@ import { useRef } from "react";
 import Image from "next/image";
 import { TeamPageData } from "../data/types/team-types";
 
-export default function TeamImageHeaderDesktop({ data }: { data: TeamPageData }) {
+export default function TeamImageHeaderDesktop({ data, className }: { data: TeamPageData; className?: string }) {
   const containerRef = useRef(null);
   const { scrollYProgress } = useScroll({
     target: containerRef,
@@ -18,7 +18,7 @@ export default function TeamImageHeaderDesktop({ data }: { data: TeamPageData })
   return (
     <section
       ref={containerRef}
-      className="relative w-full h-screen mb-24 overflow-hidden hidden md:block" // Hidden on mobile
+      className={`relative w-full h-screen mb-24 overflow-hidden ${className ?? ""}`} // Hidden on mobile
     >
       {/* Background Image with Parallax */}
       <motion.div

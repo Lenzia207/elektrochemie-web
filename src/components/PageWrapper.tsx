@@ -1,4 +1,4 @@
-import MainNavigation from "@/components/ui/MainNavigation/MainNavigation";
+import MainNavigation from "@/components/MainNavigation/MainNavigation";
 import { ReactNode } from "react";
 import { Footer } from "./Footer/Footer";
 import ScrollToTop from "./ui/ScrollToTop/ScrollToTop";

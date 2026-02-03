@@ -6,9 +6,9 @@ import TeamImageHeaderMobile from "./TeamImageHeaderMobile";
 
 export default function TeamImageHeader({ data }: { data: TeamPageData }) {
   return (
-    <>
-      <TeamImageHeaderMobile data={data} />
-      <TeamImageHeaderDesktop data={data} />
-    </>
+    <div>
+      <TeamImageHeaderDesktop data={data} className="hidden lg:block" />
+      <TeamImageHeaderMobile data={data} className="block lg:hidden" />
+    </div>
   );
 }

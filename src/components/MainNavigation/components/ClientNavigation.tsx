@@ -7,7 +7,7 @@ import { Navbar } from "./Navbar";
 import {
   MobileMainNavigation,
 
-} from "@/components/ui/MainNavigation/MobileMainNavigation";
+} from "@/components/MainNavigation/MobileMainNavigation";
 import { NavigationItem } from "../types";
 
 interface ClientNavigationProps {

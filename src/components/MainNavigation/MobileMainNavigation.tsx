@@ -1,9 +1,8 @@
 "use client";
-import { cn } from "../../../lib/utils/utils";
+import { cn } from "../../lib/utils/utils";
 import {
   motion,
 } from "motion/react";
-import Link from "next/link";
 
 import React, { useState, useEffect } from "react";
 import { NavbarLogo } from "./components/NavbarLogo";
@@ -11,6 +10,7 @@ import { MobileNavHeader } from "./Mobile/MobileNavHeader";
 import { MobileNavMenu } from "./Mobile/MobileNavMenu";
 import { MobileToggleMenu } from "./Mobile/MobileToggleMenu";
 import { NavigationItem } from "./types";
+import { Link } from "@/i18n/routing";
 
 interface MobileNavProps {
   navItems: NavigationItem[];
@@ -22,10 +22,11 @@ interface MobileNavProps {
 export const MobileMainNavigation = ({ navItems, trackHeaderOverlap = false, className, visible }: MobileNavProps) => {
   const [isMobile, setIsMobile] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const mobileBreakpoint = 768; // px
 
 
   useEffect(() => {
-    const checkMobile = () => setIsMobile(window.innerWidth <= 768);
+    const checkMobile = () => setIsMobile(window.innerWidth <= mobileBreakpoint);
     checkMobile();
     window.addEventListener('resize', checkMobile);
     return () => window.removeEventListener('resize', checkMobile);
@@ -65,6 +66,7 @@ export const MobileMainNavigation = ({ navItems, trackHeaderOverlap = false, cla
             isOpen={isMobileMenuOpen}
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             trackHeaderOverlap={trackHeaderOverlap}
+            mobileBreakpoint={mobileBreakpoint}
           />
         </div>
       </MobileNavHeader>

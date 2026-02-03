@@ -1,4 +1,4 @@
-import { NavigationData } from "../../../../components/ui/MainNavigation/data/nav-types";
+import { NavigationData } from "../data/nav-types";
 import { NavigationItem } from "../types";
 
 /**

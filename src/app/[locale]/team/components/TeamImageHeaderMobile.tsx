@@ -4,9 +4,9 @@ import { motion } from "motion/react";
 import Image from "next/image";
 import { TeamPageData } from "../data/types/team-types";
 
-export default function TeamImageHeaderMobile({ data }: { data: TeamPageData }) {
+export default function TeamImageHeaderMobile({ data, className }: { data: TeamPageData; className?: string }) {
     return (
-        <section className="relative w-full h-[40vh] mb-4 overflow-hidden md:hidden bg-[#0d2642]">
+        <section className={`relative w-full h-[40vh] mb-4  bg-[#0d2642] ${className ?? ""}`}>
             {/* Static Image for Mobile Performance */}
             <div className="absolute inset-0 w-full h-full">
                 <Image
