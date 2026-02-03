@@ -4,7 +4,6 @@ import { motion, useMotionValueEvent, useScroll } from "motion/react";
 import { useState } from "react";
 import { Link } from "@/i18n/routing";
 import { NavigationItem } from "../types";
-import { useParams } from "next/navigation";
 import useCurrentLocale from "@/hooks/use-current-locale";
 
 interface NavItemsProps {
@@ -24,6 +23,8 @@ export const NavItems = ({
     trackHeaderOverlap ? true : false
   );
   const { scrollY } = useScroll();
+  const currentLocale = useCurrentLocale();
+
 
   // Only track scroll if trackHeaderOverlap is true
   useMotionValueEvent(scrollY, "change", (latest) => {
@@ -45,7 +46,7 @@ export const NavItems = ({
     >
       {items.map((item, idx) => (
         <Link
-          locale={useCurrentLocale()}
+          locale={currentLocale}
           onMouseEnter={() => setHovered(idx)}
           className={cn(
             "relative px-4 py-2 dark:text-neutral-300 transition duration-250",
@@ -57,7 +58,7 @@ export const NavItems = ({
             "text-shadow-black"
           )}
           key={`link-${idx}`}
-          href={item.link as any}
+          href={item.link}
         >
           {hovered === idx && (
             <motion.div

@@ -24,6 +24,8 @@ export const MobileMainNavigation = ({ navItems, trackHeaderOverlap = false, cla
   const [isMobile, setIsMobile] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const mobileBreakpoint = 768; // px
+  const currentLocale = useCurrentLocale();
+
 
 
   useEffect(() => {
@@ -81,7 +83,7 @@ export const MobileMainNavigation = ({ navItems, trackHeaderOverlap = false, cla
             key={`mobile-link-${idx}`}
             href={item.link}
             onClick={() => setIsMobileMenuOpen(false)}
-            locale={useCurrentLocale()}
+            locale={currentLocale}
             className="relative text-neutral-600 dark:text-neutral-300"
           >
             <span className="block">{item.name}</span>

@@ -13,11 +13,13 @@ interface TeamAvaterImagesProps {
 }
 
 export function TeamAvaterImages({ teamMembers }: TeamAvaterImagesProps) {
+    const currentLocale = useCurrentLocale();
+  
   return (
     <AvatarGroup className="gap-x-2">
       {teamMembers.map((avatar, index) => (
         
-        <Link href="/team" key={index} locale={useCurrentLocale()} className="relative w-12 h-12 ">
+        <Link href="/team" key={index} locale={currentLocale} className="relative w-12 h-12 ">
           <Image
             src={avatar.image}
             alt={avatar.name}

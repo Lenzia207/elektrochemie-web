@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import { SwitchLanguage } from "./LanguageSwitcher";
 import { Link } from "@/i18n/routing";
@@ -12,6 +13,7 @@ interface NavbarLogoProps {
 
 export const NavbarLogo = ({ image, url = "/", showLanguageSwitcher }: NavbarLogoProps) => {
   const isExternalUrl = url && (url.startsWith('http') || url.startsWith('//'));
+  const currentLocale = useCurrentLocale();
 
   return (
     <div className="flex items-center">
@@ -28,7 +30,7 @@ export const NavbarLogo = ({ image, url = "/", showLanguageSwitcher }: NavbarLog
      ) : (
        <Link
          href={url as NavigationPath}
-         locale={useCurrentLocale()}
+         locale={currentLocale}
          className="relative z-20 mr-4 flex items-center space-x-2 px-2 py-1 text-sm font-normal"
        >
          <Image src={image} alt="logo" width={50} height={50} />
