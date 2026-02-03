@@ -1,16 +1,13 @@
 "use client";
-import React, { useState } from "react";
+import React from "react";
 import { NavbarLogo } from "./NavbarLogo";
 import { NavItems } from "./NavItems";
 import { NavBody } from "./NavBody";
 import { Navbar } from "./Navbar";
 import {
-  MobileNav,
-  MobileNavHeader,
-  MobileNavToggle,
-  MobileNavMenu,
+  MobileMainNavigation,
+
 } from "@/components/ui/MainNavigation/MobileMainNavigation";
-import { Link } from "@/i18n/routing";
 import { NavigationItem } from "../types";
 
 interface ClientNavigationProps {
@@ -22,45 +19,17 @@ export default function ClientNavigation({
   navItems,
   trackHeaderOverlap = false,
 }: ClientNavigationProps) {
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   return (
     <div className="relative w-full">
       <Navbar>
         <NavBody>
-          <NavbarLogo image="/images/header/adlerLogo.png" url="https://ziviltechniker.at/mitglied/958130"/>
-          <NavbarLogo image="/images/logo.svg" showLanguageSwitcher/>
+          <NavbarLogo image="/images/header/adlerLogo.png" url="https://ziviltechniker.at/mitglied/958130" />
+          <NavbarLogo image="/images/logo.svg" showLanguageSwitcher />
           <NavItems items={navItems} trackHeaderOverlap={trackHeaderOverlap} />
         </NavBody>
 
-        <MobileNav>
-          <MobileNavHeader>
-            <NavbarLogo image="/images/logo.svg" showLanguageSwitcher />
-             
-            <div className="flex items-center gap-2">
-              <MobileNavToggle
-                isOpen={isMobileMenuOpen}
-                onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-                trackHeaderOverlap={trackHeaderOverlap}
-              />
-            </div>
-          </MobileNavHeader>
+        <MobileMainNavigation navItems={navItems} trackHeaderOverlap={trackHeaderOverlap} />
 
-          <MobileNavMenu
-            isOpen={isMobileMenuOpen}
-            onClose={() => setIsMobileMenuOpen(false)}
-          >
-            {navItems.map((item, idx) => (
-              <Link
-                key={`mobile-link-${idx}`}
-                href={item.link}
-                onClick={() => setIsMobileMenuOpen(false)}
-                className="relative text-neutral-600 dark:text-neutral-300"
-              >
-                <span className="block">{item.name}</span>
-              </Link>
-            ))}
-          </MobileNavMenu>
-        </MobileNav>
       </Navbar>
     </div>
   );

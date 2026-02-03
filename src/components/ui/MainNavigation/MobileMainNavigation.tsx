@@ -1,35 +1,28 @@
 "use client";
 import { cn } from "../../../lib/utils/utils";
-import { IconMenu2, IconX } from "@tabler/icons-react";
 import {
   motion,
-  AnimatePresence,
-  useMotionValueEvent,
-  useScroll,
 } from "motion/react";
+import Link from "next/link";
 
 import React, { useState, useEffect } from "react";
+import { NavbarLogo } from "./components/NavbarLogo";
+import { MobileNavHeader } from "./Mobile/MobileNavHeader";
+import { MobileNavMenu } from "./Mobile/MobileNavMenu";
+import { MobileToggleMenu } from "./Mobile/MobileToggleMenu";
+import { NavigationItem } from "./types";
 
 interface MobileNavProps {
-  children: React.ReactNode;
+  navItems: NavigationItem[];
+  trackHeaderOverlap?: boolean;
   className?: string;
   visible?: boolean;
 }
 
-interface MobileNavHeaderProps {
-  children: React.ReactNode;
-  className?: string;
-}
-
-interface MobileNavMenuProps {
-  children: React.ReactNode;
-  className?: string;
-  isOpen: boolean;
-  onClose: () => void;
-}
-
-export const MobileNav = ({ children, className, visible }: MobileNavProps) => {
+export const MobileMainNavigation = ({ navItems, trackHeaderOverlap = false, className, visible }: MobileNavProps) => {
   const [isMobile, setIsMobile] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
 
   useEffect(() => {
     const checkMobile = () => setIsMobile(window.innerWidth <= 768);
@@ -62,89 +55,41 @@ export const MobileNav = ({ children, className, visible }: MobileNavProps) => {
         className
       )}
     >
-      {children}
+      <MobileNavHeader>
+        {/* App Logo with language switcher */}
+        <NavbarLogo image="/images/logo.svg" showLanguageSwitcher />
+
+        {/* Hamburger Menu to toggle menu */}
+        <div className="flex items-center gap-2">
+          <MobileToggleMenu
+            isOpen={isMobileMenuOpen}
+            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            trackHeaderOverlap={trackHeaderOverlap}
+          />
+        </div>
+      </MobileNavHeader>
+
+      <MobileNavMenu
+        isOpen={isMobileMenuOpen}
+        onClose={() => setIsMobileMenuOpen(false)}
+      >
+        {navItems.map((item, idx) => (
+          <Link
+            key={`mobile-link-${idx}`}
+            href={item.link}
+            onClick={() => setIsMobileMenuOpen(false)}
+            className="relative text-neutral-600 dark:text-neutral-300"
+          >
+            <span className="block">{item.name}</span>
+          </Link>
+        ))}
+      </MobileNavMenu>
     </motion.div>
   );
 };
 
-export const MobileNavHeader = ({
-  children,
-  className,
-}: MobileNavHeaderProps) => {
-  return (
-    <div
-      className={cn(
-        "flex w-full flex-row items-center justify-between",
-        className
-      )}
-    >
-      {children}
-    </div>
-  );
-};
 
-export const MobileNavMenu = ({
-  children,
-  className,
-  isOpen,
-}: MobileNavMenuProps) => {
-  return (
-    <AnimatePresence>
-      {isOpen && (
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          exit={{ opacity: 0, y: 20 }}
-          transition={{ type: "spring", stiffness: 300, damping: 30 }}
-          className={cn(
-            "absolute inset-x-0 bottom-full mb-2 z-50 flex w-full flex-col items-start justify-start gap-3 rounded-2xl bg-white px-6 py-6 shadow-[0_-4px_24px_rgba(34,_42,_53,_0.12),_0_-2px_8px_rgba(0,_0,_0,_0.08)] border border-gray-200 dark:bg-neutral-950 dark:border-neutral-800",
-            className
-          )}
-        >
-          {children}
-        </motion.div>
-      )}
-    </AnimatePresence>
-  );
-};
 
-export const MobileNavToggle = ({
-  isOpen,
-  onClick,
-  trackHeaderOverlap,
-}: {
-  isOpen: boolean;
-  onClick: () => void;
-  trackHeaderOverlap: boolean;
-}) => {
-  const [isOverHeader, setIsOverHeader] = useState(
-    trackHeaderOverlap ? true : false
-  );
-  const [isMobile, setIsMobile] = useState(false);
 
-  useEffect(() => {
-    const checkMobile = () => setIsMobile(window.innerWidth <= 768);
-    checkMobile();
-    window.addEventListener('resize', checkMobile);
-    return () => window.removeEventListener('resize', checkMobile);
-  }, []);
 
-  const { scrollY } = useScroll();
 
-  // Only track scroll if trackHeaderOverlap is true
-  useMotionValueEvent(scrollY, "change", (latest) => {
-    if (trackHeaderOverlap) {
-      // Use a smaller threshold for mobile to switch color earlier
-      const mobileThreshold = 80; // px, adjust as needed
-      const desktopThreshold = window.innerHeight;
-      const threshold = isMobile ? mobileThreshold : desktopThreshold;
-      setIsOverHeader(latest < threshold);
-    }
-  });
-  const iconColor = isMobile ? "text-black" : (trackHeaderOverlap && isOverHeader ? "text-white" : "text-black");
-  return isOpen ? (
-    <IconX className={`${iconColor} dark:text-white`} onClick={onClick} />
-  ) : (
-    <IconMenu2 className={`${iconColor} dark:text-white`} onClick={onClick} />
-  );
-};

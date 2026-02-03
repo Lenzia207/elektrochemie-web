@@ -6,9 +6,9 @@ import { NavigationItem } from "../types";
 
 interface NavItemsProps {
   items: NavigationItem[];
+  trackHeaderOverlap?: boolean;
   className?: string;
   onItemClick?: () => void;
-  trackHeaderOverlap?: boolean;
 }
 
 export const NavItems = ({
