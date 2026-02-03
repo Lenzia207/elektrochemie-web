@@ -1,5 +1,11 @@
 import { LocaleParams } from "@/i18n/local-params";
 
+export const dynamic = "force-static";
+
+export function generateStaticParams() {
+  return [{ locale: 'en' }, { locale: 'de' }];
+}
+
 import PageWrapper from "@/components/PageWrapper";
 import KontaktScreen from "./KontaktScreen";
 import fetchContactPageData from "./data/contact-data";

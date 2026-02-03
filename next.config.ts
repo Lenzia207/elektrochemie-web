@@ -5,11 +5,11 @@ const withNextIntl = createNextIntlPlugin("./src/i18n/request.ts");
 
 /** @type {import('next').NextConfig} */
 const nextConfig: NextConfig = {
-  //   output: "export",
   images: {
     unoptimized: true,
   },
   trailingSlash: true,
+  output: "export",
 };
 
 module.exports = withNextIntl(nextConfig);

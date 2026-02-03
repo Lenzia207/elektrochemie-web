@@ -4,8 +4,8 @@ import {
   AvatarGroup,
   AvatarGroupTooltip,
 } from "@/components/animate-ui/primitives/animate/avatar-group";
+import { Link } from "@/i18n/routing";
 import Image from "next/image";
-import Link from "next/link";
 
 interface TeamAvaterImagesProps {
   teamMembers: TeamMember[];

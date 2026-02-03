@@ -2,10 +2,10 @@ import { NavigationData } from "../../../../components/ui/MainNavigation/data/na
 
 export function transformNavData(locale: string, navData: NavigationData) {
   return [
-    { link: { locale, path: "/" }, name: navData.home },
-    { link: { locale, path: "/expertise" }, name: navData.expertise },
-    { link: { locale, path: "/services" }, name: navData.services },
-    { link: { locale, path: "/team" }, name: navData.team },
-    { link: { locale, path: "/kontakt" }, name: navData.contact },
+    { link: { path: "/" }, name: navData.home },
+    { link: { path: "/kompetenzen" }, name: navData.expertise },
+    { link: { path: "/leistungen" }, name: navData.services },
+    { link: { path: "/team" }, name: navData.team },
+    { link: { path: "/kontakt" }, name: navData.contact },
   ] as const;
 }

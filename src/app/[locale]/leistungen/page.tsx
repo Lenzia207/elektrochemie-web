@@ -1,8 +1,13 @@
 import { LocaleParams } from "@/i18n/local-params";
 
+export function generateStaticParams() {
+  return [{ locale: 'en' }, { locale: 'de' }];
+}
+
 import PageWrapper from "@/components/PageWrapper";
 import ServicesScreen from "./ServicesScreen";
 import fetchServicesPageData from "./data/leistungen-data";
+export const dynamic = "force-static";
 
 const ServicesPage = async (props: LocaleParams) => {
   const { locale } = await props.params;

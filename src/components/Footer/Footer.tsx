@@ -1,5 +1,5 @@
 
-import Link from "next/link";
+import { Link } from "@/i18n/routing";
 import fetchFooterData from "./footer-data";
 
 export async function Footer({ locale }: { locale: string }) {
