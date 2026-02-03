@@ -3,41 +3,21 @@ import { createNavigation } from "next-intl/navigation";
 
 export const routing = defineRouting({
   // A list of all locales that are supported
-  locales: ["en", "de"],
+  locales: ["de", "en"],
 
   // Used when no locale matches
   defaultLocale: "de",
   localePrefix: 'always',
+  // For static export: use same paths for all locales
+  // The content will be different based on locale, but URLs stay consistent
   pathnames: {
-    "/": {
-      en: "/",
-      de: "/",
-    },
-    "/kompetenzen": {
-      en: "/expertise",
-      de: "/kompetenzen",
-    },
-    "/leistungen": {
-      en: "/services",
-      de: "/leistungen",
-    },
-    "/team": {
-      en: "/team",
-      de: "/team",
-    },
-    "/kontakt": {
-      en: "/contact",
-      de: "/kontakt",
-    },
-
-    "/impressum": {
-      en: "/imprint",
-      de: "/impressum",
-    },
-    "/datenschutz": {
-      en: "/privacy",
-      de: "/datenschutz",
-    },
+    "/": "/",
+    "/kompetenzen": "/kompetenzen",
+    "/leistungen": "/leistungen",
+    "/team": "/team",
+    "/kontakt": "/kontakt",
+    "/impressum": "/impressum",
+    "/datenschutz": "/datenschutz",
   },
 });
 

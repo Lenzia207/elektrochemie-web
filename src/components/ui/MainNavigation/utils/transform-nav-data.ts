@@ -1,11 +1,18 @@
 import { NavigationData } from "../../../../components/ui/MainNavigation/data/nav-types";
+import { NavigationItem } from "../types";
 
-export function transformNavData(locale: string, navData: NavigationData) {
+/**
+ * Transform navigation data using pathname keys.
+ * next-intl's Link component will automatically translate these to locale-specific URLs:
+ * - German: /kompetenzen -> /de/kompetenzen
+ * - English: /kompetenzen -> /en/expertise
+ */
+export function transformNavData(locale: string, navData: NavigationData): NavigationItem[] {
   return [
-    { link: { path: "/" }, name: navData.home },
-    { link: { path: "/kompetenzen" }, name: navData.expertise },
-    { link: { path: "/leistungen" }, name: navData.services },
-    { link: { path: "/team" }, name: navData.team },
-    { link: { path: "/kontakt" }, name: navData.contact },
-  ] as const;
+    { link: "/", name: navData.home },
+    { link: "/kompetenzen", name: navData.expertise },
+    { link: "/leistungen", name: navData.services },
+    { link: "/team", name: navData.team },
+    { link: "/kontakt", name: navData.contact },
+  ];
 }

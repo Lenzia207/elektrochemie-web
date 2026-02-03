@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 - Page Not Found</title>
+  <script>
+    (function() {
+      // Get browser language
+      var browserLang = navigator.language || navigator.userLanguage;
+      var locale = 'en'; // default
+      
+      // Check if browser language starts with 'de'
+      if (browserLang.toLowerCase().startsWith('de')) {
+        locale = 'de';
+      }
+      
+      // Redirect to locale-prefixed URL
+      var path = window.location.pathname;
+      
+      // If path doesn't start with locale, add it
+      if (!path.startsWith('/en') && !path.startsWith('/de')) {
+        window.location.replace('/' + locale + path);
+      } else {
+        // Path has locale but page not found, redirect to home
+        window.location.replace('/' + locale + '/');
+      }
+    })();
+  </script>
+</head>
+<body>
+  <h1>404 - Page Not Found</h1>
+  <p>Redirecting to home page...</p>
+</body>
+</html>

@@ -1,12 +1,11 @@
 import { cn } from "@/lib/utils/utils";
 import { motion, useMotionValueEvent, useScroll } from "motion/react";
 import { useState } from "react";
+import { Link } from "@/i18n/routing";
+import { NavigationItem } from "../types";
 
 interface NavItemsProps {
-  items: {
-    name: string;
-    link: string;
-  }[];
+  items: NavigationItem[];
   className?: string;
   onItemClick?: () => void;
   trackHeaderOverlap?: boolean;
@@ -43,7 +42,7 @@ export const NavItems = ({
       )}
     >
       {items.map((item, idx) => (
-        <a
+        <Link
           onMouseEnter={() => setHovered(idx)}
           onClick={onItemClick}
           className={cn(
@@ -65,7 +64,7 @@ export const NavItems = ({
             />
           )}
           <span className="relative z-20">{item.name}</span>
-        </a>
+        </Link>
       ))}
     </motion.div>
   );

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Redirecting...</title>
+  <script>
+    (function() {
+      // Get browser language
+      var browserLang = navigator.language || navigator.userLanguage;
+      var locale = 'en'; // default
+      
+      // Check if browser language starts with 'de'
+      if (browserLang.toLowerCase().startsWith('de')) {
+        locale = 'de';
+      }
+      
+      // Redirect to locale-prefixed URL
+      var path = window.location.pathname;
+      if (path === '/' || path === '') {
+        window.location.replace('/' + locale + '/');
+      } else if (!path.startsWith('/en') && !path.startsWith('/de')) {
+        window.location.replace('/' + locale + path);
+      }
+    })();
+  </script>
+</head>
+<body>
+  <p>Redirecting...</p>
+</body>
+</html>

@@ -10,12 +10,11 @@ import {
   MobileNavToggle,
   MobileNavMenu,
 } from "@/components/ui/MainNavigation/MobileMainNavigation";
+import { Link } from "@/i18n/routing";
+import { NavigationItem } from "../types";
 
 interface ClientNavigationProps {
-  navItems: {
-    link: string;
-    name: string;
-  }[];
+  navItems: NavigationItem[];
   trackHeaderOverlap?: boolean;
 }
 
@@ -51,14 +50,14 @@ export default function ClientNavigation({
             onClose={() => setIsMobileMenuOpen(false)}
           >
             {navItems.map((item, idx) => (
-              <a
+              <Link
                 key={`mobile-link-${idx}`}
                 href={item.link}
                 onClick={() => setIsMobileMenuOpen(false)}
                 className="relative text-neutral-600 dark:text-neutral-300"
               >
                 <span className="block">{item.name}</span>
-              </a>
+              </Link>
             ))}
           </MobileNavMenu>
         </MobileNav>

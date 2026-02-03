@@ -14,15 +14,9 @@ export default async function MainNavigation({
   const navData = await fetchLocaleNavText(locale);
   const navItems = transformNavData(locale, navData);
 
-  // Map link object to string (e.g., using path)
-  const mappedNavItems = navItems.map((item) => ({
-    ...item,
-    link: item.link.path, 
-  }));
-
   return (
     <ClientNavigation
-      navItems={mappedNavItems}
+      navItems={navItems}
       trackHeaderOverlap={trackHeaderOverlap}
     />
   );

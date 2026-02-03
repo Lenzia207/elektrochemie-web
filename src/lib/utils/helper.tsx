@@ -27,3 +27,13 @@ export function extractTextForLink(data: string, targetText: string, linkUrl: st
         }
         return data;
     };
+
+
+export function normalizePathForLocaleSwitch(path = "/", locales: string[]) {
+  const segments = path.split("/").filter(Boolean); // remove empty parts
+  if (segments.length > 0 && locales.includes(segments[0])) {
+    segments.shift(); // remove existing locale
+  }
+  if (segments.length === 0) return "/";
+  return `/${segments.join("/")}/`; // keep trailing slash per next.config
+}

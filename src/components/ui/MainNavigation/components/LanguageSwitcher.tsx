@@ -1,17 +1,20 @@
 "use client";
 
-import { usePathname, useRouter } from "@/i18n/routing";
+import { routing, usePathname } from "@/i18n/routing";
+import { normalizePathForLocaleSwitch } from "@/lib/utils/helper";
 import { useParams } from "next/navigation";
 
 export function SwitchLanguage() {
-    const router = useRouter();
     const pathname = usePathname();
     const params = useParams();
     const currentLocale = params.locale as string;
 
     const handleLanguageSwitch = () => {
         const newLocale = currentLocale === "de" ? "en" : "de";
-        router.replace(pathname, { locale: newLocale });
+        const normalized = normalizePathForLocaleSwitch(pathname || "/", Array.from(routing.locales));
+        const newPath = `/${newLocale}${normalized}`;
+        // full reload for SSG-hosted site
+        window.location.assign(newPath);
     };
 
     return (
