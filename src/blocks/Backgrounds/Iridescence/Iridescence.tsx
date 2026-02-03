@@ -68,7 +68,29 @@ export default function Iridescence({
     const gl = renderer.gl;
     gl.clearColor(1, 1, 1, 1);
 
-    let program: Program;
+    const geometry = new Triangle(gl);
+    const program = new Program(gl, {
+      vertex: vertexShader,
+      fragment: fragmentShader,
+      uniforms: {
+        uTime: { value: 0 },
+        uColor: { value: new Color(...color) },
+        uResolution: {
+          value: new Color(
+            gl.canvas.width,
+            gl.canvas.height,
+            gl.canvas.width / gl.canvas.height
+          ),
+        },
+        uMouse: {
+          value: new Float32Array([mousePos.current.x, mousePos.current.y]),
+        },
+        uAmplitude: { value: amplitude },
+        uSpeed: { value: speed },
+      },
+    });
+
+    const mesh = new Mesh(gl, { geometry, program });
 
     function resize() {
       const scale = 1;
@@ -91,30 +113,6 @@ export default function Iridescence({
     setTimeout(() => {
       resize();
     }, 0);
-
-    const geometry = new Triangle(gl);
-    program = new Program(gl, {
-      vertex: vertexShader,
-      fragment: fragmentShader,
-      uniforms: {
-        uTime: { value: 0 },
-        uColor: { value: new Color(...color) },
-        uResolution: {
-          value: new Color(
-            gl.canvas.width,
-            gl.canvas.height,
-            gl.canvas.width / gl.canvas.height
-          ),
-        },
-        uMouse: {
-          value: new Float32Array([mousePos.current.x, mousePos.current.y]),
-        },
-        uAmplitude: { value: amplitude },
-        uSpeed: { value: speed },
-      },
-    });
-
-    const mesh = new Mesh(gl, { geometry, program });
     let animateId: number;
 
     function update(t: number) {

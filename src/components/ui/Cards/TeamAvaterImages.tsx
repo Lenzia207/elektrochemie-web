@@ -5,6 +5,7 @@ import {
   AvatarGroupTooltip,
 } from "@/components/animate-ui/primitives/animate/avatar-group";
 import Image from "next/image";
+import Link from "next/link";
 
 interface TeamAvaterImagesProps {
   teamMembers: TeamMember[];
@@ -15,7 +16,7 @@ export function TeamAvaterImages({ teamMembers }: TeamAvaterImagesProps) {
     <AvatarGroup className="gap-x-2">
       {teamMembers.map((avatar, index) => (
         
-        <a href="/team" key={index} className="relative w-12 h-12 ">
+        <Link href="/team" key={index} className="relative w-12 h-12 ">
           <Image
             src={avatar.image}
             alt={avatar.name}
@@ -24,7 +25,7 @@ export function TeamAvaterImages({ teamMembers }: TeamAvaterImagesProps) {
             className="rounded-full object-cover"
           />
           <AvatarGroupTooltip className="font-bold">{avatar.name}</AvatarGroupTooltip>
-        </a>
+        </Link>
       ))}
     </AvatarGroup>
   );

@@ -43,7 +43,7 @@ export const Card = forwardRef<HTMLDivElement, CardProps>(
 );
 Card.displayName = "Card";
 
-type CardRef = RefObject<HTMLDivElement>;
+type CardRef = RefObject<HTMLDivElement | null>;
 interface Slot {
   x: number;
   y: number;
@@ -113,15 +113,17 @@ const CardSwap: React.FC<CardSwapProps> = ({
   );
   const refs = useMemo<CardRef[]>(
     () => childArr.map(() => React.createRef<HTMLDivElement>()),
-    [childArr.length]
+    [childArr]
   );
+
+  const memoConfig = useMemo(() => config, [easing]);
 
   const order = useRef<number[]>(
     Array.from({ length: childArr.length }, (_, i) => i)
   );
 
   const tlRef = useRef<gsap.core.Timeline | null>(null);
-  const intervalRef = useRef<number>();
+  const intervalRef = useRef<number | undefined>(undefined);
   const container = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -218,7 +220,7 @@ const CardSwap: React.FC<CardSwapProps> = ({
       };
     }
     return () => clearInterval(intervalRef.current);
-  }, [cardDistance, verticalDistance, delay, pauseOnHover, skewAmount, easing]);
+  }, [cardDistance, verticalDistance, delay, pauseOnHover, skewAmount, memoConfig, refs]);
 
   const rendered = childArr.map((child, i) =>
     isValidElement<CardProps>(child)

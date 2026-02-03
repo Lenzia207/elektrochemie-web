@@ -14,15 +14,15 @@ interface ServicesPageProps {
 }
 
 export default function ServicesScreen({ data }: ServicesPageProps) {
-  if (!data) return null;
   const { scrollYProgress } = useScroll();
   const scaleX = useSpring(scrollYProgress, {
     stiffness: 100,
     damping: 30,
     restDelta: 0.001,
   });
-
-
+  
+  
+  if (!data) return null;
   return (
     <div>
       <PageImageHeader imageSrc="/images/leistungen/header-leistungen.jpg" altText="Bild ZT Elektrochemie" title={data.pageTitle} />
