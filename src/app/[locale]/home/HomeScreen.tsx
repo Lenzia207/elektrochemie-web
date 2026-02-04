@@ -48,7 +48,7 @@ export default async function HomeScreen({ data }: HomeScreenProps) {
 
   return (
     <div className="relative">
-      <div className="absolute flex flex-col items-center justify-center min-h-screen w-full gap-20">
+      <div className="absolute flex flex-col items-center justify-center min-h-screen w-full lg:gap-20 gap-10">
         <Image
           src={data.egmImages.zt.image}
           alt={"Bild ZT Elektrochemie"}
