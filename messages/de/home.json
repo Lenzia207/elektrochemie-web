@@ -1,6 +1,12 @@
 {
   "HomePage": {
     "pageIntro": "Ihre Spezialisten für\nChemie, Korrosion und Oberflächentechnik. ",
+    "homeHeadline": 
+      {
+        "welcomeText": "Willkommen im Institut für",
+        "descriptionText": ["Elektrochemie ", "Galvanotechnik ", "Materialchemie"]
+      }
+    ,
     "egmSlogan": [
       "Chemie ist überall",
       "Wie leben Chemie"

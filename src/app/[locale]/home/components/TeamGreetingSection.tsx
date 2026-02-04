@@ -9,7 +9,7 @@ export default function TeamGreetingSection({
 }: TeamGreetingSectionProps) {
   return (
     <div className="text-center lg:py-10 py-4 lg:max-w-3xl mx-auto">
-      <p className="text-sm lg:text-2xl text-gray-700 mb-6">
+      <p className="text-md lg:text-2xl text-gray-700 mb-6">
         {welcomeMessage}
       </p>
       <div className="licorice-regular lg:text-4xl text-2xl text-[#1f4f83]">

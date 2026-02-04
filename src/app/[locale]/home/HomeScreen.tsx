@@ -63,7 +63,7 @@ export default async function HomeScreen({ data }: HomeScreenProps) {
       <BackgroundClient />
 
       <div className="lg:mx-20 md:mx-10">
-        <HeadlineText />
+        <HeadlineText welcomeText={data.homeHeadline.welcomeText} descriptionText={data.homeHeadline.descriptionText} />
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-center gap-10 px-10 pt-10">
           {features.slice(0, 4).map((feature, index) => (
             <FeatureCard

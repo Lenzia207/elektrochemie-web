@@ -9,6 +9,12 @@ export interface HomePageData {
   egmWelcomeEnd: string[];
   teamMembers: TeamMember[];
   features: Feature[];
+  homeHeadline: HomeHeadline;
+}
+
+export interface HomeHeadline {
+  welcomeText: string;
+  descriptionText: string[];
 }
 
 export interface Feature {

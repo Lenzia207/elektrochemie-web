@@ -38,12 +38,12 @@ export default function FeatureCard({
 
       {/* Content */}
       <div className="flex flex-col gap-2">
-        <h3 className="text-lg font-bold text-gray-900 tracking-tight">
+        <p className="text-xl font-bold text-gray-900 tracking-tight">
           {title}
-        </h3>
+        </p>
         
         {description && (
-          <p className="text-gray-600 leading-relaxed text-sm text-balance">
+          <p className="text-gray-600 leading-relaxed text-md text-balance">
             {description}
           </p>
         )}
