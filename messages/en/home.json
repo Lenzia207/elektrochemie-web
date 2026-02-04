@@ -1,6 +1,12 @@
 {
   "HomePage": {
     "pageIntro": "Your specialists for\nchemistry, corrosion and surface technology.",
+    "homeHeadline": 
+      {
+        "welcomeText": "Welcome to the Institute for",
+        "descriptionText": ["Electrochemistry ", "Electroplating ", "Material Chemistry"]
+      }
+    ,
     "egmSlogan": [
       "Chemistry is everywhere",
       "We live chemistry"
