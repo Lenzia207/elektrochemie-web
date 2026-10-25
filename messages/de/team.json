@@ -1,67 +1,81 @@
 {
   "TeamPage": {
-    "pageTitle": "Unser EGM Team",
+    "pageTitle": "Unser EGM-Team",
+    "pageDescription": "Ziviltechniker, Sachverständige und Chemieingenieure – mit einem wissenschaftlichen Beirat aus vier Universitäten im Rücken.",
     "teamImage": "/images/team/Team.jpg",
+    "teamImageAlt": "Das EGM-Team im Büro: Susanna Weiß, Wolfgang Hansal und Selma Hansal",
     "teamMemberList": [
       {
         "name": "Mag. Dr. habil. Wolfgang Hansal",
         "role": "Institutsvorstand, Geschäftsführer, Ziviltechniker Chemie, allgemein beeideter und gerichtlich zertifizierter Sachverständiger",
-        "description": "Dr. Wolfgang Hansal blickt auf mehr als 25 Jahre Berufserfahrung in den Bereichen Chemie, Oberflächentechnik und Galvanotechnik zurück und hat dabei erfolgreich mehr als 100 industrierelevante Projekte in diesen Gebieten geleitet. Als Vorstandsmitglied der europäischen Akademie für Oberflächentechnik und Mitglied in zahlreichen Fachverbänden ist er zudem sehr gut international vernetzt. Er ist Autor zahlreicher Fachpublikationen, darunter Bücher zum Thema elektrochemische Pulsabscheidung und Nachbearbeitung 3D-gedruckter Metallbauteile (in Druck).",
-        "image": "/images/team/Wolfgang.png"
+        "description": "Mehr als 25 Jahre Berufserfahrung in Chemie, Oberflächentechnik und Galvanotechnik und über 100 geleitete industrierelevante Projekte. Vorstandsmitglied der Europäischen Akademie für Oberflächentechnik, international bestens vernetzt und Autor zahlreicher Fachpublikationen – darunter Bücher zur elektrochemischen Pulsabscheidung und zur Nachbearbeitung 3D-gedruckter Metallbauteile (in Druck).",
+        "image": "/images/team/Wolfgang.png",
+        "roleLink": {
+          "text": "allgemein beeideter und gerichtlich zertifizierter Sachverständiger",
+          "url": "https://suche.gerichts-sv.at/Default.aspx?z=1389982462"
+        }
       },
       {
         "name": "Mag. Dr. Selma Hansal",
         "role": "Geschäftsführerin, Ziviltechnikerin Chemie",
-        "description": "Dr. Selma Hansal ist seit über 20 Jahren erfolgreich in der Leitung industrierelaventer F&E Projekte tätig und hat dabei Ihren Fokus stets auf die industrielle Umsetzung gelegt. Ihre Kernkompetenzen sind Elektrochemie, Materialanalyse und Nachbearbeitung additiv gefertigter Metallbauteile. Branchenübergreifende Netzwerke sowie die umfassende Betrachtung und Abstimmung gesamter Prozessketten sind Ihr ein zentrales Anliegen.",
+        "description": "Seit über 20 Jahren erfolgreich in der Leitung industrierelevanter F&E-Projekte, stets mit Fokus auf die industrielle Umsetzung. Kernkompetenzen: Elektrochemie, Materialanalyse und Nachbearbeitung additiv gefertigter Metallbauteile. Branchenübergreifende Netzwerke und die Abstimmung gesamter Prozessketten sind ihr ein zentrales Anliegen.",
         "image": "/images/team/Selma.png"
       },
       {
         "name": "Ing. Susanna Weiß",
         "role": "Operations Managerin, Chemieingenieurin",
-        "description": "Frau Susanna Weiß hat langjährige Erfahrung auf dem Gebiet der chemischen Oberflächenbearbeitung sowie der chemischen Analyse. Sie hat sich neben dem Fachgebiet Elektrochemie auf Umweltchemie, Oberflächenanalyse und Gefahrenstoffmanagement spezialisiert und ist geprüfte Sachkundige für Sicherheitsdatenblätter nach REACH.",
+        "description": "Langjährige Erfahrung in chemischer Oberflächenbearbeitung und chemischer Analyse. Neben der Elektrochemie spezialisiert auf Umweltchemie, Oberflächenanalyse und Gefahrenstoffmanagement – und geprüfte Sachkundige für Sicherheitsdatenblätter nach REACH.",
         "image": "/images/team/Susanna.png"
       }
     ],
-
-    "infoCertificates": [
-      {
-        "infoClarification": "Staatlich befugte und beeidete ZiviltechnikerInnen sind natürliche Personen, die freiberuflich aufgrund der vom Bundesminister für Wirtschaft und Arbeit verliehenen Befugnis auf ingenieur- oder naturwissenschaftlichen Fachgebieten tätig sind. Als äußeres Zeichen der staatlichen Befugnis und Beeidigung führen ZiviltechnikerInnen ein Siegel mit dem Bundeswappen der Republik Österreich. ZiviltechnikerInnen sind mit „öffentlichem Glauben“ versehene Personen gemäß §292 Zivilprozessordnung (öffentliche Urkundsperson). Sie sind berechtigt, im Rahmen ihrer Befugnis öffentliche Urkunden zu erreichten, die von Verwaltungsbehörden so angesehen werden, als wenn sie von Behörden selbst ausgefertigt worden wären. ",
-        "infoDescription": "Die breite Leistungspalette der ZivilingenieurInnen umfasst die spezialisierte Fachplanung, bis zur Gesamtplanung komplexer Investitionsvorhaben und kompetenter Prüf- und Beratungsleistungen als neutrale Treuhänder des Auftraggebers. Sie stellen mit Ihren hochqualifizierten MitarbeiterInnen einen Leistungsvorteil sicher, der sich durch Transparenz, Interdisziplinarität, Kontrolle und Verantwortlichkeit dokumentiert. Durch ihre innovativen Lösungen sind ZivilingenieurInnen in vielen Bereichen des Alltags Garanten für die Sicherung der Lebensqualität der Menschen."
-      }
-    ],
-    "scientificTeam":{
-      "title": "Unser Wissenschaftlicher Beirat",
-      "description": "Am Puls der technologischen Entwicklung zu bleiben, ist nicht nur unsere Verpflichtung, es ist uns auch ein ganz besonderes, persönliches Anliegen. So tauschen wir uns regelmäßig mit den führenden internationalen Fachexperten aus und arbeiten mit diesen eng mit in unterschiedlichen Projekten zusammen. Unser wissenschaftlicher Beirat unterstützt uns bei Bedarf fachlich und kann in Innovationsprojekte eingebunden werden.",
+    "civilEngineers": {
+      "eyebrow": "Ziviltechniker",
+      "title": "Staatlich befugt. Beeidet. Mit öffentlichem Glauben.",
+      "paragraphs": [
+        "Staatlich befugte und beeidete ZiviltechnikerInnen sind natürliche Personen, die freiberuflich aufgrund der vom Bundesminister für Wirtschaft und Arbeit verliehenen Befugnis auf ingenieur- oder naturwissenschaftlichen Fachgebieten tätig sind. Als äußeres Zeichen der staatlichen Befugnis und Beeidigung führen sie ein Siegel mit dem Bundeswappen der Republik Österreich.",
+        "ZiviltechnikerInnen sind mit „öffentlichem Glauben“ versehene Personen gemäß §292 Zivilprozessordnung (öffentliche Urkundspersonen). Sie sind berechtigt, im Rahmen ihrer Befugnis öffentliche Urkunden zu errichten, die von Verwaltungsbehörden so angesehen werden, als wären sie von Behörden selbst ausgefertigt worden.",
+        "Ihre Leistungspalette reicht von der spezialisierten Fachplanung bis zur Gesamtplanung komplexer Investitionsvorhaben sowie zu Prüf- und Beratungsleistungen als neutrale Treuhänder des Auftraggebers – geprägt von Transparenz, Interdisziplinarität, Kontrolle und Verantwortlichkeit."
+      ]
+    },
+    "scientificTeam": {
+      "eyebrow": "Wissenschaftlicher Beirat",
+      "title": "Am Puls der Forschung.",
+      "description": "Am Puls der technologischen Entwicklung zu bleiben, ist nicht nur unsere Verpflichtung, sondern ein ganz persönliches Anliegen. Wir tauschen uns regelmäßig mit führenden internationalen Fachexperten aus und arbeiten in unterschiedlichen Projekten eng mit ihnen zusammen. Unser wissenschaftlicher Beirat unterstützt uns bei Bedarf fachlich und kann in Innovationsprojekte eingebunden werden.",
+      "profileLinkLabel": "Profil ansehen",
       "members": [
         {
           "image": "/images/team/beirat/Bund.png",
           "name": "Prof. Dr. Andreas Bund",
           "university": "Technische Universität Ilmenau",
-          "alt":"Prof. Dr. Andreas Bund Porträtbild von TU Ilmenau",
-          "url":"https://www.tu-ilmenau.de/universitaet/fakultaeten/fakultaet-elektrotechnik-und-informationstechnik/profil/institute-und-fachgebiete/fachgebiet-elektrochemie-und-galvanotechnik/team"
+          "alt": "Prof. Dr. Andreas Bund Porträtbild von TU Ilmenau",
+          "url": "https://www.tu-ilmenau.de/universitaet/fakultaeten/fakultaet-elektrotechnik-und-informationstechnik/profil/institute-und-fachgebiete/fachgebiet-elektrochemie-und-galvanotechnik/team"
         },
         {
           "image": "/images/team/beirat/Lampke.png",
           "name": "Prof. Dr. Thomas Lampke",
           "university": "Technische Universität Chemnitz",
-          "alt":"Prof. Dr. Thomas Lampke Porträtbild von TU Chemnitz",
-          "url":"https://www.tu-chemnitz.de/mb/WOT/professur/ma.php?id=7"
+          "alt": "Prof. Dr. Thomas Lampke Porträtbild von TU Chemnitz",
+          "url": "https://www.tu-chemnitz.de/mb/WOT/professur/ma.php?id=7"
         },
         {
           "image": "/images/team/beirat/Leisner.png",
           "name": "Prof. Dr. Peter Leisner",
           "university": "Jönköping University",
-          "alt":"Prof. Dr. Peter Leisner Porträtbild von Jönköping University",
-          "url":"https://ju.se/en/personinfo?id=3687"
+          "alt": "Prof. Dr. Peter Leisner Porträtbild von Jönköping University",
+          "url": "https://ju.se/en/personinfo?id=3687"
         },
         {
           "image": "/images/team/beirat/Kautek.png",
           "name": "Prof. Dr. Wolfgang Kautek",
           "university": "Universität Wien",
-          "alt":"Prof. Dr. Wolfgang Kautek Porträtbild von Universität Wien",
-          "url":"https://ufind.univie.ac.at/de/person.html?id=88668"
+          "alt": "Prof. Dr. Wolfgang Kautek Porträtbild von Universität Wien",
+          "url": "https://ufind.univie.ac.at/de/person.html?id=88668"
         }
       ]
+    },
+    "closing": {
+      "title": "Wir freuen uns darauf, für Sie da sein zu können!",
+      "signature": "Ihr EGM-Team"
     }
   }
 }

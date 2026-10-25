@@ -5,7 +5,8 @@ export interface FooterData {
     imprint: string;
     privacyPolicy: string;
     companyName: string;
-    zivilTechniker: string;
+    copyright: string;
+    ztMemberLink: string;
 }
 
 
@@ -13,7 +14,7 @@ export const fetchFooterData = cache(async function (
     locale: string
 ): Promise<FooterData> {
     const [footerData] = await Promise.all([
-        import(`../../..//messages/${locale}/footer.json`),
+        import(`../../../messages/${locale}/footer.json`),
     ]);
 
     return {

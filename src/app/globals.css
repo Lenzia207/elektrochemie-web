@@ -1,12 +1,36 @@
 @import "tailwindcss";
-/* @import "tw-animate-css"; */
-
-/* @import url('https://fonts.googleapis.com/css2?family=Licorice&display=swap'); */
-@import url('https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&family=Licorice&display=swap');
-
-
 
 @custom-variant dark (&:is(.dark *));
+
+/* EGM design tokens – usable as bg-egm-*, text-egm-*, border-egm-* */
+@theme {
+  --color-egm-ink: #0e2340;
+  --color-egm-haze: #6c7fb0;
+  --color-egm-blue: #1f4f83;
+  --color-egm-cyan: #70c3d8;
+  --color-egm-teal: #2c7f96;
+  --color-egm-purple: #765f95;
+  --color-egm-mist: #f4f6f9;
+  --color-egm-line: #dce3ec;
+  --color-egm-line-strong: #b9c6d6;
+  --color-egm-muted: #4a5870;
+  --color-egm-body: #33425a;
+  --color-egm-frost: #c9d6e6;
+  --color-egm-frost-light: #dce6f2;
+  --color-egm-snow: #f2f6fb;
+  --color-egm-lilac: #e6def0;
+  --color-egm-lilac-light: #f1ecf7;
+  --color-egm-ring-blue: #4f82bc;
+  --color-egm-ring-purple: #a08bc0;
+}
+
+/* Font families are provided by next/font in the locale layout */
+@theme inline {
+  --font-sans: var(--font-funnel-sans), system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-display: var(--font-funnel-display), var(--font-funnel-sans), sans-serif;
+  --font-mono: var(--font-jetbrains-mono), ui-monospace, monospace;
+  --font-script: var(--font-licorice), cursive;
+}
 
 :root {
   --radius: 0.625rem;
@@ -88,159 +112,23 @@
 }
 
 @layer base {
-  h1 {
-    font-family: 'Funnel_Sans', sans-serif;
-    font-size: 2.99rem;
-    font-weight: 700;
-    line-height: 3.5rem;
-    letter-spacing: -0.022rem;
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
   }
-  h2 {
-    font-family: "Funnel_Sans", sans-serif;
-    font-size: 2.488rem;
-    font-weight: 700;
-    line-height: 3.1rem;
-    letter-spacing: -0.022rem;
+  body {
+    background-color: var(--color-egm-mist);
+    color: var(--color-egm-ink);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
   }
-
-  h3 {
-    font-family: "Funnel_Sans", sans-serif;
-    font-size: 2.074rem;
-    font-weight: 700;
-    line-height: 2.25rem;
-    letter-spacing: -0.022rem;
-  }
-
-  h4 {
-    font-family: "Funnel_Sans", sans-serif;
-    font-size: 1.728rem;
-    font-weight: 700;
-    line-height: 2.25rem;
-    letter-spacing: -0.022rem;
-  }
-
-  h5 {
-    font-family: "Funnel_Sans", sans-serif;
-    font-size: 1.44rem;
-    font-weight: 700;
-    line-height: 2.25rem;
-    letter-spacing: -0.022rem;
-  }
-
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
   h6 {
-    font-family: "Funnel_Sans", sans-serif;
-    font-size: 1.2rem;
+    font-family: var(--font-display);
     font-weight: 700;
-    line-height: 1.5rem;
-    letter-spacing: -0.022rem;
   }
-  p {
-    font-family: "Funnel_Sans", sans-serif;
-    font-size: 1rem;
-    font-weight: 300;
-    line-height: 1.6rem;
-  }
-}
-
-@layer components {
-  .small-opacity {
-    font-family: "Funnel_Sans", sans-serif;
-    font-size: 0.875rem;
-
-    font-weight: 100;
-    line-height: 1.2rem;
-    letter-spacing: -0.01rem;
-    opacity: 0.7;
-  }
-
-  .licorice-regular {
-    font-family: "Licorice", cursive;
-    font-weight: 400;
-    font-style: normal;
-  }
-
-
-
-  @keyframes slide-from-border-right {
-    from {
-      transform: translateX(-100%);
-      opacity: 0;
-    }
-    to {
-      transform: translateX(0);
-      opacity: 1;
-    }
-  }
-
-  @keyframes slide-from-border-left {
-    from {
-      transform: translateX(-20%);
-      opacity: 0;
-    }
-    to {
-      transform: translateX(0);
-      opacity: 1;
-    }
-  }
-
-  .animate-slide-from-border-right {
-    animation: slide-from-border-right 1.5s ease-out backwards;
-  }
-
-  .animate-slide-from-border-left {
-    animation: slide-from-border-left 1.5s ease-out forwards;
-    animation-delay: 1.4s;
-    opacity: 0;
-  }
-
-  @keyframes slide-up {
-    from {
-      transform: translateY(150px);
-      opacity: 0;
-    }
-    to {
-      transform: translateY(0);
-      opacity: 1;
-    }
-  }
-
-  .animate-slide-up {
-    animation: slide-up 0.8s ease-out forwards;
-  }
-
-  @keyframes border-expand-left {
-    from {
-      width: 0;
-      opacity: 0;
-    }
-    to {
-      width: 5rem;
-      opacity: 1;
-    }
-  }
-
-  @keyframes border-expand-right {
-    from {
-      width: 0;
-      opacity: 0;
-    }
-    to {
-      width: 5rem;
-      opacity: 1;
-    }
-  }
-
-  .animate-border-left {
-    animation: border-expand-left 0.5s ease-out forwards;
-    animation-delay: 0.3s;
-    opacity: 0;
-  }
-
-  .animate-border-right {
-    animation: border-expand-right 0.5s ease-out forwards;
-    animation-delay: 0.3s;
-    opacity: 0;
-  }
-
-
 }

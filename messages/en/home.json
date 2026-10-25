@@ -1,68 +1,130 @@
 {
   "HomePage": {
     "pageIntro": "Your specialists for\nchemistry, corrosion and surface technology.",
-    "homeHeadline": 
-      {
-        "welcomeText": "Welcome to the Institute for",
-        "descriptionText": ["Electrochemistry ", "Electroplating ", "Material Chemistry"]
+    "homeHeadline": {
+      "welcomeText": "Welcome to the Institute for",
+      "descriptionText": [
+        "Electrochemistry",
+        "Electroplating",
+        "Material Chemistry"
+      ]
+    },
+    "intro": {
+      "description": "State-authorised and sworn civil engineers for chemistry – with more than 20 years of industrial expertise in surface technology, corrosion and materials analysis.",
+      "stats": [
+        {
+          "value": "20+",
+          "label": "years of industrial practice"
+        },
+        {
+          "value": "100+",
+          "label": "industry-relevant projects led"
+        }
+      ],
+      "certification": {
+        "title": "Court-certified experts",
+        "subtitle": "Public certifying officers pursuant to §292 ZPO"
       }
-    ,
-    "egmSlogan": [
-      "Chemistry is everywhere",
-      "We live chemistry"
-    ],
-    "expertiseHighlight": "We would particularly like to draw your attention to our work in the field of expert opinions and our cooperation with lawyers and insurance companies.",
-    "egmWelcomeEnd": [
-      "We look forward to being there for you!",
-      "Your EGM Team"
-    ],
-    "teamMembers": [
-      {
-        "name": "Mag. Dr. habil. Wolfgang Hansal",
-        "image": "/images/team/Wolfgang.png"
-      },
-      {
-        "name": "Mag. Dr. Selma Hansal",
-        "image": "/images/team/Selma.png"
-      },
-      {
-        "name": "Ing. Susanna Weiß",
-        "image": "/images/team/Susanna.png"
-      }
-    ],
+    },
+    "concerns": {
+      "eyebrow": "Your concern",
+      "title": "What can we help you with?",
+      "linkLabel": "All services"
+    },
     "features": [
       {
+        "symbol": "Co",
         "title": "Corroding Parts & Surfaces",
         "description": "Do you need support with corroding parts and surfaces?"
       },
       {
+        "symbol": "Cn",
         "title": "Investigate Contaminations",
         "description": "Would you like to accurately investigate contaminations (e.g. in control cabinets)?"
       },
       {
+        "symbol": "Pa",
         "title": "Pollutant Analysis After Fire",
         "description": "Do you need reliable pollutant analysis after a fire or fire remediation?"
       },
       {
+        "symbol": "Ex",
         "title": "Experts at Your Side",
         "description": "Would you like an experienced expert at your side for chemical questions?"
       },
       {
+        "symbol": "Pc",
         "title": "Plant Construction & Expansion",
         "description": "Are you planning the construction or expansion of a chemical or electroplating plant?"
       },
       {
+        "symbol": "Cm",
         "title": "Chemical & Environmental Management",
         "description": "Are you looking for an expert for your chemical and environmental management or as an HSE officer?"
       },
       {
+        "symbol": "3D",
         "title": "Surface Finishing 3D Printing",
         "description": "Do you need the right surface finishing for your 3D-printed metal parts?"
       },
       {
+        "symbol": "Rd",
         "title": "Investment & R&D Projects",
         "description": "Do you want professional support in managing technical investment projects and R&D projects?"
       }
-    ]
+    ],
+    "egmSlogan": [
+      "Chemistry is everywhere.",
+      "We live chemistry."
+    ],
+    "competencePreview": {
+      "eyebrow": "Expertise",
+      "title": "All of chemistry. Six focus areas.",
+      "linkLabel": "All areas of expertise"
+    },
+    "expertOpinion": {
+      "eyebrow": "Expert opinions",
+      "title": "Reports and expert opinions that stand up in court.",
+      "description": "We would particularly like to draw your attention to our work in the field of expert opinions and our cooperation with lawyers and insurance companies. Whether court proceedings or a private expert opinion – we help you clarify your position.",
+      "tags": [
+        "Courts",
+        "Lawyers",
+        "Insurers",
+        "Private expert opinions"
+      ],
+      "linkLabel": "Request an expert opinion",
+      "image": "/images/leistungen/02.jpg",
+      "imageAlt": "Scales of justice and gavel"
+    },
+    "teamPreview": {
+      "eyebrow": "Team",
+      "title": "Three minds. One reaction.",
+      "linkLabel": "Team & advisory board"
+    },
+    "teamMembers": [
+      {
+        "name": "Mag. Dr. habil. Wolfgang Hansal",
+        "image": "/images/team/Wolfgang.png",
+        "role": "Head of institute, managing director, civil engineer for chemistry, court-certified expert"
+      },
+      {
+        "name": "Mag. Dr. Selma Hansal",
+        "image": "/images/team/Selma.png",
+        "role": "Managing director, civil engineer for chemistry"
+      },
+      {
+        "name": "Ing. Susanna Weiß",
+        "image": "/images/team/Susanna.png",
+        "role": "Operations manager, chemical engineer"
+      }
+    ],
+    "egmWelcomeEnd": [
+      "We look forward to being there for you!",
+      "Your EGM Team"
+    ],
+    "contactBand": {
+      "eyebrow": "Contact",
+      "title": "Let's talk about your question."
+    }
   }
 }

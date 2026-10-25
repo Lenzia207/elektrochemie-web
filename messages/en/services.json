@@ -1,62 +1,120 @@
 {
   "ServicesPage": {
     "pageTitle": "Our Services",
-    "pageDescription": "Our expertise in the field of electrochemistry",
+    "pageDescription": "Eleven services, one area of expertise: electrochemistry – from regulatory submissions and expert opinions to pollutant analysis.",
+    "overviewLabel": "Overview",
+    "featuredLabel": "Focus",
+    "featuredLinkLabel": "Request an expert opinion",
+    "ctaTitle": "Which service do you need? We are happy to advise you.",
     "expertiseList": [
       {
+        "shortTitle": "Regulatory procedures and submissions",
         "expertiseTitle": "Support for Regulatory Procedures and Submissions",
-        "expertiseDescription": "A central task of civil engineers is to represent their clients in official approval procedures such as operating facility procedures and workplace approvals. In addition to technical (professional) challenges, subtle delimitation issues and legal aspects must also be considered. In addition to the fragmentation of facility law into numerous material laws and corresponding procedural regulations, European legal influences and technical developments must be taken into account. Here, EGM provides competent and certified support, starting from planning through the preparation of required documents and the actual operating facility procedure to timely problem identification in ongoing operations.",
-        "image": "/images/leistungen/01.jpg"
+        "expertiseDescription": [
+          "A central task of civil engineers is to represent their clients in official approval procedures such as operating facility procedures and workplace approvals. In addition to technical (professional) challenges, subtle delimitation issues and legal aspects must also be considered. In addition to the fragmentation of facility law into numerous material laws and corresponding procedural regulations, European legal influences and technical developments must be taken into account.",
+          "Here, EGM provides competent and certified support, starting from planning through the preparation of required documents and the actual operating facility procedure to timely problem identification in ongoing operations."
+        ],
+        "image": "/images/leistungen/01.jpg",
+        "imageAlt": "Regulatory procedures"
       },
       {
+        "shortTitle": "Reports and expert opinions",
         "expertiseTitle": "Reports and Expert Opinions",
-        "expertiseDescription": "Whether supporting court proceedings or for private expert opinions, the EGM team is competently at your side and helps you clarify your position.",
-        "image": "/images/leistungen/02.jpg"
+        "expertiseDescription": [
+          "Whether supporting court proceedings or for private expert opinions, the EGM team is competently at your side and helps you clarify your position.",
+          "Generally sworn and court-certified expert. Close cooperation with lawyers and insurance companies."
+        ],
+        "image": "/images/leistungen/02.jpg",
+        "imageAlt": "Scales of justice and gavel",
+        "featured": true
       },
       {
+        "shortTitle": "Damage prevention and investigation",
         "expertiseTitle": "Damage Prevention and Damage Investigation",
-        "expertiseDescription": "Risk assessment and risk minimization are central tasks of process development and quality assurance. From FMEA, process instructions to quality assurance issues, we support your ongoing production. Should something not go as planned, we are experienced in quickly identifying the causes and developing corrective measures.",
-        "image": "/images/leistungen/03.jpg"
+        "expertiseDescription": [
+          "Risk assessment and risk minimization are central tasks of process development and quality assurance. From FMEA, process instructions to quality assurance issues, we support your ongoing production.",
+          "Should something not go as planned, we are experienced in quickly identifying the causes and developing corrective measures."
+        ],
+        "image": "/images/leistungen/03.jpg",
+        "imageAlt": "Damage investigation"
       },
       {
+        "shortTitle": "Process control of electroplating baths",
         "expertiseTitle": "Process Control of Electroplating Baths and Systems",
-        "expertiseDescription": "Process-accompanying analysis of electroplating baths is a central task in surface technology. The EGM team supports these important analyses, performs them as an external partner for its customers and provides the data for optimal adjustment of process baths. Additionally, we accompany and coordinate optimizations, help in selecting process parameters and support the introduction of new electrolytes.",
-        "image": "/images/leistungen/04.jpg"
+        "expertiseDescription": [
+          "Process-accompanying analysis of electroplating baths is a central task in surface technology. The EGM team supports these important analyses, performs them as an external partner for its customers and provides the data for optimal adjustment of process baths.",
+          "Additionally, we accompany and coordinate optimizations, help in selecting process parameters and support the introduction of new electrolytes."
+        ],
+        "image": "/images/leistungen/04.jpg",
+        "imageAlt": "Laboratory glass with electrolyte"
       },
       {
+        "shortTitle": "Chemical and hazardous substance management",
         "expertiseTitle": "Chemical and Hazardous Substance Management",
-        "expertiseDescription": "The Federal Act on the Protection of Humans and the Environment from Chemicals (Chemicals Act 1996 - ChemG 1996) prescribes continuous monitoring and recording of chemical inventories and their consumption. As a competent and certified partner, EGM takes over these activities for its customers, maintains chemical databases, prepares regular reports for authorities and can actively represent its customers in official audits. Safety data sheets can be created in REACH-compliant and qualified manner for own mixtures. Chemical storage facilities can be evaluated regarding occupational safety and official requirements and adapted accordingly.",
-        "image": "/images/leistungen/05.jpg"
+        "expertiseDescription": [
+          "The Federal Act on the Protection of Humans and the Environment from Chemicals (Chemicals Act 1996 - ChemG 1996) prescribes continuous monitoring and recording of chemical inventories and their consumption. As a competent and certified partner, EGM takes over these activities for its customers, maintains chemical databases, prepares regular reports for authorities and can actively represent its customers in official audits.",
+          "Safety data sheets can be created in REACH-compliant and qualified manner for own mixtures. Chemical storage facilities can be evaluated regarding occupational safety and official requirements and adapted accordingly."
+        ],
+        "image": "/images/leistungen/05.jpg",
+        "imageAlt": "Hazardous substance management"
       },
       {
+        "shortTitle": "Material testing and surface analysis",
         "expertiseTitle": "Material Testing, Production Control, Surface Analysis",
-        "expertiseDescription": "Many different factors influence the problem-free use of materials and raw materials in ongoing production. In addition to the exact composition, it is usually microstructures and surface phenomena that have a central influence on processing behavior and the properties of the final product. EGM supports through a variety of material- and surface-sensitive measurement and testing routines, according to international standards or customer-specific regulations, the (chemical) material properties, material structure and surface conditions. From outsourced incoming goods inspection to specification and quality assurance of the finished product, EGM is your competent partner.",
-        "image": "/images/leistungen/06.jpg"
+        "expertiseDescription": [
+          "Many different factors influence the problem-free use of materials and raw materials in ongoing production. In addition to the exact composition, it is usually microstructures and surface phenomena that have a central influence on processing behavior and the properties of the final product.",
+          "EGM supports through a variety of material- and surface-sensitive measurement and testing routines, according to international standards or customer-specific regulations, the (chemical) material properties, material structure and surface conditions. From outsourced incoming goods inspection to specification and quality assurance of the finished product, EGM is your competent partner."
+        ],
+        "image": "/images/leistungen/06.jpg",
+        "imageAlt": "Material testing"
       },
       {
+        "shortTitle": "Innovation management",
         "expertiseTitle": "Coordination of Innovation Projects and Innovation Management",
-        "expertiseDescription": "Innovation is the profitable implementation of a brilliant idea in industrial practice. From development to ongoing industrial production, we accompany chemical processes and procedures through all stages of up-scaling and validation to the ongoing industrial production process. We act here as an interface between research partners, the development department and production and quality assurance, support the selection and integration of system suppliers and help certify suitable chemical raw materials and operating facilities.",
-        "image": "/images/leistungen/07.jpg"
+        "expertiseDescription": [
+          "Innovation is the profitable implementation of a brilliant idea in industrial practice. From development to ongoing industrial production, we accompany chemical processes and procedures through all stages of up-scaling and validation to the ongoing industrial production process.",
+          "We act here as an interface between research partners, the development department and production and quality assurance, support the selection and integration of system suppliers and help certify suitable chemical raw materials and operating facilities."
+        ],
+        "image": "/images/leistungen/07.jpg",
+        "imageAlt": "Innovation management"
       },
       {
+        "shortTitle": "Coordination of production chains",
         "expertiseTitle": "Coordination and Process-Accompanying Control of Production Chains",
-        "expertiseDescription": "For the successful implementation of a new production process, recognizing and closing the individual interfaces across the entire production chain is essential. This begins with defining customer-specific product specifications in the application case, extends through the selection of suitable materials and processing chemicals, the design and configuration of (chemical) facilities, post-processing and cleaning to process-accompanying quality assurance. Throughout this entire chain, we act as a competent partner and coordinator, thus offering our customers efficient, always goal-oriented and error-avoiding implementation of new (chemical) production processes. Of course, this support also extends to process optimizations.",
-        "image": "/images/leistungen/08.jpg"
+        "expertiseDescription": [
+          "For the successful implementation of a new production process, recognizing and closing the individual interfaces across the entire production chain is essential. This begins with defining customer-specific product specifications in the application case, extends through the selection of suitable materials and processing chemicals, the design and configuration of (chemical) facilities, post-processing and cleaning to process-accompanying quality assurance.",
+          "Throughout this entire chain, we act as a competent partner and coordinator, thus offering our customers efficient, always goal-oriented and error-avoiding implementation of new (chemical) production processes. Of course, this support also extends to process optimizations."
+        ],
+        "image": "/images/leistungen/08.jpg",
+        "imageAlt": "Production chain"
       },
       {
+        "shortTitle": "Patent plausibility assessment",
         "expertiseTitle": "Patent Plausibility Assessment",
-        "expertiseDescription": "Do you want to patent a new invention or buy a patent from the field of chemistry for your company? We quickly and independently check for you whether and with what effort this invention can be implemented in industrial practice, or show what boundary conditions or requirements are necessary for this implementation.",
-        "image": "/images/leistungen/09.jpg"
+        "expertiseDescription": [
+          "Do you want to patent a new invention or buy a patent from the field of chemistry for your company? We quickly and independently check for you whether and with what effort this invention can be implemented in industrial practice, or show what boundary conditions or requirements are necessary for this implementation."
+        ],
+        "image": "/images/leistungen/09.jpg",
+        "imageAlt": "Patent assessment"
       },
       {
+        "shortTitle": "Training, seminars, conferences",
         "expertiseTitle": "Training, Seminars and Professional Conferences",
-        "expertiseDescription": "In addition to organizing international conferences (European Pulse Plating Seminar, co-organizer EDNANO), EGM's experienced speakers offer a range of individual specialist seminars and training courses. Practical, varied and informative, we cover all sub-areas of chemistry and its application in industrial practice. From new development areas, through focus training to safety-relevant topics, we tailor our presentations entirely to your needs.",
-        "image": "/images/leistungen/10.jpg"
+        "expertiseDescription": [
+          "In addition to organizing international conferences (European Pulse Plating Seminar, co-organizer EDNANO), EGM's experienced speakers offer a range of individual specialist seminars and training courses.",
+          "Practical, varied and informative, we cover all sub-areas of chemistry and its application in industrial practice. From new development areas, through focus training to safety-relevant topics, we tailor our presentations entirely to your needs."
+        ],
+        "image": "/images/leistungen/10.jpg",
+        "imageAlt": "Seminar"
       },
       {
+        "shortTitle": "Pollutant analysis",
         "expertiseTitle": "Pollutant Analysis",
-        "expertiseDescription": "Whether after a fire or its remediation, after a chemical accident or contamination in control cabinets or facilities, we are at your side, clarify causes, perform all analyses and verify and confirm that all contaminants have been completely removed.",
-        "image": "/images/leistungen/11.jpg"
+        "expertiseDescription": [
+          "Whether after a fire or its remediation, after a chemical accident or contamination in control cabinets or facilities, we are at your side, clarify causes, perform all analyses and verify and confirm that all contaminants have been completely removed."
+        ],
+        "image": "/images/leistungen/11.jpg",
+        "imageAlt": "Pollutant analysis"
       }
     ]
   }

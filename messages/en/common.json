@@ -20,6 +20,15 @@
       "alt": "Logo Adler"
     }
   },
-
-   "ToTheTop": "Scroll to Top"
+  "ToTheTop": "Scroll to Top",
+  "UiLabels": {
+    "breadcrumb": "Breadcrumb",
+    "mainNavigation": "Main navigation",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "switchLanguage": "Switch to German",
+    "scrollDown": "Scroll down",
+    "logoTagline": "Ziviltechniker GmbH",
+    "contactCta": "Get in touch"
+  }
 }

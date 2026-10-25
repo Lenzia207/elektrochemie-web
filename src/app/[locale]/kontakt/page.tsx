@@ -9,20 +9,24 @@ export function generateStaticParams() {
 import PageWrapper from "@/components/PageWrapper";
 import KontaktScreen from "./KontaktScreen";
 import fetchContactPageData from "./data/contact-data";
+import fetchCommonData from "@/lib/data/common-data";
 
 
 const Kontakt = async (props: LocaleParams) => {
   const { locale } = await props.params;
 
-  const data = await fetchContactPageData(locale);
+  const [data, common] = await Promise.all([
+    fetchContactPageData(locale),
+    fetchCommonData(locale),
+  ]);
   
 
 //   if (!data) return <div>Loading...</div>;
   return (
     <PageWrapper
       locale={locale}
-      isNavTextOverlaping={false}
-      pageContent={<KontaktScreen data={data} />}
+      isNavTextOverlaping={true}
+      pageContent={<KontaktScreen data={data} common={common} />}
     />
   );
 };

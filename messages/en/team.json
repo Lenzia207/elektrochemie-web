@@ -1,37 +1,47 @@
 {
   "TeamPage": {
     "pageTitle": "Our EGM Team",
+    "pageDescription": "Civil engineers, court experts and chemical engineers – backed by a scientific advisory board from four universities.",
     "teamImage": "/images/team/Team.jpg",
+    "teamImageAlt": "The EGM team in the office: Susanna Weiß, Wolfgang Hansal and Selma Hansal",
     "teamMemberList": [
       {
         "name": "Mag. Dr. habil. Wolfgang Hansal",
         "role": "Institute Director, Managing Director, Civil Engineer Chemistry, generally sworn and court-certified expert",
-        "description": "Dr. Wolfgang Hansal has more than 25 years of professional experience in the fields of chemistry, surface technology and electroplating, successfully leading more than 100 industrially relevant projects in these areas. As a board member of the European Academy for Surface Technology and member of numerous professional associations, he is also very well networked internationally. He is the author of numerous specialist publications, including books on electrochemical pulse deposition and post-processing of 3D-printed metal components (in press).",
-        "image": "/images/team/Wolfgang.png"
+        "description": "More than 25 years of professional experience in chemistry, surface technology and electroplating and over 100 industry-relevant projects led. Board member of the European Academy for Surface Technology, very well connected internationally and author of numerous specialist publications – including books on electrochemical pulse plating and on post-processing of 3D-printed metal components (in press).",
+        "image": "/images/team/Wolfgang.png",
+        "roleLink": {
+          "text": "generally sworn and court-certified expert",
+          "url": "https://suche.gerichts-sv.at/Default.aspx?z=1389982462"
+        }
       },
       {
         "name": "Mag. Dr. Selma Hansal",
         "role": "Managing Director, Civil Engineer Chemistry",
-        "description": "Dr. Selma Hansal has been successfully leading industrially relevant R&D projects for over 20 years, always focusing on industrial implementation. Her core competencies are electrochemistry, material analysis and post-processing of additively manufactured metal components. Cross-industry networks and the comprehensive consideration and coordination of entire process chains are a central concern for her.",
+        "description": "Successfully leading industry-relevant R&D projects for more than 20 years, always with a focus on industrial implementation. Core competencies: electrochemistry, materials analysis and post-processing of additively manufactured metal components. Cross-industry networks and aligning entire process chains are a central concern for her.",
         "image": "/images/team/Selma.png"
       },
       {
         "name": "Ing. Susanna Weiß",
         "role": "Operations Manager, Chemical Engineer",
-        "description": "Ms. Susanna Weiß has many years of experience in the field of chemical surface treatment and chemical analysis. In addition to the field of electrochemistry, she has specialized in environmental chemistry, surface analysis and hazardous substance management and is a certified expert for safety data sheets according to REACH.",
+        "description": "Many years of experience in chemical surface treatment and chemical analysis. Besides electrochemistry, specialised in environmental chemistry, surface analysis and hazardous substance management – and a certified expert for safety data sheets according to REACH.",
         "image": "/images/team/Susanna.png"
       }
     ],
-
-    "infoCertificates": [
-      {
-        "infoClarification": "State-authorized and sworn civil engineers are natural persons who work freelance on the basis of authorization granted by the Federal Minister for Economic Affairs and Labour in engineering or natural science fields. As an external sign of state authorization and oath, civil engineers bear a seal with the federal coat of arms of the Republic of Austria. Civil engineers are persons endowed with \"public faith\" according to §292 Civil Procedure Code (public notary). They are authorized to create public documents within the scope of their authorization, which are regarded by administrative authorities as if they had been issued by authorities themselves.",
-        "infoDescription": "The broad range of services offered by civil engineers includes specialized planning, overall planning of complex investment projects and competent testing and consulting services as neutral trustees of the client. With their highly qualified employees, they ensure a performance advantage that is documented through transparency, interdisciplinarity, control and accountability. Through their innovative solutions, civil engineers are guarantors for securing people's quality of life in many areas of everyday life."
-      }
-    ],
+    "civilEngineers": {
+      "eyebrow": "Civil engineers",
+      "title": "State-authorised. Sworn. Vested with public trust.",
+      "paragraphs": [
+        "State-authorised and sworn civil engineers are natural persons who work freelance in engineering or natural science fields on the basis of an authorisation granted by the Federal Minister for Economic Affairs and Labour. As an outward sign of this state authorisation and oath, they carry a seal bearing the federal coat of arms of the Republic of Austria.",
+        "Civil engineers are persons vested with “public trust” pursuant to §292 of the Austrian Code of Civil Procedure (public certifying officers). Within the scope of their authorisation, they are entitled to issue public documents that administrative authorities regard as if they had been issued by the authorities themselves.",
+        "Their services range from specialised planning to the overall planning of complex investment projects, as well as testing and consulting as neutral trustees of the client – characterised by transparency, interdisciplinarity, control and accountability."
+      ]
+    },
     "scientificTeam": {
-      "title": "Our Scientific Advisory Board",
-      "description": "Staying at the pulse of technological development is not only our obligation, it is also a very special personal concern for us. We regularly exchange ideas with leading international experts and work closely with them on various projects. Our scientific advisory board supports us professionally when needed and can be involved in innovation projects.",
+      "eyebrow": "Scientific advisory board",
+      "title": "At the pulse of research.",
+      "description": "Keeping pace with technological development is not just our obligation but a very personal concern. We regularly exchange ideas with leading international experts and work closely with them on various projects. Our scientific advisory board supports us with specialist advice when needed and can be involved in innovation projects.",
+      "profileLinkLabel": "View profile",
       "members": [
         {
           "image": "/images/team/beirat/Bund.png",
@@ -62,6 +72,10 @@
           "url": "https://ufind.univie.ac.at/de/person.html?id=88668"
         }
       ]
+    },
+    "closing": {
+      "title": "We look forward to being there for you!",
+      "signature": "Your EGM Team"
     }
   }
 }

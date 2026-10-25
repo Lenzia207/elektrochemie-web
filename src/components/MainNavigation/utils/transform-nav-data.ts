@@ -1,4 +1,4 @@
-import { NavigationData } from "../data/nav-types";
+import { NavLinksData } from "@/lib/data/common-data";
 import { NavigationItem } from "../types";
 
 /**
@@ -7,7 +7,7 @@ import { NavigationItem } from "../types";
  * - German: /kompetenzen -> /de/kompetenzen
  * - English: /kompetenzen -> /en/expertise
  */
-export function transformNavData(locale: string, navData: NavigationData): NavigationItem[] {
+export function transformNavData(locale: string, navData: NavLinksData): NavigationItem[] {
   return [
     { link: "/", name: navData.home },
     { link: "/kompetenzen", name: navData.expertise },

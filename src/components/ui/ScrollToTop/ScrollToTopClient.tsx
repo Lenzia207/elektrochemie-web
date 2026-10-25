@@ -40,7 +40,7 @@ export default function ScrollToTopClient( { data }: { data: string } ) {
     >
       <button
         onClick={scrollToTop}
-        className="group flex items-center gap-3 bg-white/90 backdrop-blur-sm hover:bg-[#1f4f83] text-[#1f4f83] hover:text-white px-6 py-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 border border-[#1f4f83]/20"
+        className="group flex items-center gap-3 bg-white/90 backdrop-blur-sm hover:bg-egm-blue text-egm-blue hover:text-white px-6 py-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 border border-egm-blue/20"
         aria-label="Scroll to top"
       >
         <span className="text-sm font-medium">{data}</span>

@@ -1,18 +1,53 @@
 {
   "ContactPage": {
     "pageTitle": "Kontakt",
-    "pageDescription": " Wir freuen uns auf Ihre Kontaktaufnahme und stehen Ihnen gerne für Fragen zur Verfügung.",
+    "pageDescription": "Wir freuen uns auf Ihre Kontaktaufnahme und stehen Ihnen gerne für Fragen zur Verfügung.",
     "companyName": [
       "EGM",
       "Institut für Elektrochemie, Galvanotechnik\nund Materialchemie Ziviltechniker GmbH"
     ],
     "telephone": [
-      "Telephone",
+      "Telefon",
       "+43 699 15111555"
-    ], 
+    ],
     "email": [
       "E-Mail",
       "help@elektrochemie.eu"
-    ]
+    ],
+    "address": [
+      "Adresse",
+      "Brauhausgasse 21\n2753 Markt Piesting, Österreich"
+    ],
+    "form": {
+      "title": "Schreiben Sie uns.",
+      "description": "Beschreiben Sie kurz Ihre Fragestellung – wir melden uns bei Ihnen.",
+      "fields": {
+        "name": "Name",
+        "company": "Unternehmen",
+        "email": "E-Mail",
+        "phone": "Telefon",
+        "topic": "Worum geht es?",
+        "message": "Nachricht"
+      },
+      "topicPlaceholder": "Bitte wählen",
+      "topics": [
+        "Korrosion & Oberflächen",
+        "Kontamination / Schadstoffanalyse",
+        "Gutachten & Befunde",
+        "Anlagenbau & Behördenverfahren",
+        "Chemikalien- & Umweltmanagement",
+        "3D-Druck Post-Processing",
+        "F&E- & Innovationsprojekte",
+        "Schulungen & Seminare",
+        "Sonstiges"
+      ],
+      "privacy": {
+        "before": "Ich habe die ",
+        "link": "Datenschutzerklärung",
+        "after": " gelesen und stimme der Verarbeitung meiner Angaben zu."
+      },
+      "submit": "Nachricht senden",
+      "mailSubject": "Anfrage über die Website"
+    }
   }
 }

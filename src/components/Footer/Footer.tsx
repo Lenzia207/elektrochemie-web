@@ -1,52 +1,71 @@
-
+import Image from "next/image";
 import { Link } from "@/i18n/routing";
+import fetchCommonData from "@/lib/data/common-data";
 import fetchFooterData from "./footer-data";
 
-export async function Footer({ locale }: { locale: string }) {
-  const data = await fetchFooterData(locale);
-  const currentLocale = locale;
-  return (
-    <footer className="bg-gradient-to-r from-[#1a3d6b] to-[#1f4f83] text-white py-8 lg:pb-20 pb-36 ">
-      <div className="max-w-7xl mx-auto px-8">
-        {/* Main Footer Content */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-center mb-4">
-          {/* Left - Impressum */}
-          <div className="text-center md:text-left">
-            <Link
-            locale={currentLocale}
-              href="/impressum"
-              className="hover:text-gray-300 transition-colors duration-200 md:text-base"
-            >
-              {data.imprint}
-            </Link>
-          </div>
+const linkStyles = "text-egm-frost transition-colors duration-200 hover:text-white";
 
-          {/* Center - Company Name */}
-          <div className="text-center">
-            <p className="text-xs md:text-sm font-light leading-relaxed whitespace-pre-line">
+export async function Footer({ locale }: { locale: string }) {
+  const [data, { navLinks, egmImages }] = await Promise.all([
+    fetchFooterData(locale),
+    fetchCommonData(locale),
+  ]);
+
+  const pageLinks = [
+    { href: "/kompetenzen", name: navLinks.expertise },
+    { href: "/leistungen", name: navLinks.services },
+    { href: "/team", name: navLinks.team },
+    { href: "/kontakt", name: navLinks.contact },
+  ] as const;
+
+  return (
+    <footer className="bg-egm-ink px-5 pt-16 pb-10 text-egm-frost sm:px-8">
+      <div className="mx-auto flex max-w-[1240px] flex-col gap-10">
+        <div className="flex flex-wrap items-start justify-between gap-10">
+          <div className="flex max-w-[520px] items-center gap-[18px]">
+            <Image
+              src={egmImages.logo.image}
+              alt={egmImages.logo.alt}
+              width={64}
+              height={64}
+              className="size-16 flex-none"
+            />
+            <p className="whitespace-pre-line text-[15px] leading-[1.55] text-white">
               {data.companyName}
-              <br />
-              <span className="text-xs">{data.zivilTechniker} GmbH</span>
             </p>
           </div>
 
-          {/* Right - Privacy Policy */}
-          <div className="text-center md:text-right">
-            <Link
-              locale={currentLocale}
-              href="/datenschutz"
-              className="hover:text-gray-300 transition-colors duration-200 md:text-base"
-            >
+          <nav className="flex flex-wrap gap-7 text-[15px]">
+            {pageLinks.map((link) => (
+              <Link key={link.href} locale={locale} href={link.href} className={linkStyles}>
+                {link.name}
+              </Link>
+            ))}
+          </nav>
+
+          <a href={data.ztMemberLink} target="_blank" rel="noopener noreferrer">
+            <Image
+              src={egmImages.zt.image}
+              alt={egmImages.zt.alt}
+              width={110}
+              height={60}
+              className="h-auto w-[110px]"
+            />
+          </a>
+        </div>
+
+        <div className="flex flex-wrap justify-between gap-x-7 gap-y-4 border-t border-white/15 pt-6 text-sm">
+          <span>
+            © {new Date().getFullYear()} {data.copyright}
+          </span>
+          <div className="flex gap-7">
+            <Link locale={locale} href="/impressum" className={linkStyles}>
+              {data.imprint}
+            </Link>
+            <Link locale={locale} href="/datenschutz" className={linkStyles}>
               {data.privacyPolicy}
             </Link>
           </div>
-        </div>
-
-        {/* Copyright */}
-        <div className="text-center border-t border-white/20 pt-4">
-          <p className="text-xs md:text-sm text-gray-300">
-            Copyright © {new Date().getFullYear()}
-          </p>
         </div>
       </div>
     </footer>

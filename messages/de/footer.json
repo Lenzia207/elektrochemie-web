@@ -2,7 +2,8 @@
     "Footer": {
         "imprint": "Impressum",
         "privacyPolicy": "Datenschutzerklärung",
-        "companyName": "EGM - Institut für\nElektrochemie, Galvanotechnik und Materialchemie",
-        "zivilTechniker": "Ziviltechniker"
+        "companyName": "Institut für Elektrochemie, Galvanotechnik\nund Materialchemie Ziviltechniker GmbH",
+        "copyright": "EGM Ziviltechniker GmbH",
+        "ztMemberLink": "https://ziviltechniker.at/mitglied/958130"
     }
 }

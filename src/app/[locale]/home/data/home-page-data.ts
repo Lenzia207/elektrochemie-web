@@ -1,4 +1,7 @@
 import { HomePageData } from "./types/home-types";
+import fetchCommonData from "@/lib/data/common-data";
+import fetchCompetencePageData from "../../kompetenzen/data/competence-data";
+import fetchContactPageData from "../../kontakt/data/contact-data";
 
 import { cache } from "react";
 
@@ -10,14 +13,19 @@ import { cache } from "react";
 export const fetchHomePageData = cache(async function (
   locale: string
 ): Promise<HomePageData> {
-  const [homeData, egmImages] = await Promise.all([
+  const [homeData, common, competence, contact] = await Promise.all([
     import(`../../../../../messages/${locale}/home.json`),
-    import(`../../../../../messages/${locale}/common.json`),
+    fetchCommonData(locale),
+    fetchCompetencePageData(locale),
+    fetchContactPageData(locale),
   ]);
 
   return {
     ...homeData.default.HomePage,
-    egmImages: egmImages.default.EgmImages,
+    egmImages: common.egmImages,
+    labels: common.labels,
+    competenceList: competence.competenceList,
+    contact,
   };
 });
 

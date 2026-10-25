@@ -18,12 +18,13 @@ export default async function PageWrapper({
 }: PageWrapperProps) {
 
   return (
-    <div className="bg-white">
+    // min-h-svh + flex-1 on main keeps the footer at the bottom on short pages
+    <div className="flex min-h-svh flex-col bg-white">
       <MainNavigation
         locale={locale}
         trackHeaderOverlap={isNavTextOverlaping}
       />
-      <div className="pb-20">{pageContent}</div>
+      <main className="flex-1">{pageContent}</main>
       {showToTop ? <ScrollToTop locale={locale} /> : null}
 
       <Footer locale={locale} />

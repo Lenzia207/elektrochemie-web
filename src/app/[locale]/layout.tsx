@@ -1,9 +1,8 @@
 import {
-  // Alexandria,
-  Geist,
-  Geist_Mono,
-  Licorice,
+  Funnel_Display,
   Funnel_Sans,
+  JetBrains_Mono,
+  Licorice,
 } from "next/font/google";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
@@ -11,31 +10,28 @@ import { notFound } from "next/navigation";
 import { Locale, routing } from "@/i18n/routing";
 import "../globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const funnelSans = Funnel_Sans({
   subsets: ["latin"],
+  weight: ["300", "400", "500", "600"],
+  variable: "--font-funnel-sans",
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const funnelDisplay = Funnel_Display({
   subsets: ["latin"],
+  weight: ["400", "500", "600", "700", "800"],
+  variable: "--font-funnel-display",
 });
 
-// const alexandria = Alexandria({
-//   subsets: ["latin"],
-//   weight: ["400", "500", "700"],
-//   variable: "--font-alexandria",
-// });
+const jetbrainsMono = JetBrains_Mono({
+  subsets: ["latin"],
+  weight: ["400", "500"],
+  variable: "--font-jetbrains-mono",
+});
 
 const licorice = Licorice({
   subsets: ["latin"],
   weight: ["400"],
   variable: "--font-licorice",
-});
-const funnel = Funnel_Sans({
-  subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700", "800"],
-  variable: "--font-funnel",
 });
 
 export async function generateStaticParams() {
@@ -59,7 +55,7 @@ export default async function RootLayout({
   return (
     <html
       lang={locale}
-      className={`${geistSans.variable} ${geistMono.variable}  ${licorice.variable} ${funnel.variable} $font-sans`}
+      className={`${funnelSans.variable} ${funnelDisplay.variable} ${jetbrainsMono.variable} ${licorice.variable} font-sans`}
     >
       <body>
         <NextIntlClientProvider messages={messages}>

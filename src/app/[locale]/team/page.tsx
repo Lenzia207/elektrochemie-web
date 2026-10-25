@@ -9,18 +9,22 @@ export function generateStaticParams() {
 import PageWrapper from "@/components/PageWrapper";
 import TeamScreen from "./TeamScreen";
 import fetchTeamPageData from "./data/team-page.data";
+import fetchCommonData from "@/lib/data/common-data";
 
 
 const TeamPage = async (props: LocaleParams) => {
   const { locale } = await props.params;
 
-  const data = await fetchTeamPageData(locale);
+  const [data, common] = await Promise.all([
+    fetchTeamPageData(locale),
+    fetchCommonData(locale),
+  ]);
   
 
   if (!data) return <div>Loading...</div>;
   return (
     <PageWrapper locale={locale} isNavTextOverlaping={true}
-      pageContent={<TeamScreen data={data} />} />
+      pageContent={<TeamScreen data={data} common={common} />} />
   );
 };
 

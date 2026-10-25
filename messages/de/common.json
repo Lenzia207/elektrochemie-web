@@ -6,7 +6,6 @@
     "team": "Team",
     "contact": "Kontakt"
   },
-
   "EgmImages": {
     "logo": {
       "image": "/images/logo.svg",
@@ -21,6 +20,15 @@
       "alt": "Logo Adler"
     }
   },
-
-  "ToTheTop": "zum Anfang"
+  "ToTheTop": "zum Anfang",
+  "UiLabels": {
+    "breadcrumb": "Brotkrümelnavigation",
+    "mainNavigation": "Hauptnavigation",
+    "openMenu": "Menü öffnen",
+    "closeMenu": "Menü schließen",
+    "switchLanguage": "Auf Englisch wechseln",
+    "scrollDown": "Weiter nach unten",
+    "logoTagline": "Ziviltechniker GmbH",
+    "contactCta": "Kontakt aufnehmen"
+  }
 }
