@@ -1,4 +1,6 @@
 import PageWrapper from "@/components/PageWrapper";
+import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/seo";
 import { LocaleParams } from "@/i18n/local-params";
 import fetchCommonData from "@/lib/data/common-data";
 import CompetenceScreen from "./CompetenceScreen";
@@ -7,6 +9,12 @@ export const dynamic = "force-static";
 
 export function generateStaticParams() {
   return [{ locale: 'en' }, { locale: 'de' }];
+}
+
+export async function generateMetadata(props: LocaleParams): Promise<Metadata> {
+  const { locale } = await props.params;
+  const data = await fetchCompetencePageData(locale);
+  return pageMetadata({ locale, path: "kompetenzen", title: data.pageTitle, description: data.pageDescription });
 }
 
 const KompetenzenPage = async (props: LocaleParams) => {

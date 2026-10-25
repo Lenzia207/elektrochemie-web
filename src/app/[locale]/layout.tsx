@@ -4,10 +4,12 @@ import {
   JetBrains_Mono,
   Licorice,
 } from "next/font/google";
+import type { Metadata } from "next";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { Locale, routing } from "@/i18n/routing";
+import { SITE_NAME, SITE_URL } from "@/lib/seo";
 import "../globals.css";
 
 const funnelSans = Funnel_Sans({
@@ -33,6 +35,14 @@ const licorice = Licorice({
   weight: ["400"],
   variable: "--font-licorice",
 });
+
+export const metadata: Metadata = {
+  metadataBase: new URL(SITE_URL),
+  title: {
+    default: SITE_NAME,
+    template: `%s | ${SITE_NAME}`,
+  },
+};
 
 export async function generateStaticParams() {
   return [{ locale: "en" }, { locale: "de" }];

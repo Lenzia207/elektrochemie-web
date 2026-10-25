@@ -1,4 +1,6 @@
 import { LocaleParams } from "@/i18n/local-params";
+import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/seo";
 
 export const dynamic = "force-static";
 
@@ -11,6 +13,12 @@ import TeamScreen from "./TeamScreen";
 import fetchTeamPageData from "./data/team-page.data";
 import fetchCommonData from "@/lib/data/common-data";
 
+
+export async function generateMetadata(props: LocaleParams): Promise<Metadata> {
+  const { locale } = await props.params;
+  const data = await fetchTeamPageData(locale);
+  return pageMetadata({ locale, path: "team", title: data.pageTitle, description: data.pageDescription });
+}
 
 const TeamPage = async (props: LocaleParams) => {
   const { locale } = await props.params;

@@ -30,5 +30,11 @@
     "scrollDown": "Scroll down",
     "logoTagline": "Ziviltechniker GmbH",
     "contactCta": "Get in touch"
+  },
+  "Meta": {
+    "homeTitle": "EGM – Institute for Electrochemistry, Electroplating and Material Chemistry",
+    "homeDescription": "State-authorised and sworn civil engineers for chemistry in Austria: expert opinions, corrosion, electroplating, surface technology and chemical management.",
+    "imprintDescription": "Imprint of EGM – Institute for Electrochemistry, Electroplating and Material Chemistry Civil Engineers Ltd.",
+    "privacyDescription": "Privacy policy of EGM – Institute for Electrochemistry, Electroplating and Material Chemistry Civil Engineers Ltd."
   }
 }

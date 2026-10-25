@@ -1,11 +1,10 @@
 import { ReactNode } from "react";
-import { IconMail, IconMapPin, IconPhone } from "@tabler/icons-react";
+import { IconMail, IconPhone } from "@tabler/icons-react";
 import PageHero from "@/components/PageHero";
 import Eyebrow from "@/components/ui/Texts/Eyebrow";
 import { CommonData } from "@/lib/data/common-data";
 import { cn } from "@/lib/utils/utils";
 import { ContactPageData } from "./data/types/contact-types";
-import ContactForm from "./components/ContactForm";
 
 interface KontaktScreenProps {
     data: ContactPageData;
@@ -15,7 +14,7 @@ interface KontaktScreenProps {
 export default async function KontaktScreen({ data, common }: KontaktScreenProps) {
     const [phoneLabel, phone] = data.telephone;
     const [emailLabel, email] = data.email;
-    const [addressLabel, address] = data.address;
+    // const [addressLabel, address] = data.address;
 
     return (
         <>

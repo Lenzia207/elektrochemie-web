@@ -30,5 +30,11 @@
     "scrollDown": "Weiter nach unten",
     "logoTagline": "Ziviltechniker GmbH",
     "contactCta": "Kontakt aufnehmen"
+  },
+  "Meta": {
+    "homeTitle": "EGM – Institut für Elektrochemie, Galvanotechnik und Materialchemie",
+    "homeDescription": "Staatlich befugte und beeidete Ziviltechniker für Chemie in Österreich: Gutachten, Korrosion, Galvanotechnik, Oberflächentechnik und Chemikalienmanagement.",
+    "imprintDescription": "Impressum der EGM – Institut für Elektrochemie, Galvanotechnik und Materialchemie Ziviltechniker GmbH.",
+    "privacyDescription": "Datenschutzerklärung der EGM – Institut für Elektrochemie, Galvanotechnik und Materialchemie Ziviltechniker GmbH."
   }
 }

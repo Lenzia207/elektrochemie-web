@@ -19,6 +19,13 @@ export interface UiLabelsData {
   contactCta: string;
 }
 
+export interface MetaData {
+  homeTitle: string;
+  homeDescription: string;
+  imprintDescription: string;
+  privacyDescription: string;
+}
+
 export interface EgmImageData {
   image: string;
   alt: string;
@@ -27,6 +34,7 @@ export interface EgmImageData {
 export interface CommonData {
   navLinks: NavLinksData;
   labels: UiLabelsData;
+  meta: MetaData;
   egmImages: {
     logo: EgmImageData;
     zt: EgmImageData;
@@ -46,6 +54,7 @@ export const fetchCommonData = cache(async function (
   return {
     navLinks: commonData.default.NavLinks,
     labels: commonData.default.UiLabels,
+    meta: commonData.default.Meta,
     egmImages: commonData.default.EgmImages,
   };
 });

@@ -1,31 +1,41 @@
 <!DOCTYPE html>
-<html>
+<html lang="de">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Redirecting...</title>
+  <title>EGM – Institut für Elektrochemie, Galvanotechnik und Materialchemie</title>
+  <meta name="description" content="Staatlich befugte und beeidete Ziviltechniker für Chemie in Österreich. / State-authorised and sworn civil engineers for chemistry in Austria.">
+
+  <!--
+    Language entry point (x-default). Keep the domain in sync with SITE_URL in src/lib/seo.ts.
+    Crawlers find both language versions through hreflang and the links below.
+  -->
+  <link rel="alternate" hreflang="de" href="https://elektrochemie.eu/de/">
+  <link rel="alternate" hreflang="en" href="https://elektrochemie.eu/en/">
+  <link rel="alternate" hreflang="x-default" href="https://elektrochemie.eu/">
+
   <script>
     (function() {
-      // Get browser language
-      var browserLang = navigator.language || navigator.userLanguage;
-      var locale = 'en'; // default
-      
-      // Check if browser language starts with 'de'
-      if (browserLang.toLowerCase().startsWith('de')) {
-        locale = 'de';
-      }
-      
-      // Redirect to locale-prefixed URL
+      // Send visitors to the version matching their browser language
+      var browserLang = navigator.language || navigator.userLanguage || '';
+      var locale = browserLang.toLowerCase().indexOf('de') === 0 ? 'de' : 'en';
+
       var path = window.location.pathname;
       if (path === '/' || path === '') {
         window.location.replace('/' + locale + '/');
-      } else if (!path.startsWith('/en') && !path.startsWith('/de')) {
+      } else if (path.indexOf('/en') !== 0 && path.indexOf('/de') !== 0) {
         window.location.replace('/' + locale + path);
       }
     })();
   </script>
+  <!-- Without JavaScript: fall back to the German version -->
+  <noscript><meta http-equiv="refresh" content="0; url=/de/"></noscript>
 </head>
 <body>
-  <p>Redirecting...</p>
+  <h1>EGM – Institut für Elektrochemie, Galvanotechnik und Materialchemie</h1>
+  <ul>
+    <li><a href="/de/" hreflang="de" lang="de">Deutsch</a></li>
+    <li><a href="/en/" hreflang="en" lang="en">English</a></li>
+  </ul>
 </body>
 </html>

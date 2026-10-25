@@ -1,4 +1,6 @@
 import { LocaleParams } from "@/i18n/local-params";
+import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/seo";
 
 export const dynamic = "force-static";
 
@@ -11,6 +13,12 @@ import KontaktScreen from "./KontaktScreen";
 import fetchContactPageData from "./data/contact-data";
 import fetchCommonData from "@/lib/data/common-data";
 
+
+export async function generateMetadata(props: LocaleParams): Promise<Metadata> {
+  const { locale } = await props.params;
+  const data = await fetchContactPageData(locale);
+  return pageMetadata({ locale, path: "kontakt", title: data.pageTitle, description: data.pageDescription });
+}
 
 const Kontakt = async (props: LocaleParams) => {
   const { locale } = await props.params;
