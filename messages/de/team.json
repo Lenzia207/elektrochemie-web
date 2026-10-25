@@ -1,7 +1,6 @@
 {
   "TeamPage": {
     "pageTitle": "Unser EGM-Team",
-    "pageDescription": "Ziviltechniker, Sachverständige und Chemieingenieure – mit einem wissenschaftlichen Beirat aus vier Universitäten im Rücken.",
     "teamImage": "/images/team/Team.jpg",
     "teamImageAlt": "Das EGM-Team im Büro: Susanna Weiß, Wolfgang Hansal und Selma Hansal",
     "teamMemberList": [
@@ -34,7 +33,7 @@
       "paragraphs": [
         "Staatlich befugte und beeidete ZiviltechnikerInnen sind natürliche Personen, die freiberuflich aufgrund der vom Bundesminister für Wirtschaft und Arbeit verliehenen Befugnis auf ingenieur- oder naturwissenschaftlichen Fachgebieten tätig sind. Als äußeres Zeichen der staatlichen Befugnis und Beeidigung führen sie ein Siegel mit dem Bundeswappen der Republik Österreich.",
         "ZiviltechnikerInnen sind mit „öffentlichem Glauben“ versehene Personen gemäß §292 Zivilprozessordnung (öffentliche Urkundspersonen). Sie sind berechtigt, im Rahmen ihrer Befugnis öffentliche Urkunden zu errichten, die von Verwaltungsbehörden so angesehen werden, als wären sie von Behörden selbst ausgefertigt worden.",
-        "Ihre Leistungspalette reicht von der spezialisierten Fachplanung bis zur Gesamtplanung komplexer Investitionsvorhaben sowie zu Prüf- und Beratungsleistungen als neutrale Treuhänder des Auftraggebers – geprägt von Transparenz, Interdisziplinarität, Kontrolle und Verantwortlichkeit."
+        "Die breite Leistungspalette der ZivilingenieurInnen umfasst die spezialisierte Fachplanung, bis zur Gesamtplanung komplexer Investitionsvorhaben und kompetenter Prüf- und Beratungsleistungen als neutrale Treuhänder des Auftraggebers. Sie stellen mit Ihren hochqualifizierten MitarbeiterInnen einen Leistungsvorteil sicher, der sich durch Transparenz, Interdisziplinarität, Kontrolle und Verantwortlichkeit dokumentiert. Durch ihre innovativen Lösungen sind ZivilingenieurInnen in vielen Bereichen des Alltags Garanten für die Sicherung der Lebensqualität der Menschen."
       ]
     },
     "scientificTeam": {

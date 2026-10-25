@@ -25,7 +25,7 @@ export default function CivilEngineerSection({ data, ztLogo }: CivilEngineerSect
                         className="mt-2 h-auto w-40"
                     />
                 </div>
-                <div className="flex min-w-0 flex-[1.3_1_480px] flex-col gap-5">
+                <div className="flex min-w-0 flex-[1.3_1_480px] text-justify flex-col gap-5">
                     {data.paragraphs.map((paragraph) => (
                         <p key={paragraph} className="text-[17px] leading-[1.7] text-egm-frost-light">
                             {paragraph}
