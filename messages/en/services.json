@@ -1,7 +1,7 @@
 {
   "ServicesPage": {
     "pageTitle": "Our Services",
-    "pageDescription": "Eleven services, one area of expertise: electrochemistry – from regulatory submissions and expert opinions to pollutant analysis.",
+    "pageDescription": "Eleven services, one area of expertise: Electrochemistry. From regulatory submissions and expert opinions to pollutant analysis.",
     "overviewLabel": "Overview",
     "featuredLabel": "Focus",
     "featuredLinkLabel": "Request an expert opinion",
@@ -22,7 +22,7 @@
         "expertiseTitle": "Reports and Expert Opinions",
         "expertiseDescription": [
           "Whether supporting court proceedings or for private expert opinions, the EGM team is competently at your side and helps you clarify your position.",
-          "Generally sworn and court-certified expert. Close cooperation with lawyers and insurance companies."
+          "Generally sworn and court-certified expert."
         ],
         "image": "/images/leistungen/02.jpg",
         "imageAlt": "Scales of justice and gavel",

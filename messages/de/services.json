@@ -1,7 +1,7 @@
 {
   "ServicesPage": {
     "pageTitle": "Unsere Leistungen",
-    "pageDescription": "Elf Leistungen, eine Expertise: Elektrochemie – von der Behördeneinreichung über Gutachten bis zur Schadstoffanalyse.",
+    "pageDescription": "Elf Leistungen, eine Expertise: Elektrochemie. Angefangen bei der Behördeneinreichung über die Erstellung von Gutachten bis hin zur Schadstoffanalyse.",
     "overviewLabel": "Übersicht",
     "featuredLabel": "Schwerpunkt",
     "featuredLinkLabel": "Gutachten anfragen",
@@ -21,8 +21,8 @@
         "shortTitle": "Befunde und Gutachten",
         "expertiseTitle": "Befunde und Gutachten",
         "expertiseDescription": [
-          "Ob Unterstützung in einem Gerichtsverfahren oder für ein Privatgutachten – das Team des EGM steht Ihnen kompetent zur Seite und hilft Ihnen, Ihren Standpunkt zu verdeutlichen.",
-          "Allgemein beeideter und gerichtlich zertifizierter Sachverständiger. Enge Zusammenarbeit mit Rechtsanwälten und Versicherungen."
+          "Ob Unterstützung in einem Gerichtsverfahren oder für ein Privatgutachten: Das Team des EGM steht Ihnen kompetent zur Seite und hilft Ihnen, Ihren Standpunkt zu verdeutlichen.",
+          "Allgemein beeideter und gerichtlich zertifizierter Sachverständiger."
         ],
         "image": "/images/leistungen/02.jpg",
         "imageAlt": "Justitia-Waage und Richterhammer",

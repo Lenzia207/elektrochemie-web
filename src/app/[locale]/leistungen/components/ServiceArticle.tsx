@@ -30,7 +30,7 @@ export default function ServiceArticle({
       className={cn(
         "flex flex-wrap gap-x-16 gap-y-8",
         isFeatured
-          ? "my-2 overflow-hidden rounded-[28px] bg-egm-ink px-[clamp(24px,4vw,48px)] py-14 text-white"
+          ? "my-2 overflow-hidden rounded-[28px] bg-egm-ink px-[clamp(24px,4vw,48px)] py-14 mb-14 text-white"
           : "border-t border-egm-line py-14"
       )}
     >
