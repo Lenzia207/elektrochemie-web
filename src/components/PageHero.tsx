@@ -8,7 +8,7 @@ interface PageHeroProps {
   pageLabel: string;
   breadcrumbLabel: string;
   title: string;
-  description: string;
+  description?: string;
   /** Opacity of the navy scrim over the shader, 0–100 */
   scrim?: number;
   /** Puts the description next to the title instead of below it */
@@ -66,9 +66,11 @@ export default function PageHero({
             {title}
           </h1>
         </div>
-        <HeroLead className={cn(splitLayout ? "min-w-0 flex-[1_1_340px] pb-2" : "max-w-[720px]")}>
-          {description}
-        </HeroLead>
+        {description ? (
+          <HeroLead className={cn(splitLayout ? "min-w-0 flex-[1_1_340px] pb-2" : "max-w-[720px]")}>
+            {description}
+          </HeroLead>
+        ) : null}
       </div>
     </header>
   );

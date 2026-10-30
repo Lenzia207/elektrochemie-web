@@ -3,7 +3,9 @@
  */
 export interface TeamPageData {
   pageTitle: string;
-  pageDescription: string;
+  pageDescription?: string;
+  /** Search result snippet, independent of the hero text */
+  metaDescription: string;
   teamImage: string;
   teamImageAlt: string;
   teamMemberList: TeamMembersList[];

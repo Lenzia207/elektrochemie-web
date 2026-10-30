@@ -12,9 +12,9 @@ export default function CivilEngineerSection({ data, ztLogo }: CivilEngineerSect
     return (
         <section className="bg-egm-ink px-5 py-20 text-white sm:px-8 md:py-28">
             <div className="mx-auto flex max-w-[1240px] flex-wrap gap-x-[72px] gap-y-12">
-                <div className="flex min-w-0 flex-[1_1_380px] flex-col gap-6">
+                <div className="flex min-w-0 flex-[1_1_380px] items-center lg:items-start flex-col gap-6">
                     <Eyebrow className="text-egm-frost">{data.eyebrow}</Eyebrow>
-                    <h2 className="text-[clamp(32px,4vw,56px)] leading-[1.05] tracking-[-0.03em]">
+                    <h2 className="text-[clamp(32px,4vw,56px)] leading-[1.05] tracking-[-0.03em] text-center lg:text-start">
                         {data.title}
                     </h2>
                     <Image

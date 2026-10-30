@@ -11,7 +11,7 @@ export interface CompetencePageData {
 export interface CompetenceList {
   /** Anchor id, used for the jump links */
   id: string;
-  /** Element-style abbreviation shown in the tiles, e.g. "Ga" */
+  /** Element-style abbreviation shown in the tiles, e.g. "Gk" */
   symbol: string;
   shortTitle: string;
   competenceTitle: string;

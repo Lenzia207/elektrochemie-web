@@ -1,6 +1,7 @@
 {
   "TeamPage": {
     "pageTitle": "Our EGM Team",
+    "metaDescription": "The EGM team: civil engineers, court-certified experts and chemical engineers – backed by a scientific advisory board from four universities.",
     "teamImage": "/images/team/Team.jpg",
     "teamImageAlt": "The EGM team in the office: Susanna Weiß, Wolfgang Hansal and Selma Hansal",
     "teamMemberList": [
@@ -29,7 +30,7 @@
     ],
     "civilEngineers": {
       "eyebrow": "Civil engineers",
-      "title": "State-authorised. Sworn. Vested with public trust.",
+      "title": "State-authorised. Sworn.",
       "paragraphs": [
         "State-authorised and sworn civil engineers are natural persons who work freelance in engineering or natural science fields on the basis of an authorisation granted by the Federal Minister for Economic Affairs and Labour. As an outward sign of this state authorisation and oath, they carry a seal bearing the federal coat of arms of the Republic of Austria.",
         "Civil engineers are persons vested with “public trust” pursuant to §292 of the Austrian Code of Civil Procedure (public certifying officers). Within the scope of their authorisation, they are entitled to issue public documents that administrative authorities regard as if they had been issued by the authorities themselves.",

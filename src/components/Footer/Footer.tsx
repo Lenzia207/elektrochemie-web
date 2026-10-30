@@ -19,23 +19,25 @@ export async function Footer({ locale }: { locale: string }) {
   ] as const;
 
   return (
-    <footer className="bg-egm-ink px-5 pt-16 pb-10 text-egm-frost sm:px-8">
-      <div className="mx-auto flex max-w-[1240px] flex-col gap-10">
-        <div className="flex flex-wrap items-start justify-between gap-10">
-          <div className="flex max-w-[520px] items-center gap-[18px]">
+    <footer className="bg-egm-ink px-5 pt-16 pb-10 text-egm-frost sm:px-8 justify-center ">
+      <div className="mx-auto flex max-w-[1240px] flex-col gap-5">
+        <div className="flex flex-col gap-6 md:flex-row md:flex-wrap md:items-center md:justify-between md:gap-10">
+          <div className="flex max-w-[520px] items-center gap-4 md:gap-[18px]">
             <Image
               src={egmImages.logo.image}
               alt={egmImages.logo.alt}
               width={64}
               height={64}
-              className="size-16 flex-none"
+              className="size-12 flex-none md:size-16"
             />
-            <p className="whitespace-pre-line text-[15px] leading-[1.55] text-white">
+            {/* Forced line break only where there is room for it */}
+            <p className="text-[15px] leading-[1.55] text-white md:whitespace-pre-line">
               {data.companyName}
             </p>
           </div>
 
-          <nav className="flex flex-wrap gap-7 text-[15px]">
+          {/* Mobile: links move below both logos (order-last); desktop keeps logo · links · ZT */}
+          <nav className="order-last grid grid-cols-2 gap-x-6 gap-y-3 border-t border-white/15 pt-6 text-[15px] text-center md:order-none md:flex md:flex-wrap md:gap-7 md:border-0 md:pt-0">
             {pageLinks.map((link) => (
               <Link key={link.href} locale={locale} href={link.href} className={linkStyles}>
                 {link.name}
@@ -43,18 +45,19 @@ export async function Footer({ locale }: { locale: string }) {
             ))}
           </nav>
 
-          <a href={data.ztMemberLink} target="_blank" rel="noopener noreferrer">
+          <a href={data.ztMemberLink} target="_blank" rel="noopener noreferrer" className="-ml-3 self-start md:ml-0 md:self-auto">
             <Image
               src={egmImages.zt.image}
               alt={egmImages.zt.alt}
               width={110}
               height={60}
-              className="h-auto w-[110px]"
+              className="h-auto w-[88px] md:w-[110px]"
             />
           </a>
         </div>
 
-        <div className="flex flex-wrap justify-between gap-x-7 gap-y-4 border-t border-white/15 pt-6 text-sm">
+        {/* Mobile: legal links first, copyright as the last line */}
+        <div className="flex flex-col-reverse gap-4 border-t border-white/15 pt-6 text-sm md:flex-row md:flex-wrap md:justify-between md:gap-x-7">
           <span>
             © {new Date().getFullYear()} {data.copyright}
           </span>

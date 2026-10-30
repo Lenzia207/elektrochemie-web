@@ -1,6 +1,7 @@
 {
   "TeamPage": {
     "pageTitle": "Unser EGM-Team",
+    "metaDescription": "Das EGM-Team: Ziviltechniker, gerichtlich zertifizierte Sachverständige und Chemieingenieure – mit einem wissenschaftlichen Beirat aus vier Universitäten.",
     "teamImage": "/images/team/Team.jpg",
     "teamImageAlt": "Das EGM-Team im Büro: Susanna Weiß, Wolfgang Hansal und Selma Hansal",
     "teamMemberList": [
@@ -29,7 +30,7 @@
     ],
     "civilEngineers": {
       "eyebrow": "Ziviltechniker",
-      "title": "Staatlich befugt. Beeidet. Mit öffentlichem Glauben.",
+      "title": "Staatlich befugt und beeidet.",
       "paragraphs": [
         "Staatlich befugte und beeidete ZiviltechnikerInnen sind natürliche Personen, die freiberuflich aufgrund der vom Bundesminister für Wirtschaft und Arbeit verliehenen Befugnis auf ingenieur- oder naturwissenschaftlichen Fachgebieten tätig sind. Als äußeres Zeichen der staatlichen Befugnis und Beeidigung führen sie ein Siegel mit dem Bundeswappen der Republik Österreich.",
         "ZiviltechnikerInnen sind mit „öffentlichem Glauben“ versehene Personen gemäß §292 Zivilprozessordnung (öffentliche Urkundspersonen). Sie sind berechtigt, im Rahmen ihrer Befugnis öffentliche Urkunden zu errichten, die von Verwaltungsbehörden so angesehen werden, als wären sie von Behörden selbst ausgefertigt worden.",

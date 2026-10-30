@@ -91,7 +91,7 @@ function CompetenceArticle({ competence, index }: { competence: CompetenceList; 
             </div>
             <div className="flex min-w-0 flex-[1.4_1_480px] flex-col justify-end gap-[18px]">
                 {competence.competenceDescription.map((paragraph) => (
-                    <p key={paragraph} className="text-[17px] leading-[1.7] text-egm-body">
+                    <p key={paragraph} className="text-[17px] leading-[1.7] text-egm-body lg:text-justify">
                         {paragraph}
                     </p>
                 ))}

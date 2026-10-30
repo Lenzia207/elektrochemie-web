@@ -17,7 +17,7 @@ import fetchCommonData from "@/lib/data/common-data";
 export async function generateMetadata(props: LocaleParams): Promise<Metadata> {
   const { locale } = await props.params;
   const data = await fetchTeamPageData(locale);
-  return pageMetadata({ locale, path: "team", title: data.pageTitle, description: data.pageDescription });
+  return pageMetadata({ locale, path: "team", title: data.pageTitle, description: data.metaDescription });
 }
 
 const TeamPage = async (props: LocaleParams) => {

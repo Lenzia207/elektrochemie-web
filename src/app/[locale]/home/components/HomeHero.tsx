@@ -11,7 +11,7 @@ interface HomeHeroProps {
 
 export default function HomeHero({ title, ztLogo, scrollDownLabel }: HomeHeroProps) {
   return (
-    <header className="relative flex min-h-[100svh] flex-col overflow-hidden md:min-h-[860px]">
+    <header className="relative flex h-[100vh] flex-col overflow-hidden md:min-h-[860px]">
       <HeroBackground />
       <div className="absolute inset-0 bg-egm-ink/12" aria-hidden="true" />
 

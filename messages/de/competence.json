@@ -5,8 +5,8 @@
     "ctaTitle": "Ihr Thema ist nicht dabei? Fragen Sie uns trotzdem.",
     "competenceList": [
       {
-        "id": "ga",
-        "symbol": "Ga",
+        "id": "gk",
+        "symbol": "Gk",
         "shortTitle": "Galvanik",
         "competenceTitle": "Elektrochemische Oberflächentechnik / Galvanik",
         "teaser": "Von galvanischer Beschichtung und Anodisierung bis zu Pulsabscheidung und plasmaelektrolytischer Oxidation.",
@@ -32,7 +32,7 @@
       },
       {
         "id": "kr",
-        "symbol": "Kr",
+        "symbol": "Ko",
         "shortTitle": "Korrosion",
         "competenceTitle": "Korrosion und deren Vermeidung",
         "teaser": "Elektrochemische Aufklärung und Quantifizierung von Korrosion – und der passende Schutz für Ihre Bauteile.",

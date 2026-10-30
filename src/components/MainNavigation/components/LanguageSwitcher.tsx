@@ -25,7 +25,7 @@ export function SwitchLanguage({ label }: { label: string }) {
             aria-label={label}
         >
             {routing.locales.map((locale, index) => (
-                <span key={locale} className="flex gap-1.5">
+                <span key={locale} className="flex gap-1.5 cursor-pointer">
                     {index > 0 ? <span className="opacity-50" aria-hidden="true">/</span> : null}
                     <span className={cn(locale === currentLocale ? "font-medium" : "opacity-70")}>
                         {locale.toUpperCase()}

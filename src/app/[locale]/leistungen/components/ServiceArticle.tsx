@@ -79,7 +79,7 @@ export default function ServiceArticle({
       ) : (
         <div className="flex min-w-0 flex-[1.3_1_440px] flex-col gap-[18px] md:pt-[34px]">
           {service.expertiseDescription.map((paragraph) => (
-            <p key={paragraph} className="text-[17px] leading-[1.7] text-egm-body">
+            <p key={paragraph} className="text-[17px] leading-[1.7] text-egm-body lg:text-justify">
               {paragraph}
             </p>
           ))}
